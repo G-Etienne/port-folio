@@ -1,0 +1,13 @@
+@import '../utils/variables';
+
+.screen{
+    position: relative;
+    box-sizing: border-box;
+    border: 2px rgb(178, 178, 178) solid;
+    width: 98%;
+    margin: auto;
+    top: 1%;
+    height: 75%;
+    background-color: black;
+    box-shadow: 0px 0px 10px black;
+}

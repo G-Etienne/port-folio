@@ -1,0 +1,158 @@
+@import '../utils/variables';
+
+.footer{
+    position: absolute;
+    bottom: 0px;
+    box-sizing: border-box;
+    height: 215px;
+    width: 100%;
+
+    &__desk{
+        position: relative;
+        z-index: 10;
+        top: -5px;
+        height: 65%;
+        width: 60%;
+        margin: auto;
+        transform: perspective(150px) rotateX(5deg);
+        background-color: $main-color-desk;
+        &::after{
+            content: " ";
+            display: block;
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(rgb(0, 0, 0, 0.5) , transparent);        
+        }
+        &__front{
+            position: relative;
+            z-index: 11;
+            top: -3px;
+            height: 9px;
+            width: 62.5%;
+            margin: auto;
+            background-color: darken($main-color-desk, 5%);
+            &::after{
+                content: " ";
+                display: block;
+                height: 100%;
+                width: 100%;
+                background: linear-gradient(rgb(0, 0, 0, 0.3) , transparent);        
+            }
+        }
+        &__under-top{
+            position: relative;
+            z-index: 10;
+            top: -3px;
+            height: 32%;
+            width: 60%;
+            background-color: darken($main-color-desk, 3%);    
+            margin: auto;
+            &::after{
+                content: " ";
+                display: block;
+                height: 100%;
+                width: 100%;
+                background: linear-gradient(rgb(0, 0, 0, 0.5) , transparent);        
+            }
+        }
+        &__drawer{
+            position: absolute;
+            height: 100%;
+            width: 33.33%;
+            background-color: darken($main-color-desk, 3%);    
+            margin-left: 33.33%;
+            border-left: 2px rgb(0, 0, 0, 0.7) solid;
+            border-right: 2px rgb(0, 0, 0, 0.7) solid;            
+            &::after{
+                position: absolute;
+                top: 0px;
+                content: " ";
+                display: block;
+                height: 100%;
+                width: 100%;
+                background: linear-gradient(rgb(0, 0, 0, 0.5) , transparent);        
+            }
+            &__grip{
+                position: relative;
+                z-index: 12;
+                height: 15px;
+                width: 15px;
+                background: linear-gradient(rgb(0, 0, 0, 0.5) , grey);        
+                margin: auto;
+                margin-top: 25px;
+                border-radius: 50%;
+                box-shadow: 0px 0px 5px;
+                
+            }
+        }
+        &__keyboard{
+            display: flex;
+            flex-wrap: wrap;
+            position: absolute;
+            height: 70px;
+            width: 280px;
+            top: 50px;
+            left: 18%;
+            background-color: rgb(194, 194, 194);
+            box-shadow: 0px 0px 5px black;
+            &::after{
+                position: absolute;
+                top: 0px;
+                content: " ";
+                display: block;
+                height: 100%;
+                width: 100%;
+                background: linear-gradient(rgb(0, 0, 0, 0.2) , transparent);        
+            }
+            &__front{
+                position: absolute;
+                width: 281px;
+                height: 6px;
+                background-color: red;
+                transform: rotateX(-45deg);
+                top: 118px;
+                left: 18%;
+                background-color: darken(rgb(194, 194, 194), 10%);
+                box-shadow:inset 0px 0px 3px black;
+            }
+        }
+        &__mousepad{
+            position: absolute;
+            right: 20%;
+            top: 50px;
+            height: 70px;
+            width: 100px;
+            background-color: black;
+            border-radius: 5px;
+            box-shadow: 0px 5px 5px black;
+        }
+        &__mouse{
+            rotate: 10deg;
+            height: 35px;
+            width: 25px;
+            background-color: rgb(232, 232, 232);
+            margin: auto;
+            margin-top: 20px;
+            border-radius: 10px/15px;
+            box-shadow: inset 2px -5px 5px rgb(147, 146, 146);
+            &-one{
+                position: relative;
+                top: 10px;
+                height: 1px;
+                background-color: rgb(147, 146, 146);
+                width: 100%;
+            }
+            &-two{
+                position: relative;
+                rotate: 90deg;
+                top: 5px;
+                height: 1px;
+                background-color: rgb(147, 146, 146);
+                width: 40%;
+                margin: auto;
+            }
+            
+        }
+        }
+    
+}

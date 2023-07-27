@@ -1,0 +1,7 @@
+@import '../utils/variables';
+
+.main-wrapper{
+    background-color: $main-back-color;
+    height: 100vh;
+    box-shadow: inset 0px 0px 500px darken($main-back-color, 15%);
+}
