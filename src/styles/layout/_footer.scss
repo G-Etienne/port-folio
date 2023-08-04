@@ -163,6 +163,7 @@
         //on the desk
         &__keyboard {
             display: flex;
+            box-sizing: border-box;
             flex-wrap: wrap;
             position: absolute;
             height: 50px;
@@ -171,10 +172,12 @@
             left: 18%;
             background-color: rgb(194, 194, 194);
             box-shadow: 0px 0px 5px black;
+            padding-left: 5px;
 
             &::after {
                 position: absolute;
                 top: 0px;
+                left: 0px;
                 content: " ";
                 display: block;
                 height: 100%;

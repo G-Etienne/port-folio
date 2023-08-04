@@ -5,7 +5,7 @@ import { ThemeContext } from "../../contexts/ThemeContext";
 
 //------------------------------------------------------
 //style
-//import "../../styles/layout/_footer.scss";
+import "../../styles/layout/_footer.scss";
 
 //------------------------------------------------------
 //Desk components

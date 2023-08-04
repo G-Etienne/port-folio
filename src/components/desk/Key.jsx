@@ -5,7 +5,7 @@ import { ThemeContext } from "../../contexts/ThemeContext";
 
 //---------------------------------------------------------
 //style
-//import "../../styles/components/_key.scss";
+import "../../styles/components/desk/_key.scss";
 
 //---------------------------------------------------------
 function Key({ keyLetter }) {
@@ -13,7 +13,7 @@ function Key({ keyLetter }) {
 
     return (
         <div className={`key ${theme + "Key"}`}>
-            <p>{keyLetter}</p>
+            <p className={`key__letter ${theme + "Letter"}`}>{keyLetter}</p>
         </div>
     );
 }
