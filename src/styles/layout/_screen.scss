@@ -1,6 +1,10 @@
-@import '../utils/variables';
+//---------------------------------------------------------
+//import utils sass
+@import "../utils/variables";
 
-.screen{
+//---------------------------------------------------------
+//main rules for the screen
+.screen {
     position: relative;
     box-sizing: border-box;
     border: 2px rgb(178, 178, 178) solid;
@@ -8,6 +12,23 @@
     margin: auto;
     top: 1%;
     height: 75%;
+}
+
+//---------------------------------------------------------
+//white and dark theme
+.whitescreen {
     background-color: black;
     box-shadow: 0px 0px 10px black;
+}
+.darkscreen {
+    background-color: black;
+    box-shadow: 0px 0px 100px white;
+}
+
+//---------------------------------------------------------
+//media queries
+@media screen and (max-height: 900px) {
+    .screen {
+        height: 70%;
+    }
 }

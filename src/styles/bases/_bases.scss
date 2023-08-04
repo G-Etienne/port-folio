@@ -1,7 +1,30 @@
-@import '../utils/variables';
+//---------------------------------------------------------
+//utils sass
+@import "../utils/variables";
 
-.main-wrapper{
-    background-color: $main-back-color;
+//---------------------------------------------------------
+//interaction for the dark and white theme
+.button {
+    z-index: 16;
+    position: absolute;
+}
+//---------------------------------------------------------
+//container of the application
+.mainWrapper {
     height: 100vh;
+    min-width: 280px;
+}
+//---------------------------------------------------------
+//bases for the white and dark theme
+
+//white theme
+.whitemain {
+    background-color: $main-back-color;
     box-shadow: inset 0px 0px 500px darken($main-back-color, 15%);
+}
+
+//dark theme
+.darkmain {
+    background-color: darken($main-back-color, 70%);
+    box-shadow: inset 0px 0px 500px darken($main-back-color, 85%);
 }

@@ -1,30 +1,32 @@
+//---------------------------------------------------------
+//import of react router dom
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 
-import Header from '../components/Header';
-import Screen from '../components/Screen';
-import Footer from '../components/Footer';
+//---------------------------------------------------------
+//Routes components
+import Main from "../components/Main";
 
-import '../styles/bases/_bases.scss';
+//---------------------------------------------------------
+//context importation
+import { ThemeProvider } from "../contexts/ThemeContext";
 
-function Roads(){
-    return(
+//---------------------------------------------------------
+function Roads() {
+    return (
         <BrowserRouter>
-            <div className="main-wrapper">
-            <Screen>
-                <Header/>
-            </Screen>
+            <ThemeProvider>
+                {/* application */}
+                <Main></Main>
                 <Routes>
-                    <Route path="/"/>               
-                    <Route path="/"/>               
-                    <Route path="/"/>               
-                    <Route path="/"/>               
-                    <Route path="/"/> 
+                    <Route path="/" />
+                    <Route path="/" />
+                    <Route path="/" />
+                    <Route path="/" />
+                    <Route path="/" />
                 </Routes>
-            <Footer/> 
-            <div className="main-wrapper__shadow-wall"></div>             
-            </div>
+            </ThemeProvider>
         </BrowserRouter>
-    )
+    );
 }
 
 export default Roads;
