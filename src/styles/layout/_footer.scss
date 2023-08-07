@@ -10,32 +10,5 @@
     height: 215px;
     width: 100%;
     bottom: 1px;
-    //desk
-}
-
-//----------------------------------------------------------
-//media queries
-
-@media screen and (max-height: 900px) and (max_width: 1000px) {
-    .footer {
-        height: 180px;
-        &__desk {
-            &__front {
-                width: 83%;
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 750px) {
-    .footer {
-        height: 185px;
-    }
-}
-
-@media screen and (max-height: 650px) {
-    .footer {
-        height: 160px;
-        bottom: 0px;
-    }
+    min-width: 280px;
 }

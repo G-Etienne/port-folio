@@ -1,6 +1,7 @@
 //------------------------------------------------------
 //style
 import "../styles/layout/_footer.scss";
+import "../styles/layout/media_queries/_footerMediaQueries.scss";
 
 //------------------------------------------------------
 //components in the footer

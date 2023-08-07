@@ -1,0 +1,113 @@
+//------------------------------------------------
+//import utils
+@import "../../../utils/map";
+@import "../../../utils/mixin-mediaqueries";
+
+//------------------------------------------------
+//adaptation of the desk for each screen
+//------------------------------------------------
+@include responsive(large-tablet-and-laptop-min, large-tablet-and-laptop-max) {
+    .copyright {
+        left: 10%;
+    }
+    .desk {
+        width: 80%;
+        &__underTop {
+            width: 80%;
+        }
+
+        &__front {
+            width: 83%;
+        }
+    }
+}
+
+@include responsive(small-tablet-min, small-tablet-max) {
+    .copyright {
+        left: 10%;
+    }
+    .desk {
+        width: 80%;
+
+        &__front {
+            width: 89%;
+        }
+
+        &__underTop {
+            width: 80%;
+        }
+        &__front {
+            width: 83%;
+        }
+    }
+}
+
+@include responsive(zero-px, small-devices-max) {
+    .copyright {
+        left: 2%;
+        margin-bottom: 90px;
+        font-size: 14px;
+    }
+    .desk {
+        width: 96%;
+
+        &__underTop {
+            width: 95%;
+        }
+
+        &__front {
+            width: 99.5%;
+        }
+    }
+}
+
+//----------------------------------------------------------
+//media queries special with height
+
+@media screen and (max-height: 900px) and (max_width: 992px) {
+    .desk {
+        &__front {
+            width: 23%;
+        }
+    }
+}
+@media screen and (max-height: 650px) {
+    .copyright {
+        margin-bottom: 75px;
+    }
+    .desk {
+        &__front {
+            top: -4px;
+            height: 7px;
+            width: 82.5%;
+        }
+
+        &__underTop {
+            top: -4px;
+        }
+    }
+}
+
+@media screen and (max-height: 650px) and (max-width: 1199px) {
+    .desk {
+        &__front {
+            width: 82.5%;
+        }
+    }
+}
+
+@media screen and (max-height: 650px) and (min-width: 1199px) {
+    .desk {
+        &__front {
+            width: 62%;
+        }
+    }
+}
+
+@media screen and (max-height: 650px) and (max-width: 767px) {
+    .desk {
+        &__front {
+            width: 99%;
+        }
+    }
+}

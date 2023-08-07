@@ -24,11 +24,3 @@
     background-color: $color-screen;
     box-shadow: 0px 0px 100px white;
 }
-
-//---------------------------------------------------------
-//media queries
-@media screen and (max-height: 900px) {
-    .screen {
-        height: 70%;
-    }
-}

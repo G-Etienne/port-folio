@@ -1,7 +1,11 @@
 //---------------------------------------------------------
 //utils sass
 @import "../utils/variables";
-
+//---------------------------------------------------------
+//min width of the app
+#root {
+    min-width: 280px;
+}
 //---------------------------------------------------------
 //interaction for the dark and white theme
 .button {
@@ -12,7 +16,6 @@
 //container of the application
 .mainWrapper {
     height: 100vh;
-    min-width: 280px;
 }
 //---------------------------------------------------------
 //bases for the white and dark theme

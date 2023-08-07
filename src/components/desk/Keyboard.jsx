@@ -7,6 +7,7 @@ import Key from "./Key";
 //------------------------------------------------------
 //style
 import "../../styles/components/desk/_keyboard.scss";
+import "../../styles/components/desk/desk-media/_keyboardMediaQueries.scss";
 //------------------------------------------------------
 function Keyword() {
     return (

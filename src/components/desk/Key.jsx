@@ -6,6 +6,7 @@ import { ThemeContext } from "../../contexts/ThemeContext";
 //---------------------------------------------------------
 //style
 import "../../styles/components/desk/_key.scss";
+import "../../styles/components/desk/desk-media/_keyMediaQueries.scss";
 
 //---------------------------------------------------------
 function Key({ keyLetter }) {

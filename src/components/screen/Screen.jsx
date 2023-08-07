@@ -6,6 +6,7 @@ import { ThemeContext } from "../../contexts/ThemeContext";
 //---------------------------------------------------------
 //style
 import "../../styles/layout/_screen.scss";
+import "../../styles/layout/media_queries/_screenMediaQueries.scss";
 //---------------------------------------------------------
 //components
 import Header from "./Header";

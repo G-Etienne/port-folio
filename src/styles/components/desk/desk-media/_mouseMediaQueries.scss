@@ -1,0 +1,42 @@
+//----------------------------------------------------------
+//utils
+@import "../../../utils//mixin-mediaqueries";
+
+//----------------------------------------------------------
+//media queries
+@include responsive(large-tablet-and-laptop-min, large-tablet-and-laptop-max) {
+    .mousepad {
+        top: 20px;
+        left: 40%;
+    }
+}
+@include responsive(small-tablet-min, small-tablet-max) {
+    .mousepad {
+        top: 20px;
+        left: 50%;
+    }
+}
+
+@include responsive(small-devices-min, small-devices-max) {
+    .mousepad {
+        top: 10px;
+        left: calc(2% + 220px);
+        width: 50px;
+    }
+}
+
+@include responsive(zero-px, mobile-max) {
+    .mousepad {
+        top: 10px;
+        left: calc(2% + 210px);
+        width: 50px;
+    }
+}
+
+//----------------------------------------------------------
+//media queries height
+@media screen and (max-height: 650px) {
+    .mousepad {
+        top: 5px;
+    }
+}

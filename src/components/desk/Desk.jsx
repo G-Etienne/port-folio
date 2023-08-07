@@ -6,12 +6,14 @@ import { ThemeContext } from "../../contexts/ThemeContext";
 //------------------------------------------------------
 //style
 import "../../styles/components/desk/_desk.scss";
+//media queries
+import "../../styles/components/desk/desk-media/_deskMediaQueries.scss";
 
 //------------------------------------------------------
 //Desk components
 //Light on the desk
 import Light from "./Light";
-import Keyword from "./Keyword";
+import Keyboard from "./Keyboard";
 import Mouse from "./Mouse";
 
 //-----------------------------------------------------
@@ -28,7 +30,7 @@ function Desk() {
             </p>
             {/* desk top */}
             <div className={`desk ${theme + "Desk"}`}>
-                <Keyword />
+                <Keyboard />
                 <Mouse />
             </div>
             {/* thickness of the desk top */}

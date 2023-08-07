@@ -6,6 +6,7 @@ import { ThemeContext } from "../../contexts/ThemeContext";
 //---------------------------------------------------------
 //style
 import "../../styles/components/desk/_mouse.scss";
+import "../../styles/components/desk/desk-media/_mouseMediaQueries.scss";
 
 //---------------------------------------------------------
 function Mouse() {

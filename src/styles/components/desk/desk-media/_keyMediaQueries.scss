@@ -1,0 +1,16 @@
+//---------------------------------------------------
+//utils
+@import "../../../utils/mixin-mediaqueries";
+
+//---------------------------------------------------
+//media for the touches of the keyboard
+@include responsive(zero-px, small-devices-max) {
+    .key {
+        height: 6px;
+        width: 7;
+        font-size: 3px;
+        margin-left: 3px;
+        margin-right: 0px;
+        margin-top: 1.5px;
+    }
+}
