@@ -4,7 +4,7 @@
 
 //---------------------------------------------------
 //media for the touches of the keyboard
-@include responsive(zero-px, small-devices-max) {
+@include responsive(zero-px, small-tablet-min) {
     .key {
         height: 6px;
         width: 7;
