@@ -1,6 +1,6 @@
 //------------------------------------------------------
 //style
-//import "../styles/layout/_footer.scss";
+import "../styles/layout/_footer.scss";
 
 //------------------------------------------------------
 //components in the footer

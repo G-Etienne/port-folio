@@ -1,0 +1,237 @@
+//---------------------------------------------------
+//import utils
+@import "../../utils/variables";
+
+//---------------------------------------------------
+//style copyright
+.copyright {
+    font-weight: bold;
+    z-index: 11;
+    position: absolute;
+    bottom: -10px;
+    left: 20%;
+    font-size: 18px;
+    margin-bottom: 95px;
+    text-shadow: 0px 0px 4px lighten($main-color-desk, 50%);
+    transform: skew(-15deg);
+    &.darkCopyright {
+        color: $fluo-color;
+        text-shadow: 0px 0px 4px transparent;
+    }
+}
+
+//---------------------------------------------------
+//styles desk
+.desk {
+    position: relative;
+    z-index: 10;
+    top: -5px;
+    height: 65%;
+    width: 60%;
+    margin: auto;
+    transform: perspective(150px) rotateX(5deg);
+    background-color: $main-color-desk;
+
+    //dark mode
+    &.darkDesk {
+        background-color: darken($main-color-desk, 20%);
+
+        &::after {
+            content: " ";
+            display: block;
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(rgb(0, 0, 0, 0.8), transparent);
+            rotate: 180deg;
+        }
+    }
+
+    &::after {
+        content: " ";
+        display: block;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(rgb(0, 0, 0, 0.5), transparent);
+    }
+
+    //thickness of the desk
+    &__front {
+        position: relative;
+        z-index: 11;
+        top: -3px;
+        height: 9px;
+        width: 62.5%;
+        margin: auto;
+        background-color: darken($main-color-desk, 5%);
+        border-bottom: 1px black solid;
+
+        &::after {
+            content: " ";
+            display: block;
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(rgb(0, 0, 0, 0.3), transparent);
+        }
+
+        //dark mode
+        &.darkDeskFront {
+            background-color: darken($main-color-desk, 35%);
+        }
+    }
+
+    //under the desk top
+    &__underTop {
+        position: relative;
+        z-index: 10;
+        top: -3px;
+        height: 32%;
+        width: 60%;
+        background-color: darken($main-color-desk, 3%);
+        margin: auto;
+
+        &::after {
+            content: " ";
+            display: block;
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(rgb(0, 0, 0, 0.5), transparent);
+        }
+
+        //dark mode
+        &.darkUnderTop {
+            background-color: darken($main-color-desk, 25%);
+
+            &::after {
+                content: " ";
+                display: block;
+                height: 100%;
+                width: 100%;
+                background: linear-gradient(rgb(0, 0, 0, 0.8), transparent);
+            }
+        }
+    }
+
+    &__drawer {
+        position: absolute;
+        height: 100%;
+        width: 33.33%;
+        background-color: darken($main-color-desk, 3%);
+        margin-left: 33.33%;
+        border-left: 2px rgb(0, 0, 0, 0.7) solid;
+        border-right: 2px rgb(0, 0, 0, 0.7) solid;
+
+        &::after {
+            position: absolute;
+            top: 0px;
+            content: " ";
+            display: block;
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(rgb(0, 0, 0, 0.5), transparent);
+        }
+
+        //dark mode
+        &.darkDrawer {
+            background-color: darken($main-color-desk, 25%);
+            &::after {
+                content: " ";
+                display: block;
+                height: 100%;
+                width: 100%;
+                background: linear-gradient(rgb(0, 0, 0, 0.8), transparent);
+            }
+        }
+        &__grip {
+            position: relative;
+            z-index: 12;
+            height: 15px;
+            width: 15px;
+            background: linear-gradient(rgb(0, 0, 0, 0.5), grey);
+            margin: auto;
+            margin-top: 25px;
+            border-radius: 50%;
+            box-shadow: 0px 0px 5px;
+        }
+    }
+}
+
+//----------------------------------------------------------
+//media queries
+@media screen and (max-width: 1099px) {
+    .copyright {
+        left: 10%;
+    }
+    .desk {
+        width: 80%;
+
+        &__front {
+            width: 89%;
+        }
+
+        &__underTop {
+            width: 80%;
+        }
+
+        &__front {
+            width: 83%;
+        }
+    }
+}
+
+@media screen and (max-height: 900px) and (max_width: 1000px) {
+    .desk {
+        &__front {
+            width: 83%;
+        }
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .copyright {
+        left: 2%;
+        margin-bottom: 80px;
+    }
+    .desk {
+        width: 96%;
+
+        &__underTop {
+            width: 95%;
+        }
+
+        &__front {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-height: 650px) {
+    .copyright {
+        margin-bottom: 75px;
+    }
+    .desk {
+        &__front {
+            top: -4px;
+            height: 7px;
+            width: 82.5%;
+        }
+
+        &__underTop {
+            top: -4px;
+        }
+    }
+}
+
+@media screen and (max-height: 650px) and (max-width: 750px) {
+    .desk {
+        &__front {
+            width: 99%;
+        }
+    }
+}
+@media screen and (max-height: 650px) and (min-width: 1100px) {
+    .desk {
+        &__front {
+            width: 62%;
+        }
+    }
+}
