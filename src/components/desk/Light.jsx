@@ -5,7 +5,7 @@ import { ThemeContext } from "../../contexts/ThemeContext";
 
 //---------------------------------------------------------
 //style
-//import "../../styles/components/_light.scss";
+import "../../styles/components/desk/_light.scss";
 
 //---------------------------------------------------------
 function Light() {
@@ -14,36 +14,23 @@ function Light() {
     return (
         <>
             <div className="light">
-                {/* lampshade */}
+                <div className={`light__head__top ${theme + "HeadTop"}`}></div>
+                <div className={`light__head ${theme + "Head"}`}></div>
+                <div className={`light__on__top ${theme + "Head"}`}></div>
+                <div className={`light__on ${theme + "Head"}`}></div>
+                <div className={`light__on__bottom ${theme + "Head"}`}></div>
+                <div></div>
+                <div className={`light__arm ${theme + "Arm"}`}></div>
                 <div
-                    className={`light__LampshadeTop ${theme + "LampshadeTop"}`}
+                    className={`light__arm__Shadow ${theme + "ArmShadow"}`}
+                ></div>
+                <div className={`light__baseTop ${theme + "BaseTop"}`}></div>
+                <div
+                    className={`light__baseMiddle ${theme + "BaseMiddle"}`}
                 ></div>
                 <div
-                    className={`light__LampshadeBottom ${
-                        theme + "LampshadeBottom"
-                    }`}
+                    className={`light__baseBottom ${theme + "BaseBottom"}`}
                 ></div>
-                {/* light effect */}
-                <div className={`light__ampule ${theme + "Ampule"}`}></div>
-                <div className={`${theme + "LightOne"}`}></div>
-                {/* light support */}
-                <div className={`light__armTop ${theme + "ArmTop"}`}></div>
-                <div className={`light__armAxe ${theme + "ArmAxe"}`}></div>
-                <div
-                    className={`light__armBottom ${theme + "ArmBottom"}`}
-                ></div>
-                {/* light base */}
-                <div>
-                    <div className={`light__base ${theme + "Base"}`}></div>
-                    <div
-                        className={`light__base__top ${theme + "BaseTop"}`}
-                    ></div>
-                    <div
-                        className={`light__base__bottom ${
-                            theme + "BaseBottom"
-                        }`}
-                    ></div>
-                </div>
             </div>
         </>
     );
