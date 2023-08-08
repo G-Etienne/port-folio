@@ -7,9 +7,6 @@
 //adaptation of the desk for each screen
 //------------------------------------------------
 @include responsive(large-tablet-and-laptop-min, large-tablet-and-laptop-max) {
-    .copyright {
-        left: 10%;
-    }
     .desk {
         width: 80%;
         &__underTop {
@@ -24,7 +21,7 @@
 
 @include responsive(small-tablet-min, small-tablet-max) {
     .copyright {
-        left: 10%;
+        font-size: 16px;
     }
     .desk {
         width: 80%;
@@ -44,9 +41,8 @@
 
 @include responsive(zero-px, small-devices-max) {
     .copyright {
-        left: 2%;
-        margin-bottom: 90px;
         font-size: 14px;
+        bottom: -8px;
     }
     .desk {
         width: 96%;
@@ -58,6 +54,22 @@
         &__front {
             width: 99.5%;
         }
+        &__drawer__grip {
+            width: 10px;
+            height: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .copyright {
+        font-size: 12px;
+        bottom: -10px;
+        width: 95%;
+        margin-left: 2.5%;
+    }
+    .desk__drawer__grip {
+        display: none;
     }
 }
 
@@ -73,7 +85,8 @@
 }
 @media screen and (max-height: 650px) {
     .copyright {
-        margin-bottom: 75px;
+        margin-bottom: 15px;
+        font-size: 14;
     }
     .desk {
         &__front {
@@ -84,6 +97,9 @@
 
         &__underTop {
             top: -4px;
+        }
+        &__drawer__grip {
+            scale: 0;
         }
     }
 }

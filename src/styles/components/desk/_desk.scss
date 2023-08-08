@@ -8,12 +8,10 @@
     font-weight: bold;
     z-index: 11;
     position: absolute;
-    bottom: -10px;
-    left: 20%;
+    bottom: -15px;
     font-size: 18px;
-    margin-bottom: 95px;
-    text-shadow: 0px 0px 4px lighten($main-color-desk, 50%);
-    transform: skew(-15deg);
+    width: 100%;
+    text-align: center;
     &.darkCopyright {
         color: $fluo-color;
         text-shadow: 0px 0px 4px transparent;
@@ -99,7 +97,7 @@
 
         //dark mode
         &.darkUnderTop {
-            background-color: darken($main-color-desk, 25%);
+            background-color: darken($main-color-desk, 35%);
 
             &::after {
                 content: " ";
@@ -132,7 +130,7 @@
 
         //dark mode
         &.darkDrawer {
-            background-color: darken($main-color-desk, 25%);
+            background-color: darken($main-color-desk, 35%);
             &::after {
                 content: " ";
                 display: block;
@@ -143,6 +141,7 @@
         }
         &__grip {
             position: relative;
+            top: -18px;
             z-index: 12;
             height: 15px;
             width: 15px;

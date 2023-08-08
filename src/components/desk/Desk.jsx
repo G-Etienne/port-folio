@@ -15,6 +15,7 @@ import "../../styles/components/desk/desk-media/_deskMediaQueries.scss";
 import Light from "./Light";
 import Keyboard from "./Keyboard";
 import Mouse from "./Mouse";
+import LinksDesk from "./LinksDesk";
 
 //-----------------------------------------------------
 function Desk() {
@@ -24,10 +25,6 @@ function Desk() {
         <>
             {/* light on the desk */}
             <Light />
-            {/* copyright */}
-            <p className={`copyright ${theme + "Copyright"}`}>
-                © 2023 Etienne Ginet Tous droits réservés.
-            </p>
             {/* desk top */}
             <div className={`desk ${theme + "Desk"}`}>
                 <Keyboard />
@@ -37,8 +34,13 @@ function Desk() {
             <div className={`desk__front ${theme + "DeskFront"}`}></div>
             {/* elements under the desk top */}
             <div className={`desk__underTop ${theme + "UnderTop"}`}>
+                <LinksDesk />
                 <div className={`desk__drawer ${theme + "Drawer"}`}>
                     <div className="desk__drawer__grip"></div>
+                    {/* copyright */}
+                    <p className={`copyright ${theme + "Copyright"}`}>
+                        © 2023 Etienne Ginet Tous droits réservés.
+                    </p>
                 </div>
             </div>
         </>
