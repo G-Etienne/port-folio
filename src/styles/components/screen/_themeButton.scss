@@ -1,0 +1,44 @@
+//-----------------------------------------------
+//utils
+@import "../../utils/variables";
+
+//-----------------------------------------------
+//main rules theme
+.themeButton {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px;
+}
+
+//-----------------------------------------------
+//dark theme
+.darkButton {
+    background-image: url("../../../assets/Theme/sun.png");
+    border: 1px solid $color-light;
+    background-size: cover;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px white;
+    & > p {
+        opacity: 0;
+    }
+}
+
+//-----------------------------------------------
+//white theme
+.whiteButton {
+    background-image: url("../../../assets/Theme/moon.png");
+    background-size: cover;
+    border: 1px rgb(199, 197, 197) solid;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgb(199, 197, 197);
+
+    & > p {
+        opacity: 0;
+    }
+}
