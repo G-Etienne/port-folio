@@ -1,0 +1,39 @@
+//------------------------------------------------------
+//import utils
+@import "../../../utils/mixin-mediaqueries";
+@import "../../../utils/map";
+
+//------------------------------------------------------
+//laptop
+@include responsive(large-tablet-and-laptop-min, large-tablet-and-laptop-max) {
+    .light {
+        right: 12.5%;
+    }
+}
+
+//tablet
+@include responsive(small-tablet-min, small-tablet-max) {
+    .light {
+        right: 13%;
+    }
+}
+
+//phone
+@include responsive(small-devices-min, small-devices-max) {
+    .light {
+        right: 8%;
+    }
+}
+
+//very small devices
+@media screen and (min-width: 360px) and (max-width: 480px) {
+    .light {
+        right: 8%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .light {
+        scale: 0;
+    }
+}
