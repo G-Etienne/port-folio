@@ -15,7 +15,7 @@ function Keyword() {
             <div className="keyboard">
                 {/*touches of the keyboard */}
                 {keyData.map((item) => (
-                    <Key key="1" keyLetter={item.key} />
+                    <Key keyLetter={item.key} />
                 ))}
             </div>
             {/* thickness of the keyboard */}

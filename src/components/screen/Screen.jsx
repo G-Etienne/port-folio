@@ -10,6 +10,7 @@ import "../../styles/layout/media_queries/_screenMediaQueries.scss";
 //---------------------------------------------------------
 //components
 import Header from "./Header";
+import Back from "./Back";
 
 //---------------------------------------------------------
 function Screen() {
@@ -18,6 +19,7 @@ function Screen() {
     return (
         <>
             <div className={`screen ${theme + "screen"}`}>
+                <Back />
                 <Header />
             </div>
         </>

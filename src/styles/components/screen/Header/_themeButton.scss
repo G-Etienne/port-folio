@@ -6,6 +6,9 @@
 //-----------------------------------------------
 //main rules theme
 .themeButton {
+    position: relative;
+
+    z-index: 50;
     display: flex;
     justify-content: center;
     align-items: center;

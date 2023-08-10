@@ -1,0 +1,45 @@
+//utils
+@import "../utils/variables";
+@mixin dotAnimback($color) {
+    position: relative;
+    top: center;
+    left: center;
+    z-index: 12;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+
+    box-shadow: 0px 0px 7px $fluo-color;
+}
+
+@mixin dotAnimbackTwo($color) {
+    position: relative;
+    right: -2.5px;
+    z-index: 12;
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    background-color: $color;
+    box-shadow: 0px 0px 7px $fluo-color;
+}
+
+@mixin rodAnimback($color, $width) {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    top: 2px;
+    left: 2px;
+    z-index: 11;
+    height: 1px;
+    width: $width;
+    border-radius: 50%;
+    background-color: $color;
+    box-shadow: 0px 0px 7px $fluo-color;
+    background: linear-gradient(
+        90deg,
+        darken($main-screen-back-color, 15%),
+        lighten($main-screen-back-color, 80%),
+        darken($main-screen-back-color, 15%)
+    );
+}

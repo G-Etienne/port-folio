@@ -17,10 +17,8 @@
 //---------------------------------------------------------
 //white and dark theme
 .whitescreen {
-    background-color: lighten($main-screen-back-color, 10%);
     box-shadow: 0px 0px 10px black;
 }
 .darkscreen {
     background-color: $color-screen;
-    box-shadow: 0px 0px 100px lighten($main-back-color, 35%);
 }

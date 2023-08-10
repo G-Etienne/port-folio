@@ -1,0 +1,129 @@
+//------------------------------------------------
+@import "../../utils/variables";
+@import "../../utils/mixinBack";
+@import "../../utils/keyframesBack";
+
+//------------------------------------------------
+.backSide {
+    position: absolute;
+    z-index: 20;
+
+    height: 100%;
+    width: 100%;
+    background-image: url("../../../assets/back-clear.png");
+    background-size: cover;
+    background-position: center;
+}
+.backSide.dark {
+    background-image: url("../../../assets/back-dark.png");
+}
+
+.backAnim {
+    position: absolute;
+    z-index: 10;
+    height: 100%;
+    width: 50%;
+    margin-left: 25%;
+    background-color: rgba(5, 1, 1, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dot {
+    &__ancor {
+        &__one {
+            rotate: 20deg;
+            transform: rotateY(180deg);
+        }
+        &__two {
+            rotate: -40deg;
+        }
+        &__three {
+            rotate: 100deg;
+            transform: rotateY(180deg);
+        }
+    }
+    &__one {
+        @include dotAnimback(white);
+        animation: dotMouve 10000ms linear infinite;
+        &::after {
+            position: relative;
+            top: -4px;
+            content: " ";
+            display: block;
+            z-index: 15;
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+            background: radial-gradient(
+                lighten($main-screen-back-color, 50%),
+                darken($main-screen-back-color, 15%)
+            );
+        }
+    }
+    &__two {
+        @include dotAnimbackTwo(white);
+        &::after {
+            position: relative;
+            top: -1px;
+            content: " ";
+            display: block;
+            z-index: 15;
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+            background: radial-gradient(
+                lighten($main-screen-back-color, 50%),
+                darken($main-screen-back-color, 15%)
+            );
+        }
+    }
+    &__three {
+        @include dotAnimbackTwo(white);
+        &::after {
+            position: relative;
+            top: -1px;
+            content: " ";
+            display: block;
+            z-index: 15;
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+            background: radial-gradient(
+                lighten($main-screen-back-color, 50%),
+                darken($main-screen-back-color, 15%)
+            );
+        }
+    }
+}
+
+.rod {
+    &__one {
+        transform-origin: left;
+
+        @include rodAnimback(white, 100px);
+        animation: rodMouve 10000ms linear infinite;
+    }
+    &__two {
+        transform-origin: left;
+        rotate: 70deg;
+        @include rodAnimback(white, 80px);
+        animation: rodMouve 10000ms linear infinite;
+    }
+    &__three {
+        transform-origin: left;
+        rotate: 145deg;
+        @include rodAnimback(white, 164px);
+        animation: lastRodMouve 10000ms linear infinite;
+    }
+}
+
+.specialRod {
+    &__one {
+        transform-origin: left;
+        @include rodAnimback(white, 164px);
+        rotate: 20deg;
+        animation: specialRodMouveone 10000ms linear infinite;
+    }
+}
