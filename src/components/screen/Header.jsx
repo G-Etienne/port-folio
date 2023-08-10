@@ -1,6 +1,7 @@
 //---------------------------------------------------------
 //components
 import ThemeButton from "./header/ThemButton";
+import LangueButton from "./header/LangueButton";
 
 //---------------------------------------------------------
 //style
@@ -12,7 +13,10 @@ function Header() {
         <>
             <header className="header">
                 {/* interaction theme dark and white */}
-                <ThemeButton />
+                <div className="headerThemeLangue">
+                    <ThemeButton />
+                    <LangueButton />
+                </div>
             </header>
         </>
     );

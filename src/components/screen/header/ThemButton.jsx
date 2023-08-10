@@ -4,8 +4,8 @@ import { useContext } from "react";
 import { ThemeContext } from "../../../contexts/ThemeContext";
 //---------------------------------------------------------
 //style
-import "../../../styles/components/screen/_themeButton.scss";
-import "../../../styles/components/screen/screenMedia/_themebuttonMediaQueries.scss";
+import "../../../styles/components/screen/Header/_themeButton.scss";
+import "../../../styles/components/screen/Header/headerMedia/_themebuttonMediaQueries.scss";
 
 //---------------------------------------------------------
 function ThemeButton() {
@@ -14,12 +14,9 @@ function ThemeButton() {
     return (
         <>
             {/* interaction theme dark and white */}
-            <div className="themeButton">
-                <div className={`${theme + "Button"}`} onClick={toggleTheme}>
-                    <p title="Changer le theme.">
-                        {theme === "white" ? "Dark" : "White"}
-                    </p>
-                </div>
+            <div className="themeButton" onClick={toggleTheme}>
+                <div className={`moon ${theme + "Button"}`}></div>
+                <div className={`sun ${theme + "Button"}`}></div>
             </div>
         </>
     );

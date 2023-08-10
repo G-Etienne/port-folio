@@ -16,6 +16,7 @@ import Light from "./Light";
 import Keyboard from "./Keyboard";
 import Mouse from "./Mouse";
 import LinksDesk from "./LinksDesk";
+import Copyright from "./Copyright";
 
 //-----------------------------------------------------
 function Desk() {
@@ -38,9 +39,7 @@ function Desk() {
                 <div className={`desk__drawer ${theme + "Drawer"}`}>
                     <div className="desk__drawer__grip"></div>
                     {/* copyright */}
-                    <p className={`copyright ${theme + "Copyright"}`}>
-                        © 2023 Etienne Ginet Tous droits réservés.
-                    </p>
+                    <Copyright />
                 </div>
             </div>
         </>

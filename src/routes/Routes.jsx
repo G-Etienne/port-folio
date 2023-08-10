@@ -9,21 +9,24 @@ import Main from "../components/Main";
 //---------------------------------------------------------
 //context importation
 import { ThemeProvider } from "../contexts/ThemeContext";
+import { LangueProvider } from "../contexts/LangueContext";
 
 //---------------------------------------------------------
 function Roads() {
     return (
         <BrowserRouter>
             <ThemeProvider>
-                {/* application */}
-                <Main></Main>
-                <Routes>
-                    <Route path="/" />
-                    <Route path="/" />
-                    <Route path="/" />
-                    <Route path="/" />
-                    <Route path="/" />
-                </Routes>
+                <LangueProvider>
+                    {/* application */}
+                    <Main />
+                    <Routes>
+                        <Route path="/" />
+                        <Route path="/" />
+                        <Route path="/" />
+                        <Route path="/" />
+                        <Route path="/" />
+                    </Routes>
+                </LangueProvider>
             </ThemeProvider>
         </BrowserRouter>
     );

@@ -4,9 +4,14 @@
 
 //-------------------------------------------
 .header {
+    display: flex;
+    justify-content: flex-end;
     position: relative;
     box-sizing: border-box;
     //border: 1px red solid;
     height: 100px;
     width: 100%;
+    &__ThemeLangue {
+        color: transparent;
+    }
 }
