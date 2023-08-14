@@ -1,0 +1,35 @@
+//------------------------------------------------------
+//utils
+@import "../../../utils/map";
+@import "../../../utils/mixin-mediaqueries";
+
+//------------------------------------------------------
+@include responsive(large-tablet-and-laptop-min, large-tablet-and-laptop-max) {
+    .backAnim {
+        &__container {
+            scale: 0.8;
+        }
+    }
+}
+
+@include responsive(small-tablet-min, small-tablet-max) {
+    .backAnim {
+        &__container {
+            scale: 0.6;
+        }
+    }
+}
+
+@include responsive(zero-px, small-devices-max) {
+    .backAnim {
+        width: 100%;
+        margin-left: 0%;
+        &__container {
+            scale: 0.5;
+        }
+        &.dark {
+            width: 100%;
+            margin-left: 0%;
+        }
+    }
+}

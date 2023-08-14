@@ -1,4 +1,5 @@
-//rod top /left
+//-----------------------------------------------------------
+//rotation of the animation in the center
 @keyframes rotateAnime {
     0% {
         transform: rotate(0deg);
@@ -8,6 +9,8 @@
     }
 }
 
+//-----------------------------------------------------------
+//rotation and scale of the first rod
 @keyframes rodMouve {
     0% {
         transform: rotate(0deg) scaleY(1);
@@ -26,6 +29,8 @@
     }
 }
 
+//-----------------------------------------------------------
+//rotation and scale of the last rod
 @keyframes lastRodMouve {
     0% {
         transform: rotate(-4deg) scaleX(0.92);
@@ -50,6 +55,8 @@
     }
 }
 
+//-----------------------------------------------------------
+//rotation and scale for the connected some dots
 @keyframes specialRodMouveone {
     0% {
         transform: rotate(180deg) scaleX(1.4);

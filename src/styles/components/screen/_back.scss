@@ -1,9 +1,11 @@
-//------------------------------------------------
+//-----------------------------------------------------------
+//import utils
 @import "../../utils/variables";
 @import "../../utils/mixinBack";
 @import "../../utils/keyframesBack";
 
-//------------------------------------------------
+//-----------------------------------------------------------
+//image to cover the screen with a hole in the center
 .backSide {
     position: absolute;
     z-index: 20;
@@ -14,26 +16,52 @@
     background-size: cover;
     background-position: center;
 }
+//dark theme
 .backSide.dark {
     background-image: url("../../../assets/back-dark.png");
 }
 
+//-----------------------------------------------------------
+//block image behind the animation
 .backAnim {
     position: absolute;
-    z-index: 30;
+    z-index: 10;
     height: 100%;
     width: 50%;
     margin-left: 25%;
-    background-color: rgba(5, 1, 1, 1);
+    background-image: url("../../../assets/back-anim-clear.jpg");
+    background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
     &__container {
         scale: 1;
-        animation: rotateAnime 40000ms linear infinite;
+        animation: rotateAnime 80000ms linear infinite;
     }
 }
-
+//dark theme
+.backAnim.dark {
+    position: absolute;
+    z-index: 10;
+    height: 100%;
+    width: 50%;
+    margin-left: 25%;
+    background-image: url("../../../assets/back-anim-dark.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__container {
+        position: relative;
+        z-index: 13;
+        scale: 1;
+        animation: rotateAnime 80000ms linear infinite;
+    }
+}
+//-----------------------------------------------------------
+//animation
 .dot {
     &__ancor {
         &__one {
@@ -49,13 +77,12 @@
         }
     }
     &__one {
-        @include dotAnimback(white);
+        @include dotAnimback();
         &::after {
             position: relative;
             top: -4px;
             content: " ";
             display: block;
-            z-index: 15;
             height: 100%;
             width: 100%;
             border-radius: 50%;
@@ -65,14 +92,13 @@
             );
         }
         &__bis {
-            @include dotAnimback(white);
+            @include dotAnimback();
             rotate: 180deg;
             &::after {
                 position: relative;
                 top: -4px;
                 content: " ";
                 display: block;
-                z-index: 15;
                 height: 100%;
                 width: 100%;
                 border-radius: 50%;
@@ -84,13 +110,12 @@
         }
     }
     &__two {
-        @include dotAnimbackTwo(white);
+        @include dotAnimbackTwo();
         &::after {
             position: relative;
             top: -1px;
             content: " ";
             display: block;
-            z-index: 15;
             height: 100%;
             width: 100%;
             border-radius: 50%;
@@ -101,13 +126,12 @@
         }
     }
     &__three {
-        @include dotAnimbackTwo(white);
+        @include dotAnimbackTwo();
         &::after {
             position: relative;
             top: -1px;
             content: " ";
             display: block;
-            z-index: 15;
             height: 100%;
             width: 100%;
             border-radius: 50%;
@@ -123,20 +147,20 @@
     &__one {
         transform-origin: left;
 
-        @include rodAnimback(white, 100px);
-        animation: rodMouve 10000ms linear infinite;
+        @include rodAnimback(100px);
+        animation: rodMouve 20000ms linear infinite;
     }
     &__two {
         transform-origin: left;
         rotate: 70deg;
-        @include rodAnimback(white, 80px);
-        animation: rodMouve 10000ms linear infinite;
+        @include rodAnimback(80px);
+        animation: rodMouve 20000ms linear infinite;
     }
     &__three {
         transform-origin: left;
         rotate: 145deg;
-        @include rodAnimback(white, 164px);
-        animation: lastRodMouve 10000ms linear infinite;
+        @include rodAnimback(164px);
+        animation: lastRodMouve 20000ms linear infinite;
     }
 }
 
@@ -144,59 +168,59 @@
     &__one {
         position: absolute;
         transform-origin: left;
-        @include rodAnimback(white, 164px);
+        @include rodAnimback(164px);
         rotate: 20deg;
         left: 0px;
         top: 0px;
-        animation: specialRodMouveone 10000ms linear infinite;
+        animation: specialRodMouveone 20000ms linear infinite;
     }
     &__two {
         position: absolute;
         transform-origin: left;
-        @include rodAnimback(white, 164px);
+        @include rodAnimback(164px);
         rotate: 20deg;
-        animation: specialRodMouveTwo 10000ms linear infinite;
+        animation: specialRodMouveTwo 20000ms linear infinite;
     }
     &__three {
         position: absolute;
         transform-origin: left;
-        @include rodAnimback(white, 164px);
+        @include rodAnimback(164px);
         rotate: 20deg;
-        animation: specialRodMouveThree 10000ms linear infinite;
+        animation: specialRodMouveThree 20000ms linear infinite;
     }
     &__four {
         position: absolute;
         transform-origin: left;
-        @include rodAnimback(white, 164px);
+        @include rodAnimback(164px);
         rotate: 20deg;
-        animation: specialRodMouveFour 10000ms linear infinite;
+        animation: specialRodMouveFour 20000ms linear infinite;
     }
     &__five {
         position: absolute;
         transform-origin: left;
-        @include rodAnimback(white, 164px);
+        @include rodAnimback(164px);
         rotate: 20deg;
-        animation: specialRodMouveFive 10000ms linear infinite;
+        animation: specialRodMouveFive 20000ms linear infinite;
     }
     &__six {
         position: absolute;
         transform-origin: left;
-        @include rodAnimback(white, 164px);
+        @include rodAnimback(164px);
         rotate: 20deg;
-        animation: specialRodMouveSix 10000ms linear infinite;
+        animation: specialRodMouveSix 20000ms linear infinite;
     }
     &__seven {
         position: absolute;
         transform-origin: left;
-        @include rodAnimback(white, 164px);
+        @include rodAnimback(164px);
         rotate: 20deg;
-        animation: specialRodMouveSeven 10000ms linear infinite;
+        animation: specialRodMouveSeven 20000ms linear infinite;
     }
     &__eight {
         position: absolute;
         transform-origin: left;
-        @include rodAnimback(white, 164px);
+        @include rodAnimback(164px);
         rotate: 20deg;
-        animation: specialRodMouveEight 10000ms linear infinite;
+        animation: specialRodMouveEight 20000ms linear infinite;
     }
 }
