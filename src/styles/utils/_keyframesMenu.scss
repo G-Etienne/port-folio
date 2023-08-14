@@ -1,0 +1,89 @@
+@keyframes textApear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes mouveMenu {
+    0% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(20px);
+    }
+}
+@keyframes scaleMenuAnim {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+@keyframes linkOnePosition {
+    0% {
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+    40% {
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes linkTwoPosition {
+    0% {
+        transform: translateY(-170px);
+        opacity: 0;
+    }
+    40% {
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes linkThreePosition {
+    0% {
+        transform: translateY(-265px);
+        opacity: 0;
+    }
+    40% {
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes linkFourPosition {
+    0% {
+        transform: translateY(-355px);
+        opacity: 0;
+    }
+    40% {
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(-0px);
+        opacity: 1;
+    }
+}
+@keyframes linkFivePosition {
+    0% {
+        transform: translateY(-445px);
+        opacity: 0;
+    }
+    40% {
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(-0px);
+        opacity: 1;
+    }
+}

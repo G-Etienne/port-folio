@@ -20,11 +20,11 @@ function Roads() {
                     {/* application */}
                     <Main />
                     <Routes>
-                        <Route path="/" />
-                        <Route path="/" />
-                        <Route path="/" />
-                        <Route path="/" />
-                        <Route path="/" />
+                        <Route path="/home" />
+                        <Route path="/objectivs" />
+                        <Route path="/skills" />
+                        <Route path="/projects" />
+                        <Route path="/trainings" />
                     </Routes>
                 </LangueProvider>
             </ThemeProvider>
