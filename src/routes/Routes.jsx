@@ -21,7 +21,7 @@ function Roads() {
                     <Main />
                     <Routes>
                         <Route path="/home" />
-                        <Route path="/objectivs" />
+                        <Route path="/goals" />
                         <Route path="/skills" />
                         <Route path="/projects" />
                         <Route path="/trainings" />

@@ -10,8 +10,9 @@ import LangueButton from "./header/LangueButton";
 import Menu from "./header/Menu";
 
 //---------------------------------------------------------
-//style
+//styles
 import "../../styles/layout/_header.scss";
+import "../../styles/layout/media_queries/_headerMediaQueries.scss";
 
 //---------------------------------------------------------
 function Header() {

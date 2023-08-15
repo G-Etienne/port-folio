@@ -22,7 +22,7 @@
 
 //white theme
 .whitemain {
-    background-color: $main-back-color;
+    background-color: lighten($main-back-color, 10%);
     box-shadow: inset 0px 0px 500px darken($main-back-color, 15%);
 }
 

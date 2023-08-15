@@ -7,7 +7,6 @@
 //main rules theme
 .themeButton {
     position: relative;
-
     z-index: 50;
     display: flex;
     justify-content: center;
@@ -42,7 +41,7 @@
     //dark theme switch the appearance
     &.darkButton {
         background-image: url("../../../../assets/Theme/sun.png");
-        border: 2px yellow solid;
+        border: 2px rgb(182, 182, 182) solid;
     }
 }
 
@@ -52,7 +51,7 @@
     position: absolute;
     background-image: url("../../../../assets/Theme/sun.png");
     background-size: cover;
-    border: 2px yellow solid;
+    border: 2px rgb(182, 182, 182) solid;
     height: 30px;
     width: 30px;
     border-radius: 50%;

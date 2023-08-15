@@ -46,12 +46,12 @@
     cursor: pointer;
     &.englishButton {
         background-image: url("../../../../assets/flags/france.png");
-        border: 2px $fluo-color solid;
+        border: 2px blue solid;
     }
 }
 .frenchFlag {
     background-image: url("../../../../assets/flags/france.png");
-    border: 2px $fluo-color solid;
+    border: 2px blue solid;
     position: absolute;
     background-size: cover;
     height: 30px;

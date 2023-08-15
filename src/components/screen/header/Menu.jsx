@@ -1,25 +1,37 @@
 //---------------------------------------------------------
-//import for the dark and white mode context and states
+//import for the dark and white mode and langue context and states
 import { useContext, useState } from "react";
 import { ThemeContext } from "../../../contexts/ThemeContext";
 import { LangueContext } from "../../../contexts/LangueContext";
 
 //---------------------------------------------------------
+//import react-router-dom for the links navigation
 import { NavLink } from "react-router-dom";
 //---------------------------------------------------------
-//style
+//styles
 import "../../../styles/components/screen/Header/_menu.scss";
+import "../../../styles/components/screen/Header/headerMedia/_menuMediaQueries.scss";
 
 //---------------------------------------------------------
 function Menu() {
+    {
+        /* state to open the menu, theme and langue context */
+    }
     const [menuOpen, setMenuOpen] = useState(false);
     const { theme } = useContext(ThemeContext);
     const { langue } = useContext(LangueContext);
 
+    {
+        /* code when the site is in french */
+    }
     if (langue === "french") {
+        {
+            /* when the menu is close */
+        }
         if (menuOpen === false) {
             return (
                 <>
+                    {/* menu button */}
                     <div
                         onClick={() => setMenuOpen(true)}
                         className={`menu__container ${theme}`}
@@ -36,9 +48,14 @@ function Menu() {
                 </>
             );
         }
+
+        {
+            /*when the menu is open */
+        }
         if (menuOpen === true) {
             return (
                 <>
+                    {/* menu button */}
                     <div
                         onClick={() => setMenuOpen(false)}
                         className={`menu__container__open ${theme}`}
@@ -51,6 +68,8 @@ function Menu() {
                                 className={`menu__logo__open__bottomRod ${theme}`}
                             ></div>
                         </div>
+
+                        {/* links of the menu */}
                         <div className={`menu__container__links ${theme}`}>
                             <NavLink
                                 className={`menu__container__linkOne ${theme}`}
@@ -68,7 +87,7 @@ function Menu() {
 
                             <NavLink
                                 className={`menu__container__linkTwo ${theme}`}
-                                to="/objectivs"
+                                to="/goals"
                             >
                                 <div
                                     className={`menu__container__link__anim ${theme}`}
@@ -127,10 +146,18 @@ function Menu() {
             );
         }
     }
+    //---------------------------------------------------------------
+    {
+        /* code when the site is in english */
+    }
     if (langue === "english") {
+        {
+            /* when the menu is close */
+        }
         if (menuOpen === false) {
             return (
                 <>
+                    {/* menu button */}
                     <div
                         onClick={() => setMenuOpen(true)}
                         className={`menu__container ${theme}`}
@@ -147,9 +174,14 @@ function Menu() {
                 </>
             );
         }
+
+        {
+            /*when the menu is open */
+        }
         if (menuOpen === true) {
             return (
                 <>
+                    {/* menu button */}
                     <div
                         onClick={() => setMenuOpen(false)}
                         className={`menu__container__open ${theme}`}
@@ -162,6 +194,8 @@ function Menu() {
                                 className={`menu__logo__open__bottomRod ${theme}`}
                             ></div>
                         </div>
+
+                        {/* links of the menu */}
                         <div className={`menu__container__links ${theme}`}>
                             <NavLink
                                 className={`menu__container__linkOne ${theme}`}
@@ -179,7 +213,7 @@ function Menu() {
 
                             <NavLink
                                 className={`menu__container__linkTwo ${theme}`}
-                                to="/objectivs"
+                                to="/goals"
                             >
                                 <div
                                     className={`menu__container__link__anim ${theme}`}
@@ -187,7 +221,7 @@ function Menu() {
                                 <p
                                     className={`menu__container__link__text ${theme}`}
                                 >
-                                    Objectivs
+                                    Goals
                                 </p>
                             </NavLink>
 

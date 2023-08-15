@@ -1,7 +1,12 @@
+//-------------------------------------------------
+//import utils
 @import "../../../utils/variables";
 @import "../../../utils//keyframesMenu";
 
+//-------------------------------------------------
+//style for the menu
 .menu {
+    //logo in the center of the menu
     &__logo {
         display: flex;
         flex-direction: column;
@@ -16,7 +21,8 @@
             top: -2px;
             width: 20px;
             height: 3px;
-            background-color: lighten($main-back-color, 15%);
+            background-color: $color-text-clear;
+            //dark theme
             &.dark {
                 background-color: $fluo-color;
             }
@@ -26,7 +32,8 @@
             top: 2px;
             width: 20px;
             height: 3px;
-            background-color: lighten($main-back-color, 15%);
+            background-color: $color-text-clear;
+            //dark theme
             &.dark {
                 background-color: $fluo-color;
             }
@@ -37,8 +44,9 @@
                 top: 1.5px;
                 width: 20px;
                 height: 3px;
-                background-color: lighten($main-back-color, 15%);
+                background-color: $color-text-clear;
                 rotate: 45deg;
+                //dark theme
                 &.dark {
                     background-color: $fluo-color;
                     z-index: 21;
@@ -49,8 +57,9 @@
                 top: -1.5px;
                 width: 20px;
                 height: 3px;
-                background-color: lighten($main-back-color, 15%);
+                background-color: $color-text-clear;
                 rotate: -45deg;
+                //dark theme
                 &.dark {
                     background-color: $fluo-color;
                     z-index: 21;
@@ -58,13 +67,14 @@
             }
         }
     }
+    //menu button
     &__container {
         cursor: pointer;
         position: relative;
         z-index: 21;
         height: 50px;
         width: 50px;
-        border: 1px lighten($main-back-color, 30%) solid;
+        border: 1px grey solid;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -73,12 +83,14 @@
         margin-top: 10px;
         background-color: white;
         border-radius: 6px;
-        box-shadow: 0px 0px 7px $main-back-color;
+        box-shadow: 0px 0px 7px black;
         &:hover {
             animation: scaleMenuAnim 100ms ease-in-out both;
-            box-shadow: 0px 0px 15px $main-back-color;
+            box-shadow: 0px 0px 15px black;
         }
+        //dark theme
         &.dark {
+            border: 1px $fluo-color solid;
             box-shadow: 0px 0px 15px $fluo-color;
             &:hover {
                 animation: scaleMenuAnim 100ms ease-in-out both;
@@ -98,21 +110,19 @@
             position: absolute;
             content: " ";
             display: block;
-            background: radial-gradient(
-                transparent,
-                lighten($main-back-color, 50%)
-            );
+            background: radial-gradient(transparent, grey);
             height: 100%;
             width: 100%;
             border-radius: 5px;
         }
+        //menu button
         &__open {
             cursor: pointer;
             position: relative;
             z-index: 21;
             height: 50px;
             width: 50px;
-            border: 1px lighten($main-back-color, 30%) solid;
+            border: 1px grey solid;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -122,8 +132,10 @@
             background-color: white;
             border-radius: 6px;
             animation: mouveMenu 300ms ease-in-out both;
-            box-shadow: 0px 0px 7px $main-back-color;
+            box-shadow: 0px 0px 7px black;
+            //dark theme
             &.dark {
+                border: 1px $fluo-color solid;
                 box-shadow: 0px 0px 15px $fluo-color;
                 &::after {
                     position: absolute;
@@ -142,16 +154,13 @@
                 position: absolute;
                 content: " ";
                 display: block;
-                background: radial-gradient(
-                    transparent,
-                    lighten($main-back-color, 50%)
-                );
+                background: radial-gradient(transparent, grey);
                 height: 100%;
                 width: 100%;
                 border-radius: 5px;
             }
         }
-
+        //boxe who contains the links when the menu is open
         &__links {
             position: absolute;
             top: 55px;
@@ -159,11 +168,13 @@
             flex-direction: column;
             background: radial-gradient(white, transparent 80%);
             padding-top: 20px;
+            //dark theme
             &.dark {
                 background: radial-gradient(black, transparent 80%);
             }
         }
         &__link {
+            //link box
             &__anim {
                 display: flex;
                 justify-content: center;
@@ -174,13 +185,15 @@
                 margin: auto;
                 border-radius: 6px;
                 background-color: white;
-                border: 1px lighten($main-back-color, 30%) solid;
-                box-shadow: 0px 0px 7px $main-back-color;
+                border: 1px grey solid;
+                box-shadow: 0px 0px 7px black;
                 &:hover {
                     animation: scaleMenuAnim 100ms ease-in-out both;
-                    box-shadow: 0px 0px 15px $main-back-color;
+                    box-shadow: 0px 0px 15px black;
                 }
+                //dark theme
                 &.dark {
+                    border: 1px $fluo-color solid;
                     box-shadow: 0px 0px 15px $fluo-color;
                     &:hover {
                         animation: scaleMenuAnim 100ms ease-in-out both;
@@ -199,30 +212,32 @@
                         border-radius: 5px;
                     }
                 }
-
                 &::after {
                     position: absolute;
                     content: " ";
                     display: block;
-                    background: radial-gradient(
-                        transparent,
-                        lighten($main-back-color, 50%)
-                    );
+                    background: radial-gradient(transparent, grey);
                     height: 30px;
                     width: 30px;
                     border-radius: 5px;
                 }
             }
+            //texte of the links
             &__text {
                 text-decoration: none;
-                color: $main-back-color;
+                color: rgb(46, 46, 46);
                 margin-top: 5px;
                 animation: textApear 400ms 100ms ease-in-out both;
+                font-weight: bold;
+                text-shadow: 0px 0px 5px white;
+                //dark theme
                 &.dark {
                     color: lighten($fluo-color, 10%);
+                    text-shadow: 0px 0px 5px white;
                 }
             }
         }
+        //links one by one
         &__linkOne {
             text-decoration: none;
             animation: linkOnePosition 300ms ease-in-out both;

@@ -1,3 +1,5 @@
+//-------------------------------------------------
+// apparition of the text menu
 @keyframes textApear {
     0% {
         opacity: 0;
@@ -6,6 +8,9 @@
         opacity: 1;
     }
 }
+
+//-------------------------------------------------
+//mouving menu when it's opening
 @keyframes mouveMenu {
     0% {
         transform: translateX(0px);
@@ -14,6 +19,9 @@
         transform: translateX(20px);
     }
 }
+
+//-------------------------------------------------
+//hover scale animation
 @keyframes scaleMenuAnim {
     0% {
         transform: scale(1);
@@ -22,6 +30,8 @@
         transform: scale(1.1);
     }
 }
+//-------------------------------------------------
+//mouve of the differents parts of the menu when it's opening
 @keyframes linkOnePosition {
     0% {
         opacity: 0;

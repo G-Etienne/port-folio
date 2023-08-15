@@ -1,0 +1,49 @@
+//------------------------------------------------------
+//utils
+@import "../../../../utils/map";
+@import "../../../../utils/mixin-mediaqueries";
+
+//------------------------------------------------------
+@include responsive(small-tablet-min, large-tablet-and-laptop-max) {
+    .menu {
+        &__container {
+            scale: 0.8;
+            margin-top: 5px;
+            margin-left: 5px;
+            &__open {
+                scale: 0.8;
+                margin-top: 5px;
+                margin-left: 5px;
+            }
+        }
+    }
+}
+
+@include responsive(small-tablet-min, small-tablet-max) {
+    .menu {
+        &__container {
+            scale: 0.6;
+            margin-top: 0px;
+            margin-left: 0px;
+            &__open {
+                scale: 0.6;
+                margin-top: 0px;
+                margin-left: 0px;
+            }
+        }
+    }
+}
+@include responsive(zero-px, small-devices-max) {
+    .menu {
+        &__container {
+            scale: 0.6;
+            top: -10px;
+            left: -10px;
+            &__open {
+                scale: 0.6;
+                top: -10px;
+                left: -10px;
+            }
+        }
+    }
+}

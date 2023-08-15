@@ -1,0 +1,29 @@
+//------------------------------------------------------
+//utils
+@import "../../utils/map";
+@import "../../utils/mixin-mediaqueries";
+
+//------------------------------------------------------
+@include responsive(large-tablet-and-laptop-min, large-tablet-and-laptop-max) {
+    .header {
+        &__title {
+            font-size: 52px;
+        }
+    }
+}
+
+@include responsive(small-tablet-min, small-tablet-max) {
+    .header {
+        &__title {
+            font-size: 12px;
+        }
+    }
+}
+
+@include responsive(zero-px, small-devices-max) {
+    .header {
+        &__title {
+            font-size: 12px;
+        }
+    }
+}
