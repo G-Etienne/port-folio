@@ -6,14 +6,15 @@ import { LangueContext } from "../../contexts/LangueContext";
 
 //------------------------------------------------------
 //style
-import "../../styles/components/desk/_desk.scss";
+import "../../styles/components/deskFooter/_desk.scss";
 //media queries
-import "../../styles/components/desk/desk-media/_deskMediaQueries.scss";
+import "../../styles/components/deskFooter/desk-media/_deskMediaQueries.scss";
 
 //----------------------------------------------------
 function Copyright() {
     const { theme } = useContext(ThemeContext);
     const { langue } = useContext(LangueContext);
+
     //french
     if (langue === "french") {
         return (
@@ -22,6 +23,7 @@ function Copyright() {
             </p>
         );
     }
+
     //english
     if (langue === "english") {
         return (

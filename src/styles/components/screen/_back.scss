@@ -12,13 +12,13 @@
 
     height: 100%;
     width: 100%;
-    background-image: url("../../../assets/back-clear.png");
+    background-image: url("../../../assets/BackScreen/back-clear.png");
     background-size: cover;
     background-position: center;
 }
 //dark theme
 .backSide.dark {
-    background-image: url("../../../assets/back-dark.png");
+    background-image: url("../../../assets/BackScreen/back-dark.png");
 }
 
 //-----------------------------------------------------------
@@ -29,7 +29,7 @@
     height: 100%;
     width: 50%;
     margin-left: 25%;
-    background-image: url("../../../assets/back-anim-clear.jpg");
+    background-image: url("../../../assets/BackScreen/back-anim-clear.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -47,7 +47,7 @@
     height: 100%;
     width: 50%;
     margin-left: 25%;
-    background-image: url("../../../assets/back-anim-dark.jpg");
+    background-image: url("../../../assets/BackScreen/back-anim-dark.jpg");
     background-size: cover;
     background-position: center;
     display: flex;

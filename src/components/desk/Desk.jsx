@@ -5,9 +5,9 @@ import { ThemeContext } from "../../contexts/ThemeContext";
 
 //------------------------------------------------------
 //style
-import "../../styles/components/desk/_desk.scss";
+import "../../styles/components/deskFooter/_desk.scss";
 //media queries
-import "../../styles/components/desk/desk-media/_deskMediaQueries.scss";
+import "../../styles/components/deskFooter/desk-media/_deskMediaQueries.scss";
 
 //------------------------------------------------------
 //Desk components
@@ -26,18 +26,23 @@ function Desk() {
         <>
             {/* light on the desk */}
             <Light />
+
             {/* desk top */}
             <div className={`desk ${theme + "Desk"}`}>
                 <Keyboard />
                 <Mouse />
             </div>
+
             {/* thickness of the desk top */}
             <div className={`desk__front ${theme + "DeskFront"}`}></div>
+
             {/* elements under the desk top */}
             <div className={`desk__underTop ${theme + "UnderTop"}`}>
                 <LinksDesk />
+
                 <div className={`desk__drawer ${theme + "Drawer"}`}>
                     <div className="desk__drawer__grip"></div>
+
                     {/* copyright */}
                     <Copyright />
                 </div>

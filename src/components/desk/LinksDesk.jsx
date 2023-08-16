@@ -5,15 +5,15 @@ import { ThemeContext } from "../../contexts/ThemeContext";
 
 //---------------------------------------------------------
 //import logos
-import githubBlack from "../../assets/github.png";
-import linkedinBlack from "../../assets/linkedin-logo.png";
-import githubLight from "../../assets/gitlight.png";
-import linkedinLight from "../../assets/linklight.png";
+import githubBlack from "../../assets/Footer/github.png";
+import linkedinBlack from "../../assets/Footer/linkedin-logo.png";
+import githubLight from "../../assets/Footer/gitlight.png";
+import linkedinLight from "../../assets/Footer/linklight.png";
 
 //---------------------------------------------------------
 //styles
-import "../../styles/components/desk/_linksDesk.scss";
-import "../../styles/components/desk/desk-media/_linkDeskMediaQueries.scss";
+import "../../styles/components/deskFooter/_linksDesk.scss";
+import "../../styles/components/deskFooter/desk-media/_linkDeskMediaQueries.scss";
 
 function LinksDesk() {
     {
@@ -32,6 +32,7 @@ function LinksDesk() {
                     rel="noopener noreferrer"
                 >
                     <img src={githubBlack} alt="logo github" />
+
                     <p>Github</p>
                 </a>
 
@@ -43,6 +44,7 @@ function LinksDesk() {
                     rel="noopener noreferrer"
                 >
                     <p>LinkedIn</p>
+
                     <img src={linkedinBlack} alt="logo Linkedin" />
                 </a>
             </div>
@@ -60,8 +62,10 @@ function LinksDesk() {
                     <div>
                         <img src={githubLight} alt="logo github" />
                     </div>
+
                     <p>Github</p>
                 </a>
+
                 {/* Linkedin */}
                 <a
                     className={`oneLink ${theme + "Link"}`}
@@ -70,6 +74,7 @@ function LinksDesk() {
                     rel="noopener noreferrer"
                 >
                     <p>LinkedIn</p>
+
                     <div>
                         <img src={linkedinLight} alt="logo Linkedin" />
                     </div>

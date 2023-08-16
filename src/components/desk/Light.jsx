@@ -5,8 +5,8 @@ import { ThemeContext } from "../../contexts/ThemeContext";
 
 //---------------------------------------------------------
 //style
-import "../../styles/components/desk/_light.scss";
-import "../../styles/components/desk/desk-media/_lightMediaQueries.scss";
+import "../../styles/components/deskFooter/_light.scss";
+import "../../styles/components/deskFooter/desk-media/_lightMediaQueries.scss";
 
 //---------------------------------------------------------
 function Light() {
@@ -23,15 +23,19 @@ function Light() {
                 <div className={`light__on ${theme + "Head"}`}></div>
                 <div className={`light__on__bottom ${theme + "Head"}`}></div>
                 <div className={`light__arm ${theme + "Arm"}`}></div>
+
                 {/* arm of the light */}
                 <div
                     className={`light__arm__Shadow ${theme + "ArmShadow"}`}
                 ></div>
+
                 {/* base of the light */}
                 <div className={`light__baseTop ${theme + "BaseTop"}`}></div>
+
                 <div
                     className={`light__baseMiddle ${theme + "BaseMiddle"}`}
                 ></div>
+
                 <div
                     className={`light__baseBottom ${theme + "BaseBottom"}`}
                 ></div>

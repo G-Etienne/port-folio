@@ -5,8 +5,8 @@ import { ThemeContext } from "../../contexts/ThemeContext";
 
 //---------------------------------------------------------
 //style
-import "../../styles/components/desk/_mouse.scss";
-import "../../styles/components/desk/desk-media/_mouseMediaQueries.scss";
+import "../../styles/components/deskFooter/_mouse.scss";
+import "../../styles/components/deskFooter/desk-media/_mouseMediaQueries.scss";
 
 //---------------------------------------------------------
 function Mouse() {
@@ -19,6 +19,7 @@ function Mouse() {
                 <div className={`mouse ${theme + "Mouse"}`}>
                     {/* touches of the mouse */}
                     <div className="mouseTouchOne"></div>
+
                     <div className="mouseTouchTwo"></div>
                 </div>
             </div>

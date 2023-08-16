@@ -6,8 +6,8 @@ import keyData from "../../data/key.json";
 import Key from "./Key";
 //------------------------------------------------------
 //style
-import "../../styles/components/desk/_keyboard.scss";
-import "../../styles/components/desk/desk-media/_keyboardMediaQueries.scss";
+import "../../styles/components/deskFooter/_keyboard.scss";
+import "../../styles/components/deskFooter/desk-media/_keyboardMediaQueries.scss";
 //------------------------------------------------------
 function Keyword() {
     return (
@@ -15,9 +15,10 @@ function Keyword() {
             <div className="keyboard">
                 {/*touches of the keyboard */}
                 {keyData.map((item) => (
-                    <Key keyLetter={item.key} />
+                    <Key key={item.id} keyLetter={item.key} />
                 ))}
             </div>
+
             {/* thickness of the keyboard */}
             <div className="keyboard__front"></div>
         </>

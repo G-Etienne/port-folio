@@ -35,7 +35,7 @@
 //-----------------------------------------------
 //english and french style
 .englishFlag {
-    background-image: url("../../../../assets/flags/english.png");
+    background-image: url("../../../../assets/Langue/english.png");
     border: 2px red solid;
     position: absolute;
     background-size: cover;
@@ -45,12 +45,12 @@
     transform: rotateY(90deg);
     cursor: pointer;
     &.englishButton {
-        background-image: url("../../../../assets/flags/france.png");
+        background-image: url("../../../../assets/Langue/france.png");
         border: 2px blue solid;
     }
 }
 .frenchFlag {
-    background-image: url("../../../../assets/flags/france.png");
+    background-image: url("../../../../assets/Langue/france.png");
     border: 2px blue solid;
     position: absolute;
     background-size: cover;
@@ -60,7 +60,7 @@
     transform: rotateY(0deg);
     cursor: pointer;
     &.englishButton {
-        background-image: url("../../../../assets/flags/english.png");
+        background-image: url("../../../../assets/Langue/english.png");
         border: 2px red solid;
     }
 }

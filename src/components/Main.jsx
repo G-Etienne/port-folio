@@ -22,6 +22,7 @@ function Main() {
             <Screen>
                 <Header />
             </Screen>
+
             <Footer />
         </div>
     );

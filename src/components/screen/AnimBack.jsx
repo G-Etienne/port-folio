@@ -30,6 +30,7 @@ function AnimBack() {
                                         <div
                                             className={`specialRod__one ${theme}`}
                                         ></div>
+
                                         <div className={`dot__three ${theme}`}>
                                             <div
                                                 className={`rod__three ${theme}`}
