@@ -1,6 +1,6 @@
 //------------------------------------------------------
 //utils
-@import "../../../utils/mixin-mediaqueries";
+@import "../../../utils/Mixins/mixin-mediaqueries";
 //------------------------------------------------------
 //tablet and phone
 @include responsive(small-devices-min, small-tablet-max) {
@@ -8,13 +8,16 @@
         z-index: 20;
         font-size: 24px;
         width: 180px;
+
         & > img {
             width: 30px;
         }
+
         &.darkLink {
             & > div {
                 width: 35px;
                 height: 35px;
+
                 & > img {
                     height: 30px;
                     padding-top: 2px;
@@ -29,13 +32,16 @@
 @media screen and (min-width: 0px) and (max-width: 610px) {
     .oneLink {
         width: 60px;
+
         & > img {
             width: 30px;
         }
+
         &.darkLink {
             & > div {
                 width: 35px;
                 height: 35px;
+
                 & > img {
                     height: 30px;
                     padding-top: 0px;
@@ -43,6 +49,7 @@
                 }
             }
         }
+
         & > p {
             display: none;
         }
@@ -56,6 +63,7 @@
         & > div {
             width: 35px;
             height: 35px;
+
             & > img {
                 height: 30px;
                 padding-top: 0px;

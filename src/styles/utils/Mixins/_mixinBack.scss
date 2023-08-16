@@ -1,9 +1,9 @@
 //-----------------------------------------------------------
 //utils
-@import "../utils/variables";
+@import "../../utils/variables";
 
 //-----------------------------------------------------------
-//style for the dots in the center of the animation
+//style for the star dots in the center of the animation
 @mixin dotAnimback() {
     position: relative;
     top: center;
@@ -16,7 +16,7 @@
 }
 
 //-----------------------------------------------------------
-//style for the other dots
+//style for the other star dots
 @mixin dotAnimbackTwo() {
     position: relative;
     right: -2.5px;
@@ -28,7 +28,7 @@
 }
 
 //-----------------------------------------------------------
-//style for the rods of the animation
+//style for the rods of the back (star) animation
 @mixin rodAnimback($width) {
     position: relative;
     display: flex;

@@ -11,6 +11,7 @@
     box-sizing: border-box;
     height: 100px;
     width: 100%;
+
     //h1 etienne ginet
     &__title {
         text-align: center;
@@ -20,9 +21,18 @@
         font-size: 50px;
         color: $color-text-clear;
         text-shadow: 0px 0px 6px grey;
+
         //dark theme
         &.dark {
             color: $fluo-color;
         }
+    }
+
+    //box langue and theme choices
+    &__themeLangue {
+        border: 1px grey solid;
+        box-sizing: border-box;
+        position: relative;
+        z-index: 50;
     }
 }

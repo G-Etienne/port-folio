@@ -1,6 +1,7 @@
 //--------------------------------------------------------------
 //import of the breakpoints
-@import "./map";
+@import "../map";
+
 //--------------------------------------------------------------
 //mixin to add media queries
 @mixin responsive($typeOne, $typeTwo) {

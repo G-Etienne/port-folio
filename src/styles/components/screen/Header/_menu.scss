@@ -1,7 +1,7 @@
 //-------------------------------------------------
 //import utils
 @import "../../../utils/variables";
-@import "../../../utils//keyframesMenu";
+@import "../../../utils/Keyframes/keyframesMenu";
 
 //-------------------------------------------------
 //style for the menu
@@ -22,22 +22,26 @@
             width: 20px;
             height: 3px;
             background-color: $color-text-clear;
+
             //dark theme
             &.dark {
                 background-color: $fluo-color;
             }
         }
+
         &__bottomRod {
             position: relative;
             top: 2px;
             width: 20px;
             height: 3px;
             background-color: $color-text-clear;
+
             //dark theme
             &.dark {
                 background-color: $fluo-color;
             }
         }
+
         &__open {
             &__topRod {
                 position: relative;
@@ -46,12 +50,14 @@
                 height: 3px;
                 background-color: $color-text-clear;
                 rotate: 45deg;
+
                 //dark theme
                 &.dark {
                     background-color: $fluo-color;
                     z-index: 21;
                 }
             }
+
             &__bottomRod {
                 position: relative;
                 top: -1.5px;
@@ -59,6 +65,7 @@
                 height: 3px;
                 background-color: $color-text-clear;
                 rotate: -45deg;
+
                 //dark theme
                 &.dark {
                     background-color: $fluo-color;
@@ -67,6 +74,7 @@
             }
         }
     }
+
     //menu button
     &__container {
         cursor: pointer;
@@ -84,18 +92,22 @@
         background-color: white;
         border-radius: 6px;
         box-shadow: 0px 0px 7px black;
+
         &:hover {
             animation: scaleMenuAnim 100ms ease-in-out both;
             box-shadow: 0px 0px 15px black;
         }
+
         //dark theme
         &.dark {
             border: 1px $fluo-color solid;
             box-shadow: 0px 0px 15px $fluo-color;
+
             &:hover {
                 animation: scaleMenuAnim 100ms ease-in-out both;
                 box-shadow: 0px 0px 25px lighten($main-back-color, 100%);
             }
+
             &::after {
                 position: absolute;
                 content: " ";
@@ -106,6 +118,7 @@
                 border-radius: 5px;
             }
         }
+
         &::after {
             position: absolute;
             content: " ";
@@ -115,6 +128,7 @@
             width: 100%;
             border-radius: 5px;
         }
+
         //menu button
         &__open {
             cursor: pointer;
@@ -133,10 +147,12 @@
             border-radius: 6px;
             animation: mouveMenu 300ms ease-in-out both;
             box-shadow: 0px 0px 7px black;
+
             //dark theme
             &.dark {
                 border: 1px $fluo-color solid;
                 box-shadow: 0px 0px 15px $fluo-color;
+
                 &::after {
                     position: absolute;
                     content: " ";
@@ -150,6 +166,7 @@
                     border-radius: 5px;
                 }
             }
+
             &::after {
                 position: absolute;
                 content: " ";
@@ -160,6 +177,7 @@
                 border-radius: 5px;
             }
         }
+
         //boxe who contains the links when the menu is open
         &__links {
             position: absolute;
@@ -168,11 +186,13 @@
             flex-direction: column;
             background: radial-gradient(white, transparent 80%);
             padding-top: 20px;
+
             //dark theme
             &.dark {
                 background: radial-gradient(black, transparent 80%);
             }
         }
+
         &__link {
             //link box
             &__anim {
@@ -187,31 +207,37 @@
                 background-color: white;
                 border: 1px grey solid;
                 box-shadow: 0px 0px 7px black;
+
                 &:hover {
                     animation: scaleMenuAnim 100ms ease-in-out both;
                     box-shadow: 0px 0px 15px black;
                 }
+
                 //dark theme
                 &.dark {
                     border: 1px $fluo-color solid;
                     box-shadow: 0px 0px 15px $fluo-color;
+
                     &:hover {
                         animation: scaleMenuAnim 100ms ease-in-out both;
                         box-shadow: 0px 0px 25px lighten($main-back-color, 100%);
                     }
+
                     &::after {
                         position: absolute;
                         content: " ";
                         display: block;
+                        height: 30px;
+                        width: 30px;
+                        border-radius: 5px;
+
                         background: radial-gradient(
                             $main-back-color 30%,
                             $fluo-color
                         );
-                        height: 30px;
-                        width: 30px;
-                        border-radius: 5px;
                     }
                 }
+
                 &::after {
                     position: absolute;
                     content: " ";
@@ -222,6 +248,7 @@
                     border-radius: 5px;
                 }
             }
+
             //texte of the links
             &__text {
                 text-decoration: none;
@@ -230,6 +257,7 @@
                 animation: textApear 400ms 100ms ease-in-out both;
                 font-weight: bold;
                 text-shadow: 0px 0px 5px white;
+
                 //dark theme
                 &.dark {
                     color: lighten($fluo-color, 10%);
@@ -237,23 +265,28 @@
                 }
             }
         }
+
         //links one by one
         &__linkOne {
             text-decoration: none;
             animation: linkOnePosition 300ms ease-in-out both;
         }
+
         &__linkTwo {
             text-decoration: none;
             animation: linkTwoPosition 300ms ease-in-out both;
         }
+
         &__linkThree {
             text-decoration: none;
             animation: linkThreePosition 300ms ease-in-out both;
         }
+
         &__linkFour {
             text-decoration: none;
             animation: linkFourPosition 300ms ease-in-out both;
         }
+
         &__linkFive {
             text-decoration: none;
             animation: linkFivePosition 300ms ease-in-out both;

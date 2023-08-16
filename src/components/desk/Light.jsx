@@ -16,15 +16,15 @@ function Light() {
     return (
         <>
             <div className="light">
-                {/* top of the light */}
+                {/* top of the light and light */}
                 <div className={`light__head__top ${theme + "HeadTop"}`}></div>
                 <div className={`light__head ${theme + "Head"}`}></div>
                 <div className={`light__on__top ${theme + "Head"}`}></div>
                 <div className={`light__on ${theme + "Head"}`}></div>
                 <div className={`light__on__bottom ${theme + "Head"}`}></div>
-                <div className={`light__arm ${theme + "Arm"}`}></div>
 
                 {/* arm of the light */}
+                <div className={`light__arm ${theme + "Arm"}`}></div>
                 <div
                     className={`light__arm__Shadow ${theme + "ArmShadow"}`}
                 ></div>

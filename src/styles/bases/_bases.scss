@@ -6,17 +6,20 @@
 #root {
     min-width: 280px;
 }
+
 //---------------------------------------------------------
 //interaction for the dark and white theme
 .button {
     z-index: 16;
     position: absolute;
 }
+
 //---------------------------------------------------------
 //container of the application
 .mainWrapper {
     height: 100vh;
 }
+
 //---------------------------------------------------------
 //bases for the white and dark theme
 

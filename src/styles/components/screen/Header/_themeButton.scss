@@ -1,7 +1,7 @@
 //-----------------------------------------------
 //utils
 @import "../../../utils/variables";
-@import "../../../utils/keyframesTheme";
+@import "../../../utils/Keyframes/keyframesTheme";
 
 //-----------------------------------------------
 //main rules theme
@@ -20,11 +20,13 @@
         .moon {
             animation: switchThemeTwo 200ms 200ms ease-in-out both;
         }
+
         .sun {
             animation: switchThemeOne 200ms ease-in-out both;
         }
     }
 }
+
 //-----------------------------------------------
 //moon for dark them style
 .moon {

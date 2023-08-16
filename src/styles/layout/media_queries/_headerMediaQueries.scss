@@ -1,7 +1,7 @@
 //------------------------------------------------------
 //utils
 @import "../../utils/map";
-@import "../../utils/mixin-mediaqueries";
+@import "../../utils/Mixins/mixin-mediaqueries";
 
 //------------------------------------------------------
 @include responsive(large-tablet-and-laptop-min, large-tablet-and-laptop-max) {

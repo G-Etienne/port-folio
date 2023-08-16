@@ -27,7 +27,7 @@ function Header() {
                 <h1 className={`header__title ${theme}`}>Etienne Ginet</h1>
 
                 {/* interaction theme dark and white */}
-                <div className="headerThemeLangue">
+                <div className="header__themeLangue">
                     <ThemeButton />
                     <LangueButton />
                 </div>

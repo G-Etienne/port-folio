@@ -1,7 +1,7 @@
 //-----------------------------------------------
 //utils
 @import "../../../utils/variables";
-@import "../../../utils/keyframesTheme";
+@import "../../../utils/Keyframes/keyframesTheme";
 
 //-----------------------------------------------
 //main rules langue
@@ -15,17 +15,21 @@
     margin-top: 0px;
     width: 40px;
     height: 40px;
+
     //effect
     &:hover {
         .englishFlag.frenchButton {
             animation: switchThemeTwo 200ms 200ms ease-in-out both;
         }
+
         .frenchFlag.frenchButton {
             animation: switchThemeOne 200ms ease-in-out both;
         }
+
         .englishFlag.englishButton {
             animation: switchThemeTwo 200ms 200ms ease-in-out both;
         }
+
         .frenchFlag.englishButton {
             animation: switchThemeOne 200ms ease-in-out both;
         }
@@ -44,11 +48,13 @@
     border-radius: 50%;
     transform: rotateY(90deg);
     cursor: pointer;
+
     &.englishButton {
         background-image: url("../../../../assets/Langue/france.png");
         border: 2px blue solid;
     }
 }
+
 .frenchFlag {
     background-image: url("../../../../assets/Langue/france.png");
     border: 2px blue solid;
@@ -59,6 +65,7 @@
     border-radius: 50%;
     transform: rotateY(0deg);
     cursor: pointer;
+
     &.englishButton {
         background-image: url("../../../../assets/Langue/english.png");
         border: 2px red solid;

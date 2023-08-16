@@ -21,7 +21,7 @@ function Back() {
     return (
         <>
             {/* container for the back which cover the animation */}
-            <div className={`backSide ${theme}`}></div>
+            <div className={`backScreenImage ${theme}`}></div>
 
             {/* animation */}
             <AnimBack />

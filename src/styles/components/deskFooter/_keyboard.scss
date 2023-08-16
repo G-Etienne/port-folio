@@ -1,6 +1,7 @@
 //------------------------------------------------------
 //import utils
 @import "../../utils/variables";
+
 //------------------------------------------------------
 //main rules keyboard
 .keyboard {
@@ -15,6 +16,7 @@
     background-color: $color-keyboard;
     box-shadow: 0px 0px 5px black;
     padding-left: 5px;
+
     //shadow effect
     &::after {
         position: absolute;
@@ -26,6 +28,7 @@
         width: 100%;
         background: linear-gradient(rgb(0, 0, 0, 0.2), transparent);
     }
+
     //thickness ok the keyboard
     &__front {
         position: absolute;
