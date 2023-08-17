@@ -1,0 +1,95 @@
+//--------------------------------------------------------
+//import utils
+@import "../../../utils/Keyframes/keyframes";
+@import "../../../utils/variables";
+//--------------------------------------------------------
+
+.cubeContainer {
+    position: absolute;
+    z-index: 20;
+    height: 50px;
+    width: 50px;
+}
+.cube {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: SpinCube 15000ms infinite linear;
+
+    &__face {
+        position: absolute;
+        height: 50%;
+        width: 50%;
+        box-sizing: border-box;
+    }
+    & .top {
+        background: linear-gradient(43deg, $colo-cube-one, $colo-cube-two);
+        transform: rotateX(90deg) translateZ($axeZ-Cube);
+        border: 1px black solid;
+
+        &.dark {
+            background: linear-gradient(43deg, $main-back-color, $fluo-color);
+            box-sizing: border-box;
+            border: 1px $fluo-color solid;
+        }
+    }
+    & .bottom {
+        background: linear-gradient(43deg, $colo-cube-one, $colo-cube-two);
+        transform: rotateX(-90deg) translateZ($axeZ-Cube);
+        border: 1px black solid;
+
+        &.dark {
+            background: linear-gradient(43deg, $main-back-color, $fluo-color);
+            box-sizing: border-box;
+            border: 1px $fluo-color solid;
+        }
+    }
+    & .right {
+        background: linear-gradient(43deg, $colo-cube-one, $colo-cube-two);
+        transform: rotateY(90deg) translateZ($axeZ-Cube);
+        border: 1px black solid;
+
+        &.dark {
+            background: linear-gradient(43deg, $main-back-color, $fluo-color);
+            box-sizing: border-box;
+            border: 1px $fluo-color solid;
+        }
+    }
+    & .left {
+        background: linear-gradient(43deg, $colo-cube-one, $colo-cube-two);
+        transform: rotateY(-90deg) translateZ($axeZ-Cube);
+        border: 1px black solid;
+
+        &.dark {
+            background: linear-gradient(43deg, $main-back-color, $fluo-color);
+            box-sizing: border-box;
+            border: 1px $fluo-color solid;
+        }
+    }
+    & .front {
+        background: linear-gradient(43deg, $colo-cube-one, $colo-cube-two);
+        transform: rotateX(0deg) translateZ($axeZ-Cube);
+        border: 1px black solid;
+
+        &.dark {
+            background: linear-gradient(43deg, $main-back-color, $fluo-color);
+            box-sizing: border-box;
+            border: 1px $fluo-color solid;
+        }
+    }
+    & .back {
+        background: linear-gradient(43deg, $colo-cube-one, $colo-cube-two);
+        transform: rotateX(-180deg) translateZ($axeZ-Cube);
+        border: 1px black solid;
+
+        &.dark {
+            background: linear-gradient(43deg, $main-back-color, $fluo-color);
+            box-sizing: border-box;
+            border: 1px $fluo-color solid;
+        }
+    }
+}

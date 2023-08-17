@@ -21,11 +21,11 @@
             top: -2px;
             width: 20px;
             height: 3px;
-            background-color: $color-text-clear;
+            background-color: $color-rod-menu;
 
             //dark theme
             &.dark {
-                background-color: $fluo-color;
+                background-color: black;
             }
         }
 
@@ -34,26 +34,27 @@
             top: 2px;
             width: 20px;
             height: 3px;
-            background-color: $color-text-clear;
+            background-color: $color-rod-menu;
 
             //dark theme
             &.dark {
-                background-color: $fluo-color;
+                background-color: black;
             }
         }
 
         &__open {
+            z-index: 22;
             &__topRod {
                 position: relative;
                 top: 1.5px;
                 width: 20px;
                 height: 3px;
-                background-color: $color-text-clear;
+                background-color: $color-rod-menu;
                 rotate: 45deg;
 
                 //dark theme
                 &.dark {
-                    background-color: $fluo-color;
+                    background-color: black;
                     z-index: 21;
                 }
             }
@@ -63,12 +64,12 @@
                 top: -1.5px;
                 width: 20px;
                 height: 3px;
-                background-color: $color-text-clear;
+                background-color: $color-rod-menu;
                 rotate: -45deg;
 
                 //dark theme
                 &.dark {
-                    background-color: $fluo-color;
+                    background-color: black;
                     z-index: 21;
                 }
             }
@@ -89,12 +90,13 @@
         text-align: center;
         margin-left: 10px;
         margin-top: 10px;
-        background-color: white;
         border-radius: 6px;
         box-shadow: 0px 0px 7px black;
+        background-color: $color-back-menu;
 
         &:hover {
-            animation: scaleMenuAnim 100ms ease-in-out both;
+            animation: scaleMenuAnim 300ms cubic-bezier(0.7, 2.05, 0.57, 0.63)
+                both;
             box-shadow: 0px 0px 15px black;
         }
 
@@ -102,31 +104,12 @@
         &.dark {
             border: 1px $fluo-color solid;
             box-shadow: 0px 0px 15px $fluo-color;
+            background-color: $main-back-color;
 
             &:hover {
                 animation: scaleMenuAnim 100ms ease-in-out both;
                 box-shadow: 0px 0px 25px lighten($main-back-color, 100%);
             }
-
-            &::after {
-                position: absolute;
-                content: " ";
-                display: block;
-                background: radial-gradient($main-back-color 30%, $fluo-color);
-                height: 100%;
-                width: 100%;
-                border-radius: 5px;
-            }
-        }
-
-        &::after {
-            position: absolute;
-            content: " ";
-            display: block;
-            background: radial-gradient(transparent, grey);
-            height: 100%;
-            width: 100%;
-            border-radius: 5px;
         }
 
         //menu button
@@ -144,38 +127,16 @@
             text-align: center;
             margin-left: 10px;
             margin-top: 10px;
-            background-color: white;
             border-radius: 6px;
             animation: mouveMenu 300ms ease-in-out both;
             box-shadow: 0px 0px 7px black;
+            background-color: $color-back-menu;
 
             //dark theme
             &.dark {
                 border: 1px $fluo-color solid;
                 box-shadow: 0px 0px 15px $fluo-color;
-
-                &::after {
-                    position: absolute;
-                    content: " ";
-                    display: block;
-                    background: radial-gradient(
-                        $main-back-color 30%,
-                        $fluo-color
-                    );
-                    height: 100%;
-                    width: 100%;
-                    border-radius: 5px;
-                }
-            }
-
-            &::after {
-                position: absolute;
-                content: " ";
-                display: block;
-                background: radial-gradient(transparent, grey);
-                height: 100%;
-                width: 100%;
-                border-radius: 5px;
+                background-color: $main-back-color;
             }
         }
 
@@ -203,58 +164,43 @@
         }
 
         &__link {
+            &:hover {
+                animation: scaleMenuAnim 300ms
+                    cubic-bezier(0.7, 2.05, 0.57, 0.63) both;
+            }
             //link box
-            &__anim {
+            &__block {
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 height: 30px;
                 width: 30px;
-                border: 1px grey solid;
                 margin: auto;
-                border-radius: 6px;
+                border-radius: 50%;
                 background-color: white;
+                box-shadow: 0px 0px 7px grey;
+                background-color: $color-back-menu;
                 border: 1px grey solid;
-                box-shadow: 0px 0px 7px black;
+                color: $color-back-menu;
 
-                &:hover {
-                    animation: scaleMenuAnim 100ms ease-in-out both;
-                    box-shadow: 0px 0px 15px black;
-                }
+                background: linear-gradient(
+                    43deg,
+                    $colo-cube-one,
+                    $colo-cube-two
+                );
+                scale: 0.8;
 
                 //dark theme
                 &.dark {
                     border: 1px $fluo-color solid;
                     box-shadow: 0px 0px 15px $fluo-color;
+                    color: $fluo-color;
 
-                    &:hover {
-                        animation: scaleMenuAnim 100ms ease-in-out both;
-                        box-shadow: 0px 0px 25px lighten($main-back-color, 100%);
-                    }
-
-                    &::after {
-                        position: absolute;
-                        content: " ";
-                        display: block;
-                        height: 30px;
-                        width: 30px;
-                        border-radius: 5px;
-
-                        background: radial-gradient(
-                            $main-back-color 30%,
-                            $fluo-color
-                        );
-                    }
-                }
-
-                &::after {
-                    position: absolute;
-                    content: " ";
-                    display: block;
-                    background: radial-gradient(transparent, grey);
-                    height: 30px;
-                    width: 30px;
-                    border-radius: 5px;
+                    background: linear-gradient(
+                        43deg,
+                        darken($main-back-color, 10%),
+                        darken($fluo-color, 40%)
+                    );
                 }
             }
 
@@ -278,27 +224,22 @@
         //links one by one
         &__linkOne {
             text-decoration: none;
-            animation: linkOnePosition 300ms ease-in-out both;
         }
 
         &__linkTwo {
             text-decoration: none;
-            animation: linkTwoPosition 300ms ease-in-out both;
         }
 
         &__linkThree {
             text-decoration: none;
-            animation: linkThreePosition 300ms ease-in-out both;
         }
 
         &__linkFour {
             text-decoration: none;
-            animation: linkFourPosition 300ms ease-in-out both;
         }
 
         &__linkFive {
             text-decoration: none;
-            animation: linkFivePosition 300ms ease-in-out both;
         }
     }
 }

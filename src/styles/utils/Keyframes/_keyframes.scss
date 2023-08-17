@@ -17,3 +17,14 @@
         transform: scale(0.9) rotate(-5deg);
     }
 }
+
+//---------------------------------------------
+//animation cube 3D
+@keyframes SpinCube {
+    from {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+    to {
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+}
