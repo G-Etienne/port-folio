@@ -2,6 +2,30 @@
 //utils
 @import "../../utils/variables";
 
+//--------------------------------------------
+//mixin for basic after
+@mixin afterBase() {
+    content: " ";
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+//-----------------------------------------------------------
+//style the back of the screen animation
+@mixin backAnim($url) {
+    position: absolute;
+    z-index: 10;
+    height: 100%;
+    width: 50%;
+    margin-left: 25%;
+    background-image: url($url);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 //-----------------------------------------------------------
 //style for the star dots in the center of the animation
 @mixin dotAnimback() {

@@ -1,6 +1,7 @@
 //---------------------------------------------------
 //import utils
 @import "../../utils/variables";
+@import "../../utils/Mixins/mixinFooter";
 
 //---------------------------------------------------
 //style copyright
@@ -35,21 +36,13 @@
         background-color: darken($main-color-desk, 20%);
 
         &::after {
-            content: " ";
-            display: block;
-            height: 100%;
-            width: 100%;
-            background: linear-gradient(rgb(0, 0, 0, 0.8), transparent);
+            @include afterDesk(0.8);
             rotate: 180deg;
         }
     }
 
     &::after {
-        content: " ";
-        display: block;
-        height: 100%;
-        width: 100%;
-        background: linear-gradient(rgb(0, 0, 0, 0.5), transparent);
+        @include afterDesk(0.5);
     }
 
     //thickness of the desk
@@ -64,11 +57,7 @@
         border-bottom: 1px black solid;
 
         &::after {
-            content: " ";
-            display: block;
-            height: 100%;
-            width: 100%;
-            background: linear-gradient(rgb(0, 0, 0, 0.3), transparent);
+            @include afterDesk(0.3);
         }
 
         //dark mode
@@ -88,11 +77,7 @@
         margin: auto;
 
         &::after {
-            content: " ";
-            display: block;
-            height: 100%;
-            width: 100%;
-            background: linear-gradient(rgb(0, 0, 0, 0.5), transparent);
+            @include afterDesk(0.5);
         }
 
         //dark mode
@@ -100,11 +85,7 @@
             background-color: darken($main-color-desk, 35%);
 
             &::after {
-                content: " ";
-                display: block;
-                height: 100%;
-                width: 100%;
-                background: linear-gradient(rgb(0, 0, 0, 0.8), transparent);
+                @include afterDesk(0.8);
             }
         }
     }
@@ -112,7 +93,7 @@
     &__drawer {
         position: absolute;
         height: 100%;
-        width: 33.33%;
+        width: $size-width-drawer;
         background-color: darken($main-color-desk, 3%);
         margin-left: 33.33%;
         border-left: 2px rgb(0, 0, 0, 0.7) solid;
@@ -121,22 +102,14 @@
         &::after {
             position: absolute;
             top: 0px;
-            content: " ";
-            display: block;
-            height: 100%;
-            width: 100%;
-            background: linear-gradient(rgb(0, 0, 0, 0.5), transparent);
+            @include afterDesk(0.5);
         }
 
         //dark mode
         &.darkDrawer {
             background-color: darken($main-color-desk, 35%);
             &::after {
-                content: " ";
-                display: block;
-                height: 100%;
-                width: 100%;
-                background: linear-gradient(rgb(0, 0, 0, 0.8), transparent);
+                @include afterDesk(0.8);
             }
         }
 
@@ -144,8 +117,8 @@
             position: relative;
             top: -18px;
             z-index: 12;
-            height: 15px;
-            width: 15px;
+            height: $size-grip;
+            width: $size-grip;
             background: linear-gradient(rgb(0, 0, 0, 0.5), grey);
             margin: auto;
             margin-top: 25px;

@@ -1,6 +1,7 @@
 //--------------------------------------------------
 //import utils
 @import "../../utils/variables";
+@import "../../utils/Mixins/mixinFooter";
 
 //--------------------------------------------------
 //main rules for the light
@@ -166,11 +167,8 @@
         bottom: -8px;
 
         &::after {
-            display: block;
-            content: " ";
-            height: 100%;
-            width: 100%;
-            border-radius: 50%;
+            @include afterLight(50%);
+
             background: linear-gradient(-160deg, rgb(11, 11, 11), transparent);
         }
 
@@ -179,11 +177,8 @@
             background-color: grey;
 
             &::after {
-                display: block;
-                content: " ";
-                height: 100%;
-                width: 100%;
-                border-radius: 50%;
+                @include afterLight(50%);
+
                 background: radial-gradient(
                     lighten(grey, 20%),
                     lighten(rgb(42, 41, 41), 20%)
@@ -204,11 +199,8 @@
         left: -1px;
 
         &::after {
-            border-radius: 2px;
-            display: block;
-            content: " ";
-            height: 100%;
-            width: 100%;
+            @include afterLight(2px);
+
             background: linear-gradient(rgb(30, 30, 30), transparent);
         }
 
@@ -217,10 +209,8 @@
             background-color: lighten(rgb(109, 108, 108), 10%);
 
             &::after {
-                display: block;
-                content: " ";
-                height: 100%;
-                width: 100%;
+                @include afterLight(0px);
+
                 background: linear-gradient(
                     lighten(rgb(30, 30, 30), 30%),
                     grey
@@ -247,11 +237,8 @@
             box-shadow: 0px 0px 6px lighten(black, 15%);
 
             &::after {
-                display: block;
-                content: " ";
-                height: 100%;
-                width: 100%;
-                border-radius: 50%;
+                @include afterLight(50%);
+
                 background: linear-gradient(
                     lighten(grey, 25%),
                     lighten(rgb(30, 30, 30), 25%)

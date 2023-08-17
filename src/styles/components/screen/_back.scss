@@ -17,24 +17,14 @@
 }
 
 //dark theme
-.backSide.dark {
+.backScreenImage.dark {
     background-image: url("../../../assets/BackScreen/back-dark.png");
 }
 
 //-----------------------------------------------------------
 //block image behind the animation
 .backAnim {
-    position: absolute;
-    z-index: 10;
-    height: 100%;
-    width: 50%;
-    margin-left: 25%;
-    background-image: url("../../../assets/BackScreen/back-anim-clear.jpg");
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include backAnim("../../../assets/BackScreen/back-anim-clear.jpg");
 
     &__container {
         scale: 1;
@@ -44,21 +34,8 @@
 
 //dark theme
 .backAnim.dark {
-    position: absolute;
-    z-index: 10;
-    height: 100%;
-    width: 50%;
-    margin-left: 25%;
-    background-image: url("../../../assets/BackScreen/back-anim-dark.jpg");
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+    @include backAnim("../../../assets/BackScreen/back-anim-dark.jpg");
     &__container {
-        position: relative;
-        z-index: 13;
         scale: 1;
         animation: rotateAnime 80000ms linear infinite;
     }
@@ -87,13 +64,11 @@
         @include dotAnimback();
 
         &::after {
+            @include afterBase;
             position: relative;
             top: -4px;
-            content: " ";
-            display: block;
-            height: 100%;
-            width: 100%;
             border-radius: 50%;
+
             background: radial-gradient(
                 lighten($main-screen-back-color, 50%),
                 darken($main-screen-back-color, 15%)
@@ -105,12 +80,9 @@
             rotate: 180deg;
 
             &::after {
+                @include afterBase;
                 position: relative;
                 top: -4px;
-                content: " ";
-                display: block;
-                height: 100%;
-                width: 100%;
                 border-radius: 50%;
 
                 background: radial-gradient(
@@ -125,12 +97,9 @@
         @include dotAnimbackTwo();
 
         &::after {
+            @include afterBase;
             position: relative;
             top: -1px;
-            content: " ";
-            display: block;
-            height: 100%;
-            width: 100%;
             border-radius: 50%;
 
             background: radial-gradient(
@@ -144,12 +113,9 @@
         @include dotAnimbackTwo();
 
         &::after {
+            @include afterBase;
             position: relative;
             top: -1px;
-            content: " ";
-            display: block;
-            height: 100%;
-            width: 100%;
             border-radius: 50%;
 
             background: radial-gradient(
