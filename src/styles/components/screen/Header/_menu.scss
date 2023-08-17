@@ -131,6 +131,7 @@
 
         //menu button
         &__open {
+            font-family: "Rubik", sans-serif;
             cursor: pointer;
             position: relative;
             z-index: 21;
@@ -180,16 +181,24 @@
 
         //boxe who contains the links when the menu is open
         &__links {
+            box-sizing: border-box;
             position: absolute;
             top: 55px;
             display: flex;
             flex-direction: column;
-            background: radial-gradient(white, transparent 80%);
+            background-color: $color-back-menu;
+            border-radius: 20px;
+            padding: 3px;
             padding-top: 20px;
+            margin-top: 5px;
+            border: 4px grey solid;
+            animation: Apear 400ms 100ms ease-in-out both;
 
             //dark theme
             &.dark {
-                background: radial-gradient(black, transparent 80%);
+                background-color: $main-back-color;
+                border: 2px $fluo-color solid;
+                animation: Apear 400ms 100ms ease-in-out both;
             }
         }
 
@@ -254,14 +263,14 @@
                 text-decoration: none;
                 color: rgb(46, 46, 46);
                 margin-top: 5px;
-                animation: textApear 400ms 100ms ease-in-out both;
+                animation: Apear 400ms 100ms ease-in-out both;
                 font-weight: bold;
                 text-shadow: 0px 0px 5px white;
 
                 //dark theme
                 &.dark {
                     color: lighten($fluo-color, 10%);
-                    text-shadow: 0px 0px 5px white;
+                    text-shadow: none;
                 }
             }
         }

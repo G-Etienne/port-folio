@@ -15,6 +15,10 @@ import "../../styles/layout/_header.scss";
 import "../../styles/layout/media_queries/_headerMediaQueries.scss";
 
 //---------------------------------------------------------
+//import react-router-dom for the links navigation
+import { NavLink } from "react-router-dom";
+
+//---------------------------------------------------------
 function Header() {
     const { theme } = useContext(ThemeContext);
 
@@ -24,7 +28,9 @@ function Header() {
                 {/* menu of the site */}
                 <Menu />
 
-                <h1 className={`header__title ${theme}`}>Etienne Ginet</h1>
+                <NavLink className="header__title__link" to={"/home"}>
+                    <h1 className={`header__title ${theme}`}>Etienne Ginet</h1>
+                </NavLink>
 
                 {/* interaction theme dark and white */}
                 <div className="header__themeLangue">

@@ -81,7 +81,7 @@ function Menu() {
                                 <p
                                     className={`menu__container__link__text ${theme}`}
                                 >
-                                    Acceuil
+                                    Accueil
                                 </p>
                             </NavLink>
 

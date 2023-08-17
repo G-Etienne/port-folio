@@ -20,7 +20,7 @@
 
 @include responsive(small-tablet-min, small-tablet-max) {
     .copyright {
-        font-size: 16px;
+        font-size: 14px;
     }
     .desk {
         width: 80%;
@@ -40,7 +40,7 @@
 
 @include responsive(zero-px, small-devices-max) {
     .copyright {
-        font-size: 14px;
+        font-size: 12px;
         bottom: -8px;
     }
 
@@ -86,7 +86,7 @@
 }
 @media screen and (max-height: 650px) {
     .copyright {
-        margin-bottom: 15px;
+        margin-bottom: 13px;
         font-size: 14;
     }
 

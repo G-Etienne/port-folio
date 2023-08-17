@@ -1,6 +1,6 @@
 //-------------------------------------------------
 // apparition of the text menu
-@keyframes textApear {
+@keyframes Apear {
     0% {
         opacity: 0;
     }
@@ -16,7 +16,7 @@
         transform: translateX(0px);
     }
     100% {
-        transform: translateX(20px);
+        transform: translateX(30px);
     }
 }
 
