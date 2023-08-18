@@ -11,7 +11,7 @@
         display: flex;
         flex-direction: column;
         position: relative;
-        z-index: 22;
+        z-index: 222;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -25,7 +25,7 @@
 
             //dark theme
             &.dark {
-                background-color: black;
+                background-color: $color-rod-menu-dark;
             }
         }
 
@@ -38,12 +38,13 @@
 
             //dark theme
             &.dark {
-                background-color: black;
+                background-color: $color-rod-menu-dark;
             }
         }
 
+        //when the menu is open
         &__open {
-            z-index: 22;
+            z-index: 222;
             &__topRod {
                 position: relative;
                 top: 1.5px;
@@ -54,8 +55,8 @@
 
                 //dark theme
                 &.dark {
-                    background-color: black;
-                    z-index: 21;
+                    background-color: $color-rod-menu-dark;
+                    z-index: 221;
                 }
             }
 
@@ -69,8 +70,8 @@
 
                 //dark theme
                 &.dark {
-                    background-color: black;
-                    z-index: 21;
+                    background-color: $color-rod-menu-dark;
+                    z-index: 221;
                 }
             }
         }
@@ -80,7 +81,7 @@
     &__container {
         cursor: pointer;
         position: relative;
-        z-index: 21;
+        z-index: 221;
         height: 50px;
         width: 50px;
         border: 1px grey solid;
@@ -97,6 +98,7 @@
         &:hover {
             animation: scaleMenuAnim 300ms cubic-bezier(0.7, 2.05, 0.57, 0.63)
                 both;
+
             box-shadow: 0px 0px 15px black;
         }
 
@@ -108,7 +110,7 @@
 
             &:hover {
                 animation: scaleMenuAnim 100ms ease-in-out both;
-                box-shadow: 0px 0px 25px lighten($main-back-color, 100%);
+                box-shadow: 0px 0px 25px $fluo-color;
             }
         }
 
@@ -117,7 +119,7 @@
             font-family: "Rubik", sans-serif;
             cursor: pointer;
             position: relative;
-            z-index: 21;
+            z-index: 221;
             height: 50px;
             width: 50px;
             border: 1px grey solid;
@@ -162,13 +164,14 @@
                 animation: Apear 400ms 100ms ease-in-out both;
             }
         }
-
+        //for rules on all links
         &__link {
             &:hover {
                 animation: scaleMenuAnim 300ms
                     cubic-bezier(0.7, 2.05, 0.57, 0.63) both;
             }
-            //link box
+
+            //block with the links logos
             &__block {
                 display: flex;
                 justify-content: center;
@@ -177,7 +180,6 @@
                 width: 30px;
                 margin: auto;
                 border-radius: 50%;
-                background-color: white;
                 box-shadow: 0px 0px 7px grey;
                 background-color: $color-back-menu;
                 border: 1px grey solid;
@@ -188,7 +190,6 @@
                     $colo-cube-one,
                     $colo-cube-two
                 );
-                scale: 0.8;
 
                 //dark theme
                 &.dark {

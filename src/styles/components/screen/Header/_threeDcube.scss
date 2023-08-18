@@ -1,15 +1,18 @@
 //--------------------------------------------------------
 //import utils
 @import "../../../utils/Keyframes/keyframes";
-@import "../../../utils/variables";
-//--------------------------------------------------------
+@import "../../../utils/Mixins/mixinHeader";
 
+//--------------------------------------------------------
+//container of the cube animation
 .cubeContainer {
     position: absolute;
     z-index: 20;
     height: 50px;
     width: 50px;
 }
+
+//block with the cube
 .cube {
     display: flex;
     justify-content: center;
@@ -20,76 +23,36 @@
     transform-style: preserve-3d;
     animation: SpinCube 15000ms infinite linear;
 
+    //rules for all the cube faces
     &__face {
         position: absolute;
         height: 50%;
         width: 50%;
         box-sizing: border-box;
     }
+
+    //face one by one
     & .top {
-        background: linear-gradient(43deg, $colo-cube-one, $colo-cube-two);
-        transform: rotateX(90deg) translateZ($axeZ-Cube);
-        border: 1px black solid;
-
-        &.dark {
-            background: linear-gradient(43deg, $main-back-color, $fluo-color);
-            box-sizing: border-box;
-            border: 1px $fluo-color solid;
-        }
+        @include cubeStyleRotateX(90deg);
     }
+
     & .bottom {
-        background: linear-gradient(43deg, $colo-cube-one, $colo-cube-two);
-        transform: rotateX(-90deg) translateZ($axeZ-Cube);
-        border: 1px black solid;
-
-        &.dark {
-            background: linear-gradient(43deg, $main-back-color, $fluo-color);
-            box-sizing: border-box;
-            border: 1px $fluo-color solid;
-        }
+        @include cubeStyleRotateX(-90deg);
     }
+
     & .right {
-        background: linear-gradient(43deg, $colo-cube-one, $colo-cube-two);
-        transform: rotateY(90deg) translateZ($axeZ-Cube);
-        border: 1px black solid;
-
-        &.dark {
-            background: linear-gradient(43deg, $main-back-color, $fluo-color);
-            box-sizing: border-box;
-            border: 1px $fluo-color solid;
-        }
+        @include cubeStyleRotateY(90deg);
     }
+
     & .left {
-        background: linear-gradient(43deg, $colo-cube-one, $colo-cube-two);
-        transform: rotateY(-90deg) translateZ($axeZ-Cube);
-        border: 1px black solid;
-
-        &.dark {
-            background: linear-gradient(43deg, $main-back-color, $fluo-color);
-            box-sizing: border-box;
-            border: 1px $fluo-color solid;
-        }
+        @include cubeStyleRotateY(-90deg);
     }
+
     & .front {
-        background: linear-gradient(43deg, $colo-cube-one, $colo-cube-two);
-        transform: rotateX(0deg) translateZ($axeZ-Cube);
-        border: 1px black solid;
-
-        &.dark {
-            background: linear-gradient(43deg, $main-back-color, $fluo-color);
-            box-sizing: border-box;
-            border: 1px $fluo-color solid;
-        }
+        @include cubeStyleRotateX(0deg);
     }
-    & .back {
-        background: linear-gradient(43deg, $colo-cube-one, $colo-cube-two);
-        transform: rotateX(-180deg) translateZ($axeZ-Cube);
-        border: 1px black solid;
 
-        &.dark {
-            background: linear-gradient(43deg, $main-back-color, $fluo-color);
-            box-sizing: border-box;
-            border: 1px $fluo-color solid;
-        }
+    & .back {
+        @include cubeStyleRotateX(-180deg);
     }
 }

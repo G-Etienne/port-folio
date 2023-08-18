@@ -5,7 +5,7 @@ import { ThemeContext } from "../../../contexts/ThemeContext";
 import { LangueContext } from "../../../contexts/LangueContext";
 
 //---------------------------------------------------------
-//font awesome
+//font awesome with some icones
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHouse } from "@fortawesome/free-solid-svg-icons";
 import { faBullseye } from "@fortawesome/free-solid-svg-icons";
@@ -16,9 +16,11 @@ import { faUserGraduate } from "@fortawesome/free-solid-svg-icons";
 //---------------------------------------------------------
 //import react-router-dom for the links navigation
 import { NavLink } from "react-router-dom";
+
 //---------------------------------------------------------
-//element
+//component
 import Cube from "./_threeDcube";
+
 //---------------------------------------------------------
 //styles
 import "../../../styles/components/screen/Header/_menu.scss";
@@ -48,12 +50,15 @@ function Menu() {
                         onClick={() => setMenuOpen(true)}
                         className={`menu__container ${theme}`}
                     >
+                        {/* cube inside the menu */}
                         <Cube />
 
+                        {/* logo in the menu */}
                         <div className={`menu__logo ${theme}`}>
                             <div
                                 className={`menu__logo__topRod ${theme}`}
                             ></div>
+
                             <div
                                 className={`menu__logo__bottomRod ${theme}`}
                             ></div>
@@ -74,12 +79,15 @@ function Menu() {
                         onClick={() => setMenuOpen(false)}
                         className={`menu__container__open ${theme}`}
                     >
+                        {/* cube inside the menu */}
                         <Cube />
 
+                        {/* logo in the menu button */}
                         <div className={`menu__logo__open ${theme}`}>
                             <div
                                 className={`menu__logo__open__topRod ${theme}`}
                             ></div>
+
                             <div
                                 className={`menu__logo__open__bottomRod ${theme}`}
                             ></div>
@@ -97,6 +105,7 @@ function Menu() {
                                     >
                                         <FontAwesomeIcon icon={faHouse} />
                                     </div>
+
                                     <p
                                         className={`menu__container__link__text ${theme}`}
                                     >
@@ -115,6 +124,7 @@ function Menu() {
                                     >
                                         <FontAwesomeIcon icon={faBullseye} />
                                     </div>
+
                                     <p
                                         className={`menu__container__link__text ${theme}`}
                                     >
@@ -135,6 +145,7 @@ function Menu() {
                                             icon={faScrewdriverWrench}
                                         />
                                     </div>
+
                                     <p
                                         className={`menu__container__link__text ${theme}`}
                                     >
@@ -155,6 +166,7 @@ function Menu() {
                                             icon={faDiagramProject}
                                         />
                                     </div>
+
                                     <p
                                         className={`menu__container__link__text ${theme}`}
                                     >
@@ -175,6 +187,7 @@ function Menu() {
                                             icon={faUserGraduate}
                                         />
                                     </div>
+
                                     <p
                                         className={`menu__container__link__text ${theme}`}
                                     >
@@ -188,6 +201,7 @@ function Menu() {
             );
         }
     }
+
     //---------------------------------------------------------------
     {
         /* code when the site is in english */
@@ -204,12 +218,15 @@ function Menu() {
                         onClick={() => setMenuOpen(true)}
                         className={`menu__container ${theme}`}
                     >
+                        {/* cube in the menu button */}
                         <Cube />
 
+                        {/* logo in the menu button */}
                         <div className={`menu__logo ${theme}`}>
                             <div
                                 className={`menu__logo__topRod ${theme}`}
                             ></div>
+
                             <div
                                 className={`menu__logo__bottomRod ${theme}`}
                             ></div>
@@ -230,8 +247,10 @@ function Menu() {
                         onClick={() => setMenuOpen(false)}
                         className={`menu__container__open ${theme}`}
                     >
+                        {/* cube in the menu button */}
                         <Cube />
 
+                        {/* logo in the menu button */}
                         <div className={`menu__logo__open ${theme}`}>
                             <div
                                 className={`menu__logo__open__topRod ${theme}`}
@@ -253,6 +272,7 @@ function Menu() {
                                     >
                                         <FontAwesomeIcon icon={faHouse} />
                                     </div>
+
                                     <p
                                         className={`menu__container__link__text ${theme}`}
                                     >
@@ -271,6 +291,7 @@ function Menu() {
                                     >
                                         <FontAwesomeIcon icon={faBullseye} />
                                     </div>
+
                                     <p
                                         className={`menu__container__link__text ${theme}`}
                                     >
@@ -291,6 +312,7 @@ function Menu() {
                                             icon={faScrewdriverWrench}
                                         />
                                     </div>
+
                                     <p
                                         className={`menu__container__link__text ${theme}`}
                                     >
@@ -311,6 +333,7 @@ function Menu() {
                                             icon={faDiagramProject}
                                         />
                                     </div>
+
                                     <p
                                         className={`menu__container__link__text ${theme}`}
                                     >
@@ -331,6 +354,7 @@ function Menu() {
                                             icon={faUserGraduate}
                                         />
                                     </div>
+
                                     <p
                                         className={`menu__container__link__text ${theme}`}
                                     >
