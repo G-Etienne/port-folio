@@ -8,8 +8,7 @@
     display: flex;
     justify-content: space-between;
     position: relative;
-    box-sizing: border-box;
-    height: 100px;
+    height: 15%;
     width: 100%;
 
     //h1 etienne ginet
@@ -18,12 +17,13 @@
         position: relative;
         top: -30px;
         left: -10px;
-        z-index: 20;
+        z-index: 220;
         font-size: 65px;
         color: $color-text-clear;
         font-family: "Permanent Marker", cursive;
         text-shadow: 0px 0px 10px white;
 
+        //title link
         &__link {
             text-decoration: none;
         }

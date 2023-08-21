@@ -1,0 +1,45 @@
+//--------------------------------------------------------
+//utils
+@import "../utils/Mixins/mixinPositionPages";
+//--------------------------------------------------------
+//mains rules
+
+.homeScreen {
+    &__main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    //the two windows in the homepage
+    &__homeWindow {
+        position: relative;
+        height: 450px;
+        width: 90%;
+        margin: auto;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+}
+
+//test
+.truc {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 120;
+    top: 70px;
+    height: 90%;
+    width: 10%;
+    box-sizing: border-box;
+    padding: 10px;
+    overflow: auto;
+}
+
+//**************************************************************************************
+//placing the page in the virtual screen
+.homeScreen {
+    @include positionPage;
+}

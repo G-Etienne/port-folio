@@ -4,6 +4,7 @@
 @import "../../../../utils/Mixins/mixin-mediaqueries";
 
 //------------------------------------------------------
+//responsive style for the menu
 @include responsive(small-tablet-min, large-tablet-and-laptop-max) {
     .menu {
         &__container {
@@ -33,7 +34,7 @@
                 margin-left: 0px;
             }
             &__links {
-                top: 160px;
+                top: 180px;
                 left: 00px;
                 scale: 1.5;
             }
@@ -53,7 +54,7 @@
                 left: -10px;
             }
             &__links {
-                top: 160px;
+                top: 180px;
                 left: 00px;
                 scale: 1.5;
             }

@@ -1,0 +1,131 @@
+@import "../variables";
+
+@mixin stylesWindow($width, $height, $paddinTop) {
+    height: $height;
+    width: $width;
+    background: linear-gradient(43deg, $colo-cube-one, $colo-cube-two);
+    border-radius: 20px;
+    opacity: 0.9;
+    box-shadow: 0px 0px 10px $colo-cube-one;
+    padding-top: $paddinTop;
+    position: relative;
+
+    &.dark {
+        background: linear-gradient(43deg, $main-back-color, $fluo-color);
+        box-shadow: 0px 0px 20px $fluo-color;
+        border: 1px $fluo-color solid;
+    }
+
+    &__window {
+        background: linear-gradient(
+            43deg,
+            lighten($colo-cube-one, 20%),
+            lighten($colo-cube-two, 20%)
+        );
+        width: 100%;
+        height: 100%;
+        border-radius: 0px 0px 15px 15px;
+        &.dark {
+            background: linear-gradient(
+                43deg,
+                darken($main-back-color, 30%),
+                darken($fluo-color, 40%)
+            );
+            border-radius: 0px 0px 21px 21px;
+        }
+    }
+    &__tabContainer {
+        height: 30px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        top: -30px;
+    }
+    &__tab {
+        height: 100%;
+        width: 30%;
+        border-radius: 5px 5px 0px 0px;
+        border-left: 1px $main-back-color solid;
+        border-top: 1px $main-back-color solid;
+        border-right: 1px $main-back-color solid;
+        position: relative;
+        top: -5px;
+        left: -1px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &.dark {
+            border-left: 1px $fluo-color solid;
+            border-top: 1px $fluo-color solid;
+            border-right: 1px $fluo-color solid;
+        }
+        &__text {
+            position: relative;
+            top: 2px;
+            height: 34px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            border-radius: 4px 4px 0px 0px;
+            align-items: center;
+            font-family: "Permanent Marker", cursive;
+            text-shadow: 0px 0px 2px white;
+            font-size: 20px;
+            background: linear-gradient(
+                43deg,
+                rgb(182, 158, 227),
+                rgb(202, 165, 230)
+            );
+            &.dark {
+                text-shadow: 0px 0px 2px black;
+                color: $fluo-color;
+                background: linear-gradient(
+                    300deg,
+                    rgb(15, 95, 92),
+                    rgb(2, 82, 79)
+                );
+            }
+        }
+    }
+    &__tabMarginLeft {
+        height: 100%;
+        width: 1%;
+        border-radius: 0px 0px 5px 0px;
+        position: relative;
+        border-bottom: 1px $main-back-color solid;
+        border-right: 1px $main-back-color solid;
+        &.dark {
+            border-radius: 0px;
+            border-bottom: 1px $fluo-color solid;
+            border-right: 1px $fluo-color solid;
+        }
+    }
+    &__tabMarginRight {
+        height: 100%;
+        width: 70%;
+        border-radius: 0px 0px 0px 5px;
+        position: relative;
+        right: 0px;
+        left: -2px;
+        border-left: 1px $main-back-color solid;
+        border-bottom: 1px $main-back-color solid;
+        display: flex;
+        justify-content: flex-end;
+        &.dark {
+            border-radius: 0px;
+            border-left: 1px $fluo-color solid;
+            border-bottom: 1px $fluo-color solid;
+        }
+        &__cache {
+            height: 100%;
+            width: 10%;
+            position: relative;
+            right: -2px;
+            border-bottom: 1px $main-back-color solid;
+            &.dark {
+                border-bottom: 1px $fluo-color solid;
+            }
+        }
+    }
+}

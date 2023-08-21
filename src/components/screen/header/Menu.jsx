@@ -12,6 +12,7 @@ import { faBullseye } from "@fortawesome/free-solid-svg-icons";
 import { faScrewdriverWrench } from "@fortawesome/free-solid-svg-icons";
 import { faDiagramProject } from "@fortawesome/free-solid-svg-icons";
 import { faUserGraduate } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 //---------------------------------------------------------
 //import react-router-dom for the links navigation
@@ -109,7 +110,7 @@ function Menu() {
                                     <p
                                         className={`menu__container__link__text ${theme}`}
                                     >
-                                        Accueil
+                                        A propos
                                     </p>
                                 </NavLink>
                             </div>
@@ -195,6 +196,24 @@ function Menu() {
                                     </p>
                                 </NavLink>
                             </div>
+                            <div className="menu__container__link">
+                                <NavLink
+                                    className={`menu__container__linkFive ${theme}`}
+                                    to="/contact"
+                                >
+                                    <div
+                                        className={`menu__container__link__block ${theme}`}
+                                    >
+                                        <FontAwesomeIcon icon={faEnvelope} />
+                                    </div>
+
+                                    <p
+                                        className={`menu__container__link__text ${theme}`}
+                                    >
+                                        Contacts
+                                    </p>
+                                </NavLink>
+                            </div>
                         </div>
                     </div>
                 </>
@@ -276,7 +295,7 @@ function Menu() {
                                     <p
                                         className={`menu__container__link__text ${theme}`}
                                     >
-                                        Home
+                                        About
                                     </p>
                                 </NavLink>
                             </div>
@@ -359,6 +378,24 @@ function Menu() {
                                         className={`menu__container__link__text ${theme}`}
                                     >
                                         Trainings
+                                    </p>
+                                </NavLink>
+                            </div>
+                            <div className="menu__container__link">
+                                <NavLink
+                                    className={`menu__container__linkFive ${theme}`}
+                                    to="/contact"
+                                >
+                                    <div
+                                        className={`menu__container__link__block ${theme}`}
+                                    >
+                                        <FontAwesomeIcon icon={faEnvelope} />
+                                    </div>
+
+                                    <p
+                                        className={`menu__container__link__text ${theme}`}
+                                    >
+                                        Contacts
                                     </p>
                                 </NavLink>
                             </div>

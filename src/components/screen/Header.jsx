@@ -28,7 +28,7 @@ function Header() {
                 {/* menu of the site */}
                 <Menu />
 
-                <NavLink className="header__title__link" to={"/home"}>
+                <NavLink className="header__title__link" to={"/"}>
                     <h1 className={`header__title ${theme}`}>Etienne Ginet</h1>
                 </NavLink>
 

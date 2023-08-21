@@ -6,8 +6,6 @@ import { ThemeContext } from "../contexts/ThemeContext";
 //---------------------------------------------------------
 //import of the components
 import Screen from "./screen/Screen";
-import Header from "./screen/Header";
-import Footer from "./Footer";
 
 //---------------------------------------------------------
 //style
@@ -18,12 +16,9 @@ function Main() {
     const { theme } = useContext(ThemeContext);
 
     return (
-        <div className={`mainWrapper ${theme + "main"}`}>
-            <Screen>
-                <Header />
-            </Screen>
-
-            <Footer />
+        <div className={`mainBack ${theme + "main"}`}>
+            {/* virtual screen in the site */}
+            <Screen></Screen>
         </div>
     );
 }

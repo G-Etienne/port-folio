@@ -1,0 +1,12 @@
+//------------------------------------------------------
+//utils
+@import "../utils/variables";
+@import "../utils/Mixins/mixinWindow";
+
+//------------------------------------------------------
+//style for the window in a page (like a window browser)
+.window {
+    &Container {
+        @include stylesWindow(100%, 100%, 3%);
+    }
+}
