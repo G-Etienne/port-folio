@@ -4,10 +4,10 @@ import { Routes, Route, BrowserRouter } from "react-router-dom";
 
 //---------------------------------------------------------
 //Routes components
-import Home from "../pages/Home";
-import Screen from "../components/screen/Screen";
+import About from "../pages/About";
 import Footer from "../components/Footer";
 import Main from "../components/Main";
+import Home from "../pages/Home";
 //---------------------------------------------------------
 //context importation
 import { ThemeProvider } from "../contexts/ThemeContext";
@@ -27,15 +27,17 @@ function Roads() {
                     <Main />
 
                     <Routes>
-                        <Route path="/" />
-                        <Route path="/home" element={<Home />} />
+                        <Route path="/*" />
+                        <Route path="/" element={<Home />} />
+                        <Route path="/about" element={<About />} />
                         <Route path="/goals" />
                         <Route path="/skills" />
                         <Route path="/projects" />
                         <Route path="/trainings" />
                         <Route path="/contact" />
+                        <Route path="/resume" />
+                        <Route path="/graphics" />
                     </Routes>
-
                     <Footer />
                 </LangueProvider>
             </ThemeProvider>

@@ -13,6 +13,8 @@ import { faScrewdriverWrench } from "@fortawesome/free-solid-svg-icons";
 import { faDiagramProject } from "@fortawesome/free-solid-svg-icons";
 import { faUserGraduate } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faFile } from "@fortawesome/free-solid-svg-icons";
+import { faPenToSquare } from "@fortawesome/free-solid-svg-icons";
 
 //---------------------------------------------------------
 //import react-router-dom for the links navigation
@@ -98,8 +100,8 @@ function Menu() {
                         <div className={`menu__container__links ${theme}`}>
                             <div className="menu__container__link">
                                 <NavLink
-                                    className={`menu__container__linkOne ${theme}`}
-                                    to="/home"
+                                    className={`menu__container__linkAll ${theme}`}
+                                    to="/about"
                                 >
                                     <div
                                         className={`menu__container__link__block ${theme}`}
@@ -117,7 +119,7 @@ function Menu() {
 
                             <div className="menu__container__link">
                                 <NavLink
-                                    className={`menu__container__linkTwo ${theme}`}
+                                    className={`menu__container__linkAll ${theme}`}
                                     to="/goals"
                                 >
                                     <div
@@ -136,7 +138,7 @@ function Menu() {
 
                             <div className="menu__container__link">
                                 <NavLink
-                                    className={`menu__container__linkThree ${theme}`}
+                                    className={`menu__container__linkAll ${theme}`}
                                     to="/skills"
                                 >
                                     <div
@@ -157,7 +159,7 @@ function Menu() {
 
                             <div className="menu__container__link">
                                 <NavLink
-                                    className={`menu__container__linkFour ${theme}`}
+                                    className={`menu__container__linkAll ${theme}`}
                                     to="/projects"
                                 >
                                     <div
@@ -178,7 +180,7 @@ function Menu() {
 
                             <div className="menu__container__link">
                                 <NavLink
-                                    className={`menu__container__linkFive ${theme}`}
+                                    className={`menu__container__linkAll ${theme}`}
                                     to="/trainings"
                                 >
                                     <div
@@ -196,9 +198,10 @@ function Menu() {
                                     </p>
                                 </NavLink>
                             </div>
+
                             <div className="menu__container__link">
                                 <NavLink
-                                    className={`menu__container__linkFive ${theme}`}
+                                    className={`menu__container__linkAll ${theme}`}
                                     to="/contact"
                                 >
                                     <div
@@ -211,6 +214,44 @@ function Menu() {
                                         className={`menu__container__link__text ${theme}`}
                                     >
                                         Contacts
+                                    </p>
+                                </NavLink>
+                            </div>
+
+                            <div className="menu__container__link">
+                                <NavLink
+                                    className={`menu__container__linkAll ${theme}`}
+                                    to="/resume"
+                                >
+                                    <div
+                                        className={`menu__container__link__block ${theme}`}
+                                    >
+                                        <FontAwesomeIcon icon={faFile} />
+                                    </div>
+
+                                    <p
+                                        className={`menu__container__link__text ${theme}`}
+                                    >
+                                        Mon CV
+                                    </p>
+                                </NavLink>
+                            </div>
+
+                            <div className="menu__container__link">
+                                <NavLink
+                                    className={`menu__container__linkAll ${theme}`}
+                                    to="/graphics"
+                                >
+                                    <div
+                                        className={`menu__container__link__block ${theme}`}
+                                    >
+                                        <FontAwesomeIcon icon={faPenToSquare} />
+                                    </div>
+
+                                    <p
+                                        className={`menu__container__link__text ${theme}`}
+                                    >
+                                        Graphisme
                                     </p>
                                 </NavLink>
                             </div>
@@ -283,8 +324,8 @@ function Menu() {
                         <div className={`menu__container__links ${theme}`}>
                             <div className="menu__container__link">
                                 <NavLink
-                                    className={`menu__container__linkOne ${theme}`}
-                                    to="/home"
+                                    className={`menu__container__linkAll ${theme}`}
+                                    to="/about"
                                 >
                                     <div
                                         className={`menu__container__link__block ${theme}`}
@@ -302,7 +343,7 @@ function Menu() {
 
                             <div className="menu__container__link">
                                 <NavLink
-                                    className={`menu__container__linkTwo ${theme}`}
+                                    className={`menu__container__linkAll ${theme}`}
                                     to="/goals"
                                 >
                                     <div
@@ -321,7 +362,7 @@ function Menu() {
 
                             <div className="menu__container__link">
                                 <NavLink
-                                    className={`menu__container__linkThree ${theme}`}
+                                    className={`menu__container__linkAll ${theme}`}
                                     to="/skills"
                                 >
                                     <div
@@ -342,7 +383,7 @@ function Menu() {
 
                             <div className="menu__container__link">
                                 <NavLink
-                                    className={`menu__container__linkFour ${theme}`}
+                                    className={`menu__container__linkAll ${theme}`}
                                     to="/projects"
                                 >
                                     <div
@@ -363,7 +404,7 @@ function Menu() {
 
                             <div className="menu__container__link">
                                 <NavLink
-                                    className={`menu__container__linkFive ${theme}`}
+                                    className={`menu__container__linkAll ${theme}`}
                                     to="/trainings"
                                 >
                                     <div
@@ -381,9 +422,10 @@ function Menu() {
                                     </p>
                                 </NavLink>
                             </div>
+
                             <div className="menu__container__link">
                                 <NavLink
-                                    className={`menu__container__linkFive ${theme}`}
+                                    className={`menu__container__linkAll ${theme}`}
                                     to="/contact"
                                 >
                                     <div
@@ -396,6 +438,44 @@ function Menu() {
                                         className={`menu__container__link__text ${theme}`}
                                     >
                                         Contacts
+                                    </p>
+                                </NavLink>
+                            </div>
+
+                            <div className="menu__container__link">
+                                <NavLink
+                                    className={`menu__container__linkAll ${theme}`}
+                                    to="/resume"
+                                >
+                                    <div
+                                        className={`menu__container__link__block ${theme}`}
+                                    >
+                                        <FontAwesomeIcon icon={faFile} />
+                                    </div>
+
+                                    <p
+                                        className={`menu__container__link__text ${theme}`}
+                                    >
+                                        Resume
+                                    </p>
+                                </NavLink>
+                            </div>
+
+                            <div className="menu__container__link">
+                                <NavLink
+                                    className={`menu__container__linkAll ${theme}`}
+                                    to="/graphics"
+                                >
+                                    <div
+                                        className={`menu__container__link__block ${theme}`}
+                                    >
+                                        <FontAwesomeIcon icon={faPenToSquare} />
+                                    </div>
+
+                                    <p
+                                        className={`menu__container__link__text ${theme}`}
+                                    >
+                                        Graphics
                                     </p>
                                 </NavLink>
                             </div>

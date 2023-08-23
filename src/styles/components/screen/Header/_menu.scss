@@ -93,7 +93,11 @@
         margin-top: 10px;
         border-radius: 6px;
         box-shadow: 0px 0px 7px black;
-        background-color: $color-back-menu;
+
+        background: radial-gradient(
+            lighten($color-back-menu, 20%),
+            darken($color-back-menu, 10%)
+        );
 
         &:hover {
             animation: scaleMenuAnim 300ms cubic-bezier(0.7, 2.05, 0.57, 0.63)
@@ -106,7 +110,11 @@
         &.dark {
             border: 1px $fluo-color solid;
             box-shadow: 0px 0px 15px $fluo-color;
-            background-color: $main-back-color;
+
+            background: radial-gradient(
+                lighten($main-back-color, 30%),
+                darken($main-back-color, 10%)
+            );
 
             &:hover {
                 animation: scaleMenuAnim 100ms ease-in-out both;
@@ -132,13 +140,21 @@
             border-radius: 6px;
             animation: mouveMenu 300ms ease-in-out both;
             box-shadow: 0px 0px 7px black;
-            background-color: $color-back-menu;
+
+            background: radial-gradient(
+                lighten($color-back-menu, 20%),
+                darken($color-back-menu, 10%)
+            );
 
             //dark theme
             &.dark {
                 border: 1px $fluo-color solid;
                 box-shadow: 0px 0px 15px $fluo-color;
-                background-color: $main-back-color;
+
+                background: radial-gradient(
+                    lighten($main-back-color, 30%),
+                    darken($main-back-color, 10%)
+                );
             }
         }
 
@@ -149,23 +165,35 @@
             top: 55px;
             display: flex;
             flex-direction: column;
-            background-color: $color-back-menu;
             border-radius: 20px;
             padding: 3px;
-            padding-top: 20px;
             margin-top: 5px;
-            border: 4px grey solid;
+            margin-left: 130px;
+            border: 4px darken($color-back-menu, 30%) solid;
+            max-height: 400px;
+            width: 250px;
+            flex-wrap: wrap;
             animation: Apear 400ms 100ms ease-in-out both;
+
+            background: radial-gradient(
+                lighten($color-back-menu, 20%),
+                darken($color-back-menu, 10%)
+            );
 
             //dark theme
             &.dark {
-                background-color: $main-back-color;
                 border: 2px $fluo-color solid;
                 animation: Apear 400ms 100ms ease-in-out both;
+
+                background: radial-gradient(
+                    lighten($main-back-color, 15%),
+                    darken($main-back-color, 10%)
+                );
             }
         }
         //for rules on all links
         &__link {
+            margin-top: 15px;
             &:hover {
                 animation: scaleMenuAnim 300ms
                     cubic-bezier(0.7, 2.05, 0.57, 0.63) both;
@@ -181,7 +209,6 @@
                 margin: auto;
                 border-radius: 50%;
                 box-shadow: 0px 0px 7px grey;
-                background-color: $color-back-menu;
                 border: 1px grey solid;
                 color: $color-back-menu;
 
@@ -217,29 +244,13 @@
                 //dark theme
                 &.dark {
                     color: lighten($fluo-color, 10%);
-                    text-shadow: none;
+                    text-shadow: 0px 0px 5px $main-back-color;
                 }
             }
         }
 
-        //links one by one
-        &__linkOne {
-            text-decoration: none;
-        }
-
-        &__linkTwo {
-            text-decoration: none;
-        }
-
-        &__linkThree {
-            text-decoration: none;
-        }
-
-        &__linkFour {
-            text-decoration: none;
-        }
-
-        &__linkFive {
+        //rules for the menu links
+        &__linkAll {
             text-decoration: none;
         }
     }

@@ -1,7 +1,7 @@
 //-----------------------------------------------
 //utils
 @import "../../../utils/variables";
-@import "../../../utils/Keyframes/keyframesTheme";
+@import "../../../utils/Keyframes/keyframesThemeLangue";
 
 //-----------------------------------------------
 //main rules theme
@@ -18,11 +18,11 @@
 
     &:hover {
         .moon {
-            animation: switchThemeTwo 200ms 200ms ease-in-out both;
+            animation: switchTwo 200ms 200ms ease-in-out both;
         }
 
         .sun {
-            animation: switchThemeOne 200ms ease-in-out both;
+            animation: switchOne 200ms ease-in-out both;
         }
     }
 }

@@ -1,0 +1,89 @@
+//---------------------------------------------------------
+//BREAKPOINTS :
+// zero-px: 0px,
+// mobile-max: 480px,
+// small-devices-min: 481px,
+// small-devices-max: 767px,
+// small-tablet-min: 768px,
+// small-tablet-max: 991px,
+// large-tablet-and-laptop-min: 992px,
+// large-tablet-and-laptop-max: 1199px,
+// desktop-min: 1200px,
+// desktop-max: 1919px,
+// extra-large-screen-min: 1920px
+
+//---------------------------------------------------------
+//utils
+@import "../../utils/variables";
+@import "../../utils/Mixins/mixin-mediaqueries";
+
+//------------------------------------------------------
+//media queries
+@include responsive(small-tablet-min, small-tablet-max) {
+    .aboutScreen {
+        &__headerPage {
+            height: 80px;
+        }
+
+        &__main.white {
+            height: 87%;
+        }
+
+        &__main.dark {
+            height: 87%;
+        }
+    }
+}
+
+@include responsive(mobile-max, small-tablet-min) {
+    .aboutScreen {
+        &__headerPage {
+            height: 80px;
+        }
+        &__main.white {
+            height: 87%;
+        }
+        &__main.dark {
+            height: 87%;
+        }
+    }
+}
+@media screen and (max-width: 480px) {
+    .aboutScreen {
+        &__headerPage {
+            height: 100px;
+        }
+        &__main.white {
+            height: 82%;
+        }
+        &__main.dark {
+            height: 82%;
+        }
+    }
+}
+@media screen and (max-height: 900px) {
+    .aboutScreen {
+        height: 70%;
+        &__main.white {
+            height: 80%;
+        }
+    }
+}
+@media screen and (max-height: 730px) {
+    .aboutScreen {
+        &__main.white {
+            height: 75%;
+        }
+        &__main.dark {
+            height: 75%;
+        }
+    }
+}
+
+//------------------------------------------------------
+//rules for the place of the page in the virtual screen
+@media screen and (max-height: 700px) and (max-width: 300px) {
+    .aboutScreen {
+        height: 68%;
+    }
+}

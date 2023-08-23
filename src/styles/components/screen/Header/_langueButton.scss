@@ -1,7 +1,7 @@
 //-----------------------------------------------
 //utils
 @import "../../../utils/variables";
-@import "../../../utils/Keyframes/keyframesTheme";
+@import "../../../utils/Keyframes/keyframesThemeLangue";
 
 //-----------------------------------------------
 //main rules langue
@@ -19,19 +19,19 @@
     //effect
     &:hover {
         .englishFlag.frenchButton {
-            animation: switchThemeTwo 200ms 200ms ease-in-out both;
+            animation: switchTwo 200ms 200ms ease-in-out both;
         }
 
         .frenchFlag.frenchButton {
-            animation: switchThemeOne 200ms ease-in-out both;
+            animation: switchOne 200ms ease-in-out both;
         }
 
         .englishFlag.englishButton {
-            animation: switchThemeTwo 200ms 200ms ease-in-out both;
+            animation: switchTwo 200ms 200ms ease-in-out both;
         }
 
         .frenchFlag.englishButton {
-            animation: switchThemeOne 200ms ease-in-out both;
+            animation: switchOne 200ms ease-in-out both;
         }
     }
 }

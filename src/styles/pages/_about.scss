@@ -1,0 +1,55 @@
+//--------------------------------------------------------
+//utils
+@import "../utils/variables";
+@import "../utils/Mixins/mixinPositionPages";
+
+//--------------------------------------------------------
+//mains rules
+.headerAbout {
+    position: relative;
+    z-index: 101;
+    height: 100%;
+    width: 99.5%;
+    background-color: white;
+    margin: auto;
+    margin-top: 12px;
+    &::after {
+        z-index: 101;
+        display: block;
+        content: " ";
+        position: absolute;
+        bottom: 0px;
+        height: 100%;
+        width: 100%;
+        box-shadow: 0px 3px 10px lighten($main-back-color, 5%);
+    }
+    &.dark {
+        background-color: $main-back-color;
+        &::after {
+            z-index: 101;
+            display: block;
+            content: " ";
+            position: absolute;
+            bottom: 0px;
+            height: 100%;
+            width: 100%;
+            border-bottom: 1px $fluo-color solid;
+        }
+    }
+}
+.aboutMain {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(43deg, $colo-cube-one, $colo-cube-two);
+    margin-left: 2px;
+    margin-right: 2px;
+    &.dark {
+        background-color: darken($main-back-color, 20%);
+    }
+}
+
+//**************************************************************************************
+//placing the page in the virtual screen
+.aboutScreen {
+    @include positionPage;
+}

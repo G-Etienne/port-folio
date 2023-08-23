@@ -4,7 +4,7 @@
 $main-back-color: #0b444e;
 $main-screen-back-color: #60d4e8;
 $fluo-color: rgb(112, 249, 242);
-$color-text-clear: rgb(46, 46, 46);
+$color-text-clear: #2e4053;
 
 //desk
 $main-color-desk: #b55627;
@@ -32,8 +32,15 @@ $color-screen: black;
 
 //menu
 $axeZ-Cube: 12.5px;
-$colo-cube-one: #2d46c4;
-$colo-cube-two: #e95ddf;
+$colo-cube-one: #ff4500;
+$colo-cube-two: #ffcc00;
 $color-rod-menu: rgb(222, 220, 220);
 $color-rod-menu-dark: black;
-$color-back-menu: rgb(222, 220, 220);
+$color-back-menu: #ededed;
+
+//--------------------------------------------------
+//about
+$main-color-about: #1eb5d0;
+
+//home
+$main-color-home: #ededed;

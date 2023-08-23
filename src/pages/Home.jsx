@@ -2,75 +2,251 @@
 //import of the context
 import { useContext } from "react";
 import { ThemeContext } from "../contexts/ThemeContext";
+import { LangueContext } from "../contexts/LangueContext";
 
 //---------------------------------------------------------
+//import react-router-dom for the links navigation
+import { NavLink } from "react-router-dom";
+
+//-----------------------------------------------------------------
 //components
-import Window from "../components/screen/Window";
-//---------------------------------------------------------
-//style for the Home page
+import Cube from "../components/screen/header/_threeDcube";
+
+//-----------------------------------------------------------------
+//style
 import "../styles/pages/_home.scss";
-import "../styles/pages/mediaQueriesPages/_mediaQueriesPosition.scss";
+import "../styles/pages/mediaQueriesPages/_mediaQueriesHome.scss";
 
-//---------------------------------------------------------
+//-----------------------------------------------------------------
+//image
+import resumeLogo from "../assets/Home/resume-logo.jpg";
+import persoHome from "../assets/Home/persoHome.png";
+
+//-----------------------------------------------------------------
 function Home() {
+    // langue and theme
     const { theme } = useContext(ThemeContext);
+    const { langue } = useContext(LangueContext);
 
-    return (
-        <div className="homeScreen">
-            <div className="homeScreen__headerPlace"></div>
-            <div className={`homeScreen__main ${theme}`}>
-                <div className={`homeScreen__homeWindow ${theme}`}>
-                    <Window key={"tabHome"} text={"Etienne Ginet"} />
-                    <div className="truc">
-                        <p>
-                            « Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Sed non risus. Suspendisse lectus tortor,
-                            dignissim sit amet, adipiscing nec, ultricies sed,
-                            dolor. Cras elementum ultrices diam. Maecenas ligula
-                            massa, varius a, semper congue, euismod non, mi.
-                            Proin porttitor, orci nec nonummy molestie, enim est
-                            eleifend mi, non fermentum diam nisl sit amet erat.
-                            Duis semper. Duis arcu massa, scelerisque vitae,
-                            consequat in, pretium a, enim. Pellentesque congue.
-                            Ut in risus volutpat libero pharetra tempor. Cras
-                            vestibulum bibendum augue. Praesent egestas leo in
-                            pede. Praesent blandit odio eu enim. Pellentesque
-                            sed dui ut augue blandit sodales. Vestibulum ante
-                            ipsum primis in faucibus orci luctus et ultrices
-                            posuere cubilia Curae; Aliquam nibh. Mauris ac
-                            mauris sed pede pellentesque fermentum. Maecenas
-                            adipiscing ante non diam sodales hendrerit. Ut velit
-                            mauris, egestas sed, gravida nec, ornare ut, mi.
-                            Aenean ut orci vel massa suscipit pulvinar. Nulla
-                            sollicitudin. Fusce varius, ligula non tempus
-                            aliquam, nunc turpis ullamcorper nibh, in tempus
-                            sapien eros vitae ligula. Pellentesque rhoncus nunc
-                            et augue. Integer id felis. Curabitur aliquet
-                            pellentesque diam. Integer quis metus vitae elit
-                            lobortis egestas. Lorem ipsum dolor sit amet,
-                            consectetuer adipiscing elit. Morbi vel erat non
-                            mauris convallis vehicula. Nulla et sapien. Integer
-                            tortor tellus, aliquam faucibus, convallis id,
-                            congue eu, quam. Mauris ullamcorper felis vitae
-                            erat. Proin feugiat, augue non elementum posuere,
-                            metus purus iaculis lectus, et tristique ligula
-                            justo vitae magna. Aliquam convallis sollicitudin
-                            purus. Praesent aliquam, enim at fermentum mollis,
-                            ligula massa adipiscing nisl, ac euismod nibh nisl
-                            eu lectus. Fusce vulputate sem at sapien. Vivamus
-                            leo. Aliquam euismod libero eu enim. Nulla nec felis
-                            sed leo placerat imperdiet. Aenean suscipit nulla in
-                            justo. Suspendisse cursus rutrum augue. Nulla
-                            tincidunt tincidunt mi. Curabitur iaculis, lorem vel
-                            rhoncus faucibus, felis magna fermentum augue, et
-                            ultricies lacus lorem varius purus. Curabitur eu
-                            amet. »
-                        </p>
+    //french part
+    if (langue === "french") {
+        return (
+            // homeScreen is the block who allow to place the page on the virtual screen
+            <div className="homeScreen">
+                <div className="homeScreen__headerPage">
+                    {/* hearder part of the home page */}
+                    <div className={`headerHome ${theme}`}></div>
+                </div>
+
+                <div className={`homeScreen__main ${theme}`}>
+                    {/* main part of the home page */}
+                    <div className={`homeMain ${theme}`}>
+                        <div className={`homeMain__resumeContainer ${theme}`}>
+                            {/* part for askinc to clock on the menu */}
+                            <div
+                                className={`homeMain__resumeContainer__interactifResume ${theme}`}
+                            >
+                                <div
+                                    className={`homeMain__resumeContainer__interactifResume__menu ${theme}`}
+                                >
+                                    <Cube />
+                                </div>
+
+                                <div
+                                    className={`homeMain__resumeContainer__interactifResume__text ${theme}`}
+                                >
+                                    <h4>Bienvenue dans mon monde !</h4>
+
+                                    <p>Explorez-le en cliquant sur le Menu !</p>
+                                </div>
+                            </div>
+
+                            {/* part for the clasic menu */}
+                            <div
+                                className={`homeMain__resumeContainer__classicResume ${theme}`}
+                            >
+                                <div
+                                    className={`homeMain__resumeContainer__classicResume__image ${theme}`}
+                                >
+                                    <img
+                                        src={resumeLogo}
+                                        alt="image who ilustrate the classic cv element."
+                                    />
+                                </div>
+
+                                <div
+                                    className={`homeMain__resumeContainer__classicResume__text ${theme}`}
+                                >
+                                    <h4>Vous êtes plutôt CV classique ?</h4>
+
+                                    <NavLink
+                                        className={`homeMain__resumeContainer__classicResume__text__link ${theme}`}
+                                        to={"/resume"}
+                                    >
+                                        <p
+                                            className={`homeMain__resumeContainer__classicResume__text__link__paragraphe ${theme}`}
+                                        >
+                                            Mon CV en un clic!
+                                        </p>
+                                    </NavLink>
+                                </div>
+                            </div>
+
+                            <div
+                                className={`homeMain__divMobileAnimShow ${theme}`}
+                            ></div>
+                        </div>
+
+                        {/* message for introducting etienne */}
+                        <div
+                            className={`homeMain__presentationContainer ${theme}`}
+                        >
+                            {/* image part */}
+                            <div
+                                className={`homeMain__presentationContainer__image ${theme}`}
+                            >
+                                <img
+                                    src={persoHome}
+                                    alt="image du perso de la page d'accueil."
+                                />
+                            </div>
+
+                            {/* text part */}
+                            <div
+                                className={`homeMain__presentationContainer__text ${theme}`}
+                            >
+                                <h4>
+                                    Salut, je suis Étienne, un développeur web
+                                    passionné.
+                                </h4>
+
+                                <p>
+                                    Bienvenue sur mon portfolio où tu
+                                    découvriras mes compétences et projets.{" "}
+                                    <br />
+                                    <br />
+                                    Explore mon univers digital où chaque ligne
+                                    de code façonne le web de demain. <br />
+                                    <br />
+                                    Rejoins-moi dans ce voyage interactif au
+                                    croisement de la programmation et du design.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    );
+        );
+    }
+
+    //english part
+    if (langue === "english") {
+        return (
+            // homeScreen is the block who allow to place the page on the virtual screen
+            <div className="homeScreen">
+                <div className="homeScreen__headerPage">
+                    {/* hearder part of the home page */}
+                    <div className={`headerHome ${theme}`}></div>
+                </div>
+
+                <div className={`homeScreen__main ${theme}`}>
+                    {/* main part of the home page */}
+                    <div className={`homeMain ${theme}`}>
+                        <div className={`homeMain__resumeContainer ${theme}`}>
+                            {/* part for askinc to clock on the menu */}
+                            <div
+                                className={`homeMain__resumeContainer__interactifResume ${theme}`}
+                            >
+                                <div
+                                    className={`homeMain__resumeContainer__interactifResume__menu ${theme}`}
+                                >
+                                    <Cube />
+                                </div>
+
+                                <div
+                                    className={`homeMain__resumeContainer__interactifResume__text ${theme}`}
+                                >
+                                    <h4>Welcome to my world !</h4>
+
+                                    <p>Explore it by clicking on the Menu !</p>
+                                </div>
+                            </div>
+
+                            {/* part for the clasic menu */}
+                            <div
+                                className={`homeMain__resumeContainer__classicResume ${theme}`}
+                            >
+                                <div
+                                    className={`homeMain__resumeContainer__classicResume__image ${theme}`}
+                                >
+                                    <img
+                                        src={resumeLogo}
+                                        alt="image who ilustrate the classic cv element."
+                                    />
+                                </div>
+
+                                <div
+                                    className={`homeMain__resumeContainer__classicResume__text ${theme}`}
+                                >
+                                    <h4>Do you prefer a classic resmue ?</h4>
+
+                                    <NavLink
+                                        className={`homeMain__resumeContainer__classicResume__text__link ${theme}`}
+                                        to={"/resume"}
+                                    >
+                                        <p
+                                            className={`homeMain__resumeContainer__classicResume__text__link__paragraphe ${theme}`}
+                                        >
+                                            My resume !
+                                        </p>
+                                    </NavLink>
+                                </div>
+                            </div>
+
+                            <div
+                                className={`homeMain__divMobileAnimShow ${theme}`}
+                            ></div>
+                        </div>
+
+                        {/* message for introducting etienne */}
+                        <div
+                            className={`homeMain__presentationContainer ${theme}`}
+                        >
+                            {/* image part */}
+                            <div
+                                className={`homeMain__presentationContainer__image ${theme}`}
+                            >
+                                <img
+                                    src={persoHome}
+                                    alt="image du perso de la page d'accueil."
+                                />
+                            </div>
+
+                            {/* text part */}
+                            <div
+                                className={`homeMain__presentationContainer__text ${theme}`}
+                            >
+                                <h4>
+                                    Hi, I am Étienne, a passionate web
+                                    developer.
+                                </h4>
+
+                                <p>
+                                    Welcome to my portfolio where you will
+                                    discover my skills and projects. <br />
+                                    <br /> Explore my digital universe where
+                                    each line of code shapes the web of
+                                    tomorrow. <br /> <br /> Join me on this
+                                    interactive journey at the crossroads of
+                                    programming and design.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        );
+    }
 }
 
 export default Home;
