@@ -8,6 +8,7 @@ import About from "../pages/About";
 import Footer from "../components/Footer";
 import Main from "../components/Main";
 import Home from "../pages/Home";
+import Error from "../pages/Error";
 //---------------------------------------------------------
 //context importation
 import { ThemeProvider } from "../contexts/ThemeContext";
@@ -27,7 +28,7 @@ function Roads() {
                     <Main />
 
                     <Routes>
-                        <Route path="/*" />
+                        <Route path="/*" element={<Error />} />
                         <Route path="/" element={<Home />} />
                         <Route path="/about" element={<About />} />
                         <Route path="/goals" />
