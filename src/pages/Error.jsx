@@ -26,10 +26,10 @@ function Error() {
         return (
             <div>
                 <div className="errorScreen">
-                    {/* header about */}
+                    {/* header error */}
                     <div className="errorScreen__headerPage"></div>
 
-                    {/* main part about */}
+                    {/* main part error */}
                     <div className={`errorScreen__main ${theme}`}>
                         {/* bloc in the center of the error page */}
                         <div className={`errorMain ${theme}`}>

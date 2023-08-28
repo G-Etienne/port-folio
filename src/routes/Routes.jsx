@@ -9,6 +9,7 @@ import Footer from "../components/Footer";
 import Main from "../components/Main";
 import Home from "../pages/Home";
 import Error from "../pages/Error";
+import Trainings from "../pages/Trainings";
 //---------------------------------------------------------
 //context importation
 import { ThemeProvider } from "../contexts/ThemeContext";
@@ -34,7 +35,7 @@ function Roads() {
                         <Route path="/goals" />
                         <Route path="/skills" />
                         <Route path="/projects" />
-                        <Route path="/trainings" />
+                        <Route path="/trainings" element={<Trainings />} />
                         <Route path="/contact" />
                         <Route path="/resume" />
                         <Route path="/graphics" />
