@@ -11,6 +11,7 @@ import Home from "../pages/Home";
 import Error from "../pages/Error";
 import Trainings from "../pages/Trainings";
 import Goals from "../pages/Goals";
+import Contact from "../pages/Contact";
 //---------------------------------------------------------
 //context importation
 import { ThemeProvider } from "../contexts/ThemeContext";
@@ -37,7 +38,7 @@ function Roads() {
                         <Route path="/skills" />
                         <Route path="/projects" />
                         <Route path="/trainings" element={<Trainings />} />
-                        <Route path="/contact" />
+                        <Route path="/contact" element={<Contact />} />
                         <Route path="/resume" />
                         <Route path="/graphics" />
                     </Routes>
