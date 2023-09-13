@@ -12,6 +12,7 @@ import Error from "../pages/Error";
 import Trainings from "../pages/Trainings";
 import Goals from "../pages/Goals";
 import Contact from "../pages/Contact";
+import Resume from "../pages/Resume";
 //---------------------------------------------------------
 //context importation
 import { ThemeProvider } from "../contexts/ThemeContext";
@@ -39,7 +40,7 @@ function Roads() {
                         <Route path="/projects" />
                         <Route path="/trainings" element={<Trainings />} />
                         <Route path="/contact" element={<Contact />} />
-                        <Route path="/resume" />
+                        <Route path="/resume" element={<Resume />} />
                         <Route path="/graphics" />
                     </Routes>
                     <Footer />

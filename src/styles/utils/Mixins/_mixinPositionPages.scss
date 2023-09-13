@@ -44,11 +44,11 @@
         }
 
         &::-webkit-scrollbar-track {
-            background: $color-back-menu;
+            background: #e6d4b1;
         }
 
         &::-webkit-scrollbar-thumb {
-            background: black;
+            background: darken($color-back-contact, 30%);
         }
 
         //dark mode
