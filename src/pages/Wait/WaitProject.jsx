@@ -88,12 +88,14 @@ function WaitProject() {
                             please don&apos;t hesitate to check out my GitHub.
                         </p>
                         {/* link for the resume page */}
-                        <NavLink
+                        <a
+                            target="_blank"
+                            rel="noreferrer"
+                            href="https://github.com/G-Etienne?tab=repositories"
                             className={`waitContainer__content__link ${theme}`}
-                            to="/resume"
                         >
                             My projects
-                        </NavLink>
+                        </a>
                     </div>
                 </div>
             </div>
