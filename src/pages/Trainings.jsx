@@ -78,19 +78,30 @@ function Trainings() {
                                     </p>
 
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur
-                                        adipiscing elit. Sed non risus.
-                                        Suspendisse lectus tortor, dignissim sit
-                                        amet, adipiscing nec, ultricies sed,
-                                        dolor. Cras elementum ultrices diam.
-                                        Maecenas ligula massa, varius a, semper
-                                        congue, euismod non, mi. Proin
-                                        porttitor, orci nec nonummy molestie,
-                                        enim est eleifend mi, non fermentum diam
-                                        nisl sit amet erat. Duis semper. Duis
-                                        arcu massa, scelerisque vitae, consequat
-                                        in, pretium a, enim. Pellentesque
-                                        congue.
+                                        Une formation complète qui regroupe tous
+                                        les éléments essentiels pour tout bon{" "}
+                                        <strong>développeur web</strong>. Elle
+                                        couvre <strong>HTML</strong>,{" "}
+                                        <strong>CSS</strong>,
+                                        <strong>SASS</strong>,{" "}
+                                        <strong>ReactJS</strong>,{" "}
+                                        <strong>SEO</strong> et{" "}
+                                        <strong>accessibilité</strong>, la
+                                        création d&apos;
+                                        <strong>API REST</strong>, la mise en
+                                        place de
+                                        <strong>
+                                            bases de données
+                                        </strong> avec <strong>MongoDB</strong>,
+                                        le
+                                        <strong>responsive design</strong> et
+                                        toutes les bonnes pratiques qui y sont
+                                        associées. Pendant une période de plus
+                                        de 8 mois, grâce à cette formation et à
+                                        un travail intensif, j&apos;ai pu
+                                        développer de nombreuses compétences
+                                        essentielles de mon domaine
+                                        professionnel.
                                     </p>
 
                                     {/* decorativ bubulles */}
@@ -130,12 +141,9 @@ function Trainings() {
                                         reconvertion.
                                     </p>
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur
-                                        adipiscing elit. Sed non risus.
-                                        Suspendisse lectus tortor, dignissim sit
-                                        amet, adipiscing nec, ultricies sed,
-                                        dolor. Cras elementum ultrices diam.
-                                        Maecenas ligula
+                                        Une formation qui m&apos;a enseigné que
+                                        plus l&apos;effort est important, plus
+                                        le résultat l&apos;est aussi.
                                     </p>
                                 </div>
 
@@ -210,19 +218,28 @@ function Trainings() {
                                     </p>
 
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur
-                                        adipiscing elit. Sed non risus.
-                                        Suspendisse lectus tortor, dignissim sit
-                                        amet, adipiscing nec, ultricies sed,
-                                        dolor. Cras elementum ultrices diam.
-                                        Maecenas ligula massa, varius a, semper
-                                        congue, euismod non, mi. Proin
-                                        porttitor, orci nec nonummy molestie,
-                                        enim est eleifend mi, non fermentum diam
-                                        nisl sit amet erat. Duis semper. Duis
-                                        arcu massa, scelerisque vitae, consequat
-                                        in, pretium a, enim. Pellentesque
-                                        congue.
+                                        A comprehensive training program that
+                                        encompasses all the essential elements
+                                        for any good{" "}
+                                        <strong>web developer</strong>. It
+                                        covers
+                                        <strong>HTML</strong>,{" "}
+                                        <strong>CSS</strong>,{" "}
+                                        <strong>SASS</strong>,{" "}
+                                        <strong>ReactJS</strong>,{" "}
+                                        <strong>SEO</strong>, and
+                                        <strong>accessibility</strong>, the
+                                        creation of{" "}
+                                        <strong>RESTful APIs</strong>, the
+                                        establishment of{" "}
+                                        <strong>databases</strong>
+                                        with <strong>MongoDB</strong>,{" "}
+                                        <strong>responsive design</strong>, and
+                                        all associated best practices. Over a
+                                        period of more than 8 months, thanks to
+                                        this training and intensive work, I was
+                                        able to develop numerous essential
+                                        skills in my professional field.
                                     </p>
 
                                     {/* decorativ bubulles */}
@@ -264,12 +281,9 @@ function Trainings() {
                                         career transition.
                                     </p>
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur
-                                        adipiscing elit. Sed non risus.
-                                        Suspendisse lectus tortor, dignissim sit
-                                        amet, adipiscing nec, ultricies sed,
-                                        dolor. Cras elementum ultrices diam.
-                                        Maecenas ligula
+                                        A training that taught me that the
+                                        greater the effort, the greater the
+                                        result
                                     </p>
                                 </div>
                                 <div

@@ -69,14 +69,14 @@ function Goals() {
                                         <h2
                                             className={`goalMain__goalContainer__title ${theme}`}
                                         >
-                                            Toujours plus compétent !
+                                            Toujours progresser
                                         </h2>
 
                                         {/* fake button */}
                                         <div
                                             className={`goalMain__goalContainer__clic ${theme}`}
                                         >
-                                            Découvrir l&apos;objectif !
+                                            Découvrir l&apos;objectif
                                         </div>
                                     </div>
 
@@ -90,26 +90,27 @@ function Goals() {
                                             <FontAwesomeIcon icon={faXmark} />
                                         </div>
 
-                                        <h3>Aller plus loin !</h3>
+                                        <h3>Progression constante</h3>
 
                                         <p>
-                                            En tant que développeur web, il est
-                                            primordial de rester constamment à
-                                            l&apos;affût des nouvelles
-                                            technologies et méthodes.
+                                            En tant que{" "}
+                                            <strong>développeur web</strong>, il
+                                            est essentiel de maintenir une
+                                            veille constante sur les{" "}
+                                            <strong>
+                                                nouvelles technologies
+                                            </strong>{" "}
+                                            et méthodes. <br />
                                             <br />
-                                            <br />
-                                            Mon objectif est d&apos;approfondir
+                                            Mon objectif consiste à approfondir
                                             en permanence ma compréhension et
-                                            mes compétences pour garantir des
+                                            mes compétences pour assurer des
                                             résultats de haute qualité tout en
-                                            maximisant l&apos;efficacité.
+                                            optimisant l&apos;efficacité. <br />
                                             <br />
-                                            <br />
-                                            Ainsi, j&apos;évolue tout en
-                                            accomplissant au mieux les missions
-                                            qui me sont confiées.
-                                            <br />
+                                            C&apos;est ainsi que je progresse
+                                            tout en réalisant au mieux les
+                                            missions qui me sont confiées.
                                         </p>
                                     </div>
                                 </div>
@@ -133,13 +134,13 @@ function Goals() {
                                         <h2
                                             className={`goalMain__goalContainer__title ${theme}`}
                                         >
-                                            Comprendre l&apos;équipe !
+                                            Comprendre l&apos;équipe
                                         </h2>
 
                                         <div
                                             className={`goalMain__goalContainer__clic ${theme}`}
                                         >
-                                            Découvrir l&apos;objectif !
+                                            Découvrir l&apos;objectif
                                         </div>
                                     </div>
 
@@ -154,26 +155,29 @@ function Goals() {
                                         </div>
 
                                         <h3>
-                                            C&apos;est enssemble qu&apos;on
-                                            avance !
+                                            Avançons <br />
+                                            ensemble
                                         </h3>
 
                                         <p>
-                                            Pour ma part, le travail
-                                            d&apos;équipe revêt une importance
-                                            primordiale.
+                                            En tant que
+                                            <strong> développeur web</strong>,
+                                            je considère le travail
+                                            d&apos;équipe comme essentiel.{" "}
                                             <br />
                                             <br />
-                                            Imaginez une équipe solide, avançant
-                                            de concert sur les projets : <br />
-                                            c&apos;est, à mon avis, la meilleure
-                                            manière de grandir tout en
-                                            appréciant pleinement son quotidien.
+                                            Imaginer une équipe solide
+                                            travaillant de manière harmonieuse
+                                            sur des projets est, à mon avis, la
+                                            meilleure façon de progresser tout
+                                            en appréciant pleinement son
+                                            quotidien. <br />
                                             <br />
+                                            Mon objectif ? <br />
                                             <br />
-                                            Mon objectif ? M&apos;intégrer au
-                                            mieux dans une équipe et trouver ma
-                                            place idéale pour une contribution
+                                            M&apos;intégrer parfaitement dans
+                                            une équipe et trouver la place
+                                            idéale pour une contribution
                                             optimale.
                                         </p>
                                     </div>
@@ -196,13 +200,13 @@ function Goals() {
                                         <h2
                                             className={`goalMain__goalContainer__title ${theme}`}
                                         >
-                                            Évoluer !
+                                            Évoluer en entreprise
                                         </h2>
 
                                         <div
                                             className={`goalMain__goalContainer__clic ${theme}`}
                                         >
-                                            Découvrir l&apos;objectif !
+                                            Découvrir l&apos;objectif
                                         </div>
                                     </div>
 
@@ -216,23 +220,22 @@ function Goals() {
                                             <FontAwesomeIcon icon={faXmark} />
                                         </div>
 
-                                        <h3>Gravir les échellons !</h3>
+                                        <h3>Avancer dans ma carrière</h3>
 
                                         <p>
-                                            Mon objectif majeur est de
-                                            satisfaire ma curiosité insatiable
-                                            vis-à-vis du monde du web et du
-                                            graphisme.
+                                            Mon objectif principal est de
+                                            nourrir ma curiosité insatiable pour
+                                            le monde du <strong>web</strong> et
+                                            du <strong>graphisme</strong>.
                                             <br />
                                             <br />
-                                            Monter les échelons me permettra
-                                            toujours de dénicher de nouveaux
-                                            aspects passionnants de mon métier !
+                                            Progresser dans ma carrière me
+                                            permettra toujours de découvrir de
+                                            nouveaux aspects passionnants de mon
+                                            métier ! <br />
                                             <br />
-                                            <br />
-                                            Les défis qui se présentent seront
-                                            les moteurs de ma réussite, aucun
-                                            doute là-dessus.
+                                            Les défis qui se présentent sont les
+                                            catalyseurs de ma réussite.
                                         </p>
                                     </div>
                                 </div>
@@ -285,14 +288,14 @@ function Goals() {
                                         <h2
                                             className={`goalMain__goalContainer__title ${theme}`}
                                         >
-                                            Always more competent !
+                                            Always progressing
                                         </h2>
 
                                         {/* fake button */}
                                         <div
                                             className={`goalMain__goalContainer__clic ${theme}`}
                                         >
-                                            Discover the objective!
+                                            Discover the objective
                                         </div>
                                     </div>
 
@@ -306,21 +309,24 @@ function Goals() {
                                             <FontAwesomeIcon icon={faXmark} />
                                         </div>
 
-                                        <h3>Go further!</h3>
+                                        <h3>Constant Progression</h3>
 
                                         <p>
-                                            As a web developer, it&apos;s
-                                            crucial to always stay attuned to
-                                            new technologies and methods.
+                                            As a <strong>web developer</strong>,
+                                            it&apos;s crucial to stay constantly
+                                            updated with{" "}
+                                            <strong>
+                                                emerging technologies
+                                            </strong>{" "}
+                                            and methodologies.
                                             <br />
-                                            <br />
-                                            My goal is to continually deepen my
-                                            understanding and skills, ensuring
-                                            high-quality results while
+                                            <br /> My goal is to continually
+                                            deepen my understanding and skills
+                                            to ensure high-quality results while
                                             maximizing efficiency.
                                             <br />
                                             <br />
-                                            This way, I evolve while excelling
+                                            This is how I evolve while excelling
                                             in the tasks entrusted to me.
                                         </p>
                                     </div>
@@ -345,13 +351,13 @@ function Goals() {
                                         <h2
                                             className={`goalMain__goalContainer__title ${theme}`}
                                         >
-                                            Understanding the team!
+                                            Understanding the team
                                         </h2>
 
                                         <div
                                             className={`goalMain__goalContainer__clic ${theme}`}
                                         >
-                                            Discover the objective!
+                                            Discover the objective
                                         </div>
                                     </div>
 
@@ -365,27 +371,23 @@ function Goals() {
                                             <FontAwesomeIcon icon={faXmark} />
                                         </div>
 
-                                        <h3>
-                                            It&apos;s together that we move
-                                            forward!
-                                        </h3>
+                                        <h3>Let&apos;s Advance Together</h3>
 
                                         <p>
-                                            For my part, teamwork holds
-                                            paramount importance.
+                                            As a <strong>web developer</strong>,
+                                            I highly value teamwork. <br />
+                                            <br />
+                                            Picture a strong team working in
+                                            unison on projects – in my view,
+                                            it&apos;s the best way to grow while
+                                            fully enjoying your daily work.
                                             <br />
                                             <br />
-                                            Picture a solid team, moving in
-                                            harmony on projects:
+                                            My goal? <br />
                                             <br />
-                                            In my opinion, it&apos;s the best
-                                            way to grow while fully enjoying
-                                            daily life.
-                                            <br />
-                                            <br />
-                                            My goal? To integrate myself
-                                            seamlessly into a team and find my
-                                            ideal spot for optimal contribution.
+                                            To seamlessly integrate into a team
+                                            and find the ideal role for optimal
+                                            contribution
                                         </p>
                                     </div>
                                 </div>
@@ -407,13 +409,13 @@ function Goals() {
                                         <h2
                                             className={`goalMain__goalContainer__title ${theme}`}
                                         >
-                                            Evolve !
+                                            Advance in the company
                                         </h2>
 
                                         <div
                                             className={`goalMain__goalContainer__clic ${theme}`}
                                         >
-                                            Discover the objective!
+                                            Discover the objective
                                         </div>
                                     </div>
 
@@ -427,22 +429,20 @@ function Goals() {
                                             <FontAwesomeIcon icon={faXmark} />
                                         </div>
 
-                                        <h3>Climb the ranks !</h3>
+                                        <h3>Advance in my career</h3>
 
                                         <p>
-                                            My main objective is to satisfy my
-                                            insatiable curiosity towards the
-                                            world of web and graphic design.
+                                            My primary goal is to fuel my
+                                            insatiable curiosity about the world
+                                            of <strong>web</strong> and
+                                            <strong> graphics</strong>. <br />
                                             <br />
+                                            Advancing in my career will always
+                                            enable me to uncover new exciting
+                                            facets of my profession! <br />
                                             <br />
-                                            Climbing the ranks will consistently
-                                            allow me to uncover new exciting
-                                            facets of my profession!
-                                            <br />
-                                            <br />
-                                            The challenges that come my way will
-                                            be the engines of my success, no
-                                            doubt about that.
+                                            The challenges that arise serve as
+                                            the engines of my success.
                                         </p>
                                     </div>
                                 </div>

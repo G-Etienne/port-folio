@@ -19,7 +19,7 @@ function Copyright() {
     if (langue === "french") {
         return (
             <p className={`copyright ${theme + "Copyright"}`}>
-                © 2023 Etienne Ginet Tous droits réservés.
+                © 2023 <strong>Etienne Ginet</strong> Tous droits réservés.
             </p>
         );
     }
@@ -28,7 +28,7 @@ function Copyright() {
     if (langue === "english") {
         return (
             <p className={`copyright ${theme + "Copyright"}`}>
-                © 2023 Etienne Ginet All rights reserved.
+                © 2023 <strong>Etienne Ginet</strong> All rights reserved.
             </p>
         );
     }

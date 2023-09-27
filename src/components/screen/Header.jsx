@@ -29,7 +29,9 @@ function Header() {
                 <Menu />
 
                 <NavLink className="header__title__link" to={"/"}>
-                    <h1 className={`header__title ${theme}`}>Etienne Ginet</h1>
+                    <h1 className={`header__title ${theme}`}>
+                        <strong>Etienne Ginet</strong>
+                    </h1>
                 </NavLink>
 
                 {/* interaction theme dark and white */}

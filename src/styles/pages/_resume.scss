@@ -397,7 +397,9 @@
 //**************************************************************************************
 //placing the page in the virtual screen
 .resumeScreen {
-    background-color: white;
+    background-image: url("../../assets/Resume/back-resume.jpg");
+    background-size: cover;
+
     @include positionPage;
     height: 72%;
     width: 97.5%;
@@ -406,7 +408,8 @@
 
     //dark theme
     &.dark {
-        background-color: darken($main-back-color, 10%);
+        background-image: url("../../assets/Resume/back-resume-dark.jpg");
+        background-size: cover;
     }
 
     &__main {

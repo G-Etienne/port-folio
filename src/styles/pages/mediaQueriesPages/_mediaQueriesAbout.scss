@@ -219,7 +219,7 @@
 
         //part who explain who etienne is
         &__containerWhoIAm {
-            height: 300px;
+            height: 500px;
 
             &__title {
                 &.white {
@@ -240,7 +240,7 @@
 
         //containner who explain the web part
         &__containerWeb {
-            height: 300px;
+            height: 500px;
 
             &__title {
                 &.white {
@@ -261,7 +261,7 @@
 
         //containner who explain what i do before web
         &__containerBottom {
-            height: 300px;
+            height: 500px;
 
             &__title {
                 &.white {
@@ -307,8 +307,6 @@
 
         //part who explain who etienne is
         &__containerWhoIAm {
-            height: 300px;
-
             &__title {
                 &.white {
                     font-size: 30px;
@@ -326,8 +324,6 @@
         }
         //containner who explain the web part
         &__containerWeb {
-            height: 300px;
-
             &__title {
                 &.white {
                     font-size: 30px;
@@ -346,8 +342,6 @@
 
         //containner who explain what i do before web
         &__containerBottom {
-            height: 300px;
-
             &__title {
                 &.white {
                     font-size: 30px;
@@ -383,6 +377,17 @@
                 font-size: 50px;
                 height: 200px;
             }
+        }
+
+        //content containers
+        &__containerWhoIAm {
+            height: 600px;
+        }
+        &__containerWeb {
+            height: 600px;
+        }
+        &__containerBottom {
+            height: 600px;
         }
     }
 }

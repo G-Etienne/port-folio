@@ -2,6 +2,11 @@
 //utils sass
 @import "../utils/variables";
 //---------------------------------------------------------
+//strong normalization for the trainings page
+.trainingsMain__web__textContainer > p > strong {
+    font-weight: normal;
+}
+//---------------------------------------------------------
 //min width of the app
 #root {
     min-width: 280px;
