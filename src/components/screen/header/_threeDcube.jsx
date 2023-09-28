@@ -4,8 +4,8 @@ import { useContext } from "react";
 import { ThemeContext } from "../../../contexts/ThemeContext";
 
 //---------------------------------------------------
-//style
-import "../../../styles/components/screen/Header/_threeDcube.scss";
+// //style
+// import "../../../styles/components/screen/Header/_threeDcube.scss";
 
 //---------------------------------------------------
 function Cube() {

@@ -7,9 +7,9 @@ import { LangueContext } from "../contexts/LangueContext";
 //---------------------------------------------------------
 //components
 //---------------------------------------------------------
-//style for the Home page
-import "../styles/pages/_about.scss";
-import "../styles/pages/mediaQueriesPages/_mediaQueriesAbout.scss";
+// //style for the Home page
+// import "../styles/pages/_about.scss";
+// import "../styles/pages/mediaQueriesPages/_mediaQueriesAbout.scss";
 
 //---------------------------------------------------------
 function Home() {

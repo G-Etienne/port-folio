@@ -8,9 +8,9 @@ import { ThemeContext } from "../contexts/ThemeContext";
 import { LangueContext } from "../contexts/LangueContext";
 
 //-------------------------------------------------------
-//style
-import "../styles/pages/_error.scss";
-import "../styles/pages/mediaQueriesPages/_errorMediaQueries.scss";
+// //style
+// import "../styles/pages/_error.scss";
+// import "../styles/pages/mediaQueriesPages/_errorMediaQueries.scss";
 
 //-------------------------------------------------------
 //image

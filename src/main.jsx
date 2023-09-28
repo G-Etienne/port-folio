@@ -5,7 +5,7 @@ import Roads from "./routes/routes";
 
 //----------------------------------------------------
 //styles
-import "./styles/main.scss";
+// import "./styles/vendors/_normalize.scss";
 
 //----------------------------------------------------
 ReactDOM.createRoot(document.getElementById("root")).render(

@@ -11,9 +11,9 @@ import githubLight from "../../assets/Footer/gitlight.png";
 import linkedinLight from "../../assets/Footer/linklight.png";
 
 //---------------------------------------------------------
-//styles
-import "../../styles/components/deskFooter/_linksDesk.scss";
-import "../../styles/components/deskFooter/desk-media/_linkDeskMediaQueries.scss";
+// //styles
+// import "../../styles/components/deskFooter/_linksDesk.scss";
+// import "../../styles/components/deskFooter/desk-media/_linkDeskMediaQueries.scss";
 
 function LinksDesk() {
     {

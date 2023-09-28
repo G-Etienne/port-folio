@@ -4,9 +4,9 @@ import { useContext } from "react";
 import { ThemeContext } from "../../contexts/ThemeContext";
 
 //---------------------------------------------------------
-//style
-import "../../styles/components/deskFooter/_key.scss";
-import "../../styles/components/deskFooter/desk-media/_keyMediaQueries.scss";
+// //style
+// import "../../styles/components/deskFooter/_key.scss";
+// import "../../styles/components/deskFooter/desk-media/_keyMediaQueries.scss";
 
 //---------------------------------------------------------
 function Key({ keyLetter }) {

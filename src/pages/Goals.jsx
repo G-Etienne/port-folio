@@ -10,9 +10,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 
 //---------------------------------------------------------
-//style
-import "../styles/pages/_goals.scss";
-import "../styles/pages/mediaQueriesPages/_goalsMediaQueries.scss";
+// //style
+// import "../styles/pages/_goals.scss";
+// import "../styles/pages/mediaQueriesPages/_goalsMediaQueries.scss";
 
 //---------------------------------------------------------
 //image

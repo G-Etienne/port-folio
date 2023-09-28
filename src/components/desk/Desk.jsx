@@ -5,9 +5,9 @@ import { ThemeContext } from "../../contexts/ThemeContext";
 
 //------------------------------------------------------
 //style
-import "../../styles/components/deskFooter/_desk.scss";
-//media queries
-import "../../styles/components/deskFooter/desk-media/_deskMediaQueries.scss";
+// import "../../styles/components/deskFooter/_desk.scss";
+// //media queries
+// import "../../styles/components/deskFooter/desk-media/_deskMediaQueries.scss";
 
 //------------------------------------------------------
 //Desk components

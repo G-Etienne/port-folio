@@ -11,20 +11,13 @@
     z-index: 20;
     height: 100%;
     width: 100%;
-    background-image: url("../../../assets/BackScreen/back-clear.png");
-    background-size: cover;
-    background-position: center;
-}
-
-//dark theme
-.backScreenImage.dark {
-    background-image: url("../../../assets/BackScreen/back-dark.png");
+    object-fit: cover;
 }
 
 //-----------------------------------------------------------
 //block image behind the animation
 .backAnim {
-    @include backAnim("../../../assets/BackScreen/back-anim-clear.jpg");
+    @include backAnim();
 
     &__container {
         scale: 1;
@@ -32,18 +25,17 @@
     }
 }
 
-//dark theme
-.backAnim.dark {
-    @include backAnim("../../../assets/BackScreen/back-anim-dark.jpg");
-    &__container {
-        scale: 1;
-        animation: rotateAnime 80000ms linear infinite;
-    }
+.backImage {
+    position: absolute;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
 }
-
 //-----------------------------------------------------------
 //animation
 .dot {
+    position: relative;
     &__ancor {
         &__one {
             rotate: 20deg;

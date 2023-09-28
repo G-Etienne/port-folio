@@ -31,7 +31,6 @@
 //moon for dark them style
 .moon {
     position: absolute;
-    background-image: url("../../../../assets/Theme/moon.png");
     border: 2px solid $fluo-color;
     background-size: cover;
     height: 30px;
@@ -42,7 +41,6 @@
 
     //dark theme switch the appearance
     &.darkButton {
-        background-image: url("../../../../assets/Theme/sun.png");
         border: 2px rgb(182, 182, 182) solid;
     }
 }
@@ -51,7 +49,6 @@
 //sun for dark them style
 .sun {
     position: absolute;
-    background-image: url("../../../../assets/Theme/sun.png");
     background-size: cover;
     border: 2px rgb(182, 182, 182) solid;
     height: 30px;
@@ -61,7 +58,6 @@
 
     //dark theme switch the appearance
     &.darkButton {
-        background-image: url("../../../../assets/Theme/moon.png");
         border: 2px solid $fluo-color;
     }
 }

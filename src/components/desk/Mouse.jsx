@@ -4,9 +4,9 @@ import { useContext } from "react";
 import { ThemeContext } from "../../contexts/ThemeContext";
 
 //---------------------------------------------------------
-//style
-import "../../styles/components/deskFooter/_mouse.scss";
-import "../../styles/components/deskFooter/desk-media/_mouseMediaQueries.scss";
+// //style
+// import "../../styles/components/deskFooter/_mouse.scss";
+// import "../../styles/components/deskFooter/desk-media/_mouseMediaQueries.scss";
 
 //---------------------------------------------------------
 function Mouse() {

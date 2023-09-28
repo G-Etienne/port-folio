@@ -5,9 +5,9 @@ import { ThemeContext } from "../contexts/ThemeContext";
 import { LangueContext } from "../contexts/LangueContext";
 
 //---------------------------------------------------------
-//style
-import "../styles/pages/_trainings.scss";
-import "../styles/pages/mediaQueriesPages/_trainingsMediaQueries.scss";
+// //style
+// import "../styles/pages/_trainings.scss";
+// import "../styles/pages/mediaQueriesPages/_trainingsMediaQueries.scss";
 
 //---------------------------------------------------------
 //image

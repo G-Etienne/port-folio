@@ -23,9 +23,9 @@ import ResumePartOne from "../assets/Resume/BigScreen/Resume_Part_One.png";
 import ResumePartTwo from "../assets/Resume/BigScreen/Resume_Part_Two.png";
 import RecommendationPart from "../assets/Resume/BigScreen/recommendation_letter.png";
 //---------------------------------------------------------
-//style for the Home page
-import "../styles/pages/_resume.scss";
-import "../styles/pages/mediaQueriesPages/_resumeMediaQueries.scss";
+// //style for the Home page
+// import "../styles/pages/_resume.scss";
+// import "../styles/pages/mediaQueriesPages/_resumeMediaQueries.scss";
 
 //---------------------------------------------------------
 function Resume() {

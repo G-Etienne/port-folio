@@ -5,10 +5,10 @@ import { ThemeContext } from "../../contexts/ThemeContext";
 import { LangueContext } from "../../contexts/LangueContext";
 
 //------------------------------------------------------
-//style
-import "../../styles/components/deskFooter/_desk.scss";
-//media queries
-import "../../styles/components/deskFooter/desk-media/_deskMediaQueries.scss";
+// //style
+// import "../../styles/components/deskFooter/_desk.scss";
+// //media queries
+// import "../../styles/components/deskFooter/desk-media/_deskMediaQueries.scss";
 
 //----------------------------------------------------
 function Copyright() {

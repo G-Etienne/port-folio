@@ -23,7 +23,7 @@ import { LangueProvider } from "../contexts/LangueContext";
 
 //---------------------------------------------------------
 //style
-import "../styles/bases/_bases.scss";
+// import "../styles/bases/_bases.scss";
 
 //---------------------------------------------------------
 function Roads() {

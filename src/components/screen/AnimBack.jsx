@@ -4,9 +4,14 @@ import { useContext } from "react";
 import { ThemeContext } from "../../contexts/ThemeContext";
 
 //--------------------------------------------------
-//style
-import "../../styles/components/screen/_back.scss";
-import "../../styles/components/screen/mediaQueriesScreen/_backMediaQueries.scss";
+// //style
+// import "../../styles/components/screen/_back.scss";
+// import "../../styles/components/screen/mediaQueriesScreen/_backMediaQueries.scss";
+
+//--------------------------------------------------
+//image of the back of the animation
+import backAnimWhite from "../../assets/BackScreen/back-anim-clear.jpg";
+import backAnimDark from "../../assets/BackScreen/back-anim-dark.jpg";
 
 //--------------------------------------------------
 function AnimBack() {
@@ -15,11 +20,29 @@ function AnimBack() {
     }
     const { theme } = useContext(ThemeContext);
 
+    //curent back of the animation
+    let backScreen = backAnimWhite;
+
+    //changin the back of the animation
+    if (theme === "white") {
+        backScreen = backAnimWhite;
+    } else if (theme === "dark") {
+        backScreen = backAnimDark;
+    }
+
     return (
         <>
             {/* bloc with the image behind the animation */}
             <div className={`backAnim ${theme}`}>
                 {/* container of the animation */}
+                {/* image behind the animation */}
+                <img
+                    className="backImage"
+                    src={backScreen}
+                    alt="image for the back of the animation"
+                />
+
+                {/* animation */}
                 <div className="backAnim__container">
                     {/* first part of the animation (dots and rods) */}
                     <div className={`dot__one ${theme}`}>

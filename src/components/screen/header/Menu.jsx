@@ -25,9 +25,9 @@ import { NavLink } from "react-router-dom";
 import Cube from "./_threeDcube";
 
 //---------------------------------------------------------
-//styles
-import "../../../styles/components/screen/Header/_menu.scss";
-import "../../../styles/components/screen/Header/headerMedia/_menuMediaQueries.scss";
+// //styles
+// import "../../../styles/components/screen/Header/_menu.scss";
+// import "../../../styles/components/screen/Header/headerMedia/_menuMediaQueries.scss";
 
 //---------------------------------------------------------
 function Menu() {

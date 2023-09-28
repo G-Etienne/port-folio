@@ -8,8 +8,8 @@ import { ThemeContext } from "../contexts/ThemeContext";
 import Screen from "./screen/Screen";
 
 //---------------------------------------------------------
-//style
-import "../styles/bases/_bases.scss";
+// //style
+// import "../styles/bases/_bases.scss";
 
 //---------------------------------------------------------
 function Main() {

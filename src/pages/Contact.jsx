@@ -10,9 +10,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMobileRetro } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 //---------------------------------------------------------
-//style for the Home page
-import "../styles/pages/_contact.scss";
-import "../styles/pages/mediaQueriesPages/_contactMediaQueries.scss";
+// //style for the Home page
+// import "../styles/pages/_contact.scss";
+// import "../styles/pages/mediaQueriesPages/_contactMediaQueries.scss";
 
 //---------------------------------------------------------
 function Contact() {

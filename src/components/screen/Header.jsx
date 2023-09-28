@@ -10,9 +10,9 @@ import LangueButton from "./header/LangueButton";
 import Menu from "./header/Menu";
 
 //---------------------------------------------------------
-//styles
-import "../../styles/layout/_header.scss";
-import "../../styles/layout/media_queries/_headerMediaQueries.scss";
+// //styles
+// import "../../styles/layout/_header.scss";
+// import "../../styles/layout/media_queries/_headerMediaQueries.scss";
 
 //---------------------------------------------------------
 //import react-router-dom for the links navigation

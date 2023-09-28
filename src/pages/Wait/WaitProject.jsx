@@ -3,28 +3,42 @@
 import { useContext } from "react";
 import { ThemeContext } from "../../contexts/ThemeContext";
 import { LangueContext } from "../../contexts/LangueContext";
-//---------------------------------------------------------
-//import react-router-dom for the links navigation
-import { NavLink } from "react-router-dom";
 
 //--------------------------------------------------
-//style
-import "../../styles/pages/wait/_wait.scss";
-import "../../styles/pages/wait/MediaWait/_wait_media_queries.scss";
+// //style
+// import "../../styles/pages/wait/_wait.scss";
+// import "../../styles/pages/wait/MediaWait/_wait_media_queries.scss";
 
 //--------------------------------------------------
-//image
+//images
+import backWait from "../../assets/wait/back-wait.jpg";
+import backWaitDark from "../../assets/wait/back-wait-dark.jpg";
+import imageWaitCenter from "../../assets/wait/WaitPerso.jpg";
+
 //--------------------------------------------------
 function WaitProject() {
     // Context for theme and langue
     const { theme } = useContext(ThemeContext);
     const { langue } = useContext(LangueContext);
 
+    //image back screen
+    let image = backWait;
+
+    //changin image according to the theme
+    if (theme === "dark") {
+        image = backWaitDark;
+    } else if (theme === "white") {
+        image = backWait;
+    }
+
     //french part
     if (langue === "french") {
         return (
             //background of the page
             <div className={`waitBack ${theme}`}>
+                {/* image in the back of this page */}
+                <img src={image} alt="image for the back of the wait page" />
+
                 {/* container with the page elements */}
                 <div className={`waitContainer ${theme}`}>
                     {/* container in the center */}
@@ -33,9 +47,11 @@ function WaitProject() {
                         <h1>Cette pages n&apos;est pas encore disponible.</h1>
 
                         {/* image of the page */}
-                        <div
+                        <img
+                            alt="image for illustring this part"
+                            src={imageWaitCenter}
                             className={`waitContainer__content__image ${theme}`}
-                        ></div>
+                        ></img>
 
                         {/* text under the image */}
                         <p>
@@ -67,6 +83,8 @@ function WaitProject() {
         return (
             //background of the page
             <div className={`waitBack ${theme}`}>
+                {/* image in the back of this page */}
+                <img src={image} alt="image for the back of the wait page" />
                 {/* container with the page elements */}
                 <div className={`waitContainer ${theme}`}>
                     {/* container in the center */}
@@ -75,9 +93,11 @@ function WaitProject() {
                         <h1>This page is not yet available.</h1>
 
                         {/* image of the page */}
-                        <div
+                        <img
+                            alt="image for illustring this part"
+                            src={imageWaitCenter}
                             className={`waitContainer__content__image ${theme}`}
-                        ></div>
+                        ></img>
 
                         {/* text under the image */}
                         <p>
