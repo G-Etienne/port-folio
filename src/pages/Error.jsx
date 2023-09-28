@@ -50,7 +50,7 @@ function Error() {
                                 className={`errorMain__link ${theme}`}
                                 to="/"
                             >
-                                Retours à l&apos;accueil
+                                Retour à l&apos;accueil
                             </NavLink>
                         </div>
                     </div>

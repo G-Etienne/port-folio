@@ -232,7 +232,7 @@ function Goals() {
                                             Progresser dans ma carrière me
                                             permettra toujours de découvrir de
                                             nouveaux aspects passionnants de mon
-                                            métier ! <br />
+                                            métier. <br />
                                             <br />
                                             Les défis qui se présentent sont les
                                             catalyseurs de ma réussite.
@@ -295,7 +295,7 @@ function Goals() {
                                         <div
                                             className={`goalMain__goalContainer__clic ${theme}`}
                                         >
-                                            Discover the objective
+                                            Discover the goal
                                         </div>
                                     </div>
 
@@ -309,7 +309,7 @@ function Goals() {
                                             <FontAwesomeIcon icon={faXmark} />
                                         </div>
 
-                                        <h3>Constant Progression</h3>
+                                        <h3>Constant progression</h3>
 
                                         <p>
                                             As a <strong>web developer</strong>,
@@ -357,7 +357,7 @@ function Goals() {
                                         <div
                                             className={`goalMain__goalContainer__clic ${theme}`}
                                         >
-                                            Discover the objective
+                                            Discover the goal
                                         </div>
                                     </div>
 
@@ -371,14 +371,14 @@ function Goals() {
                                             <FontAwesomeIcon icon={faXmark} />
                                         </div>
 
-                                        <h3>Let&apos;s Advance Together</h3>
+                                        <h3>Let&apos;s advance together</h3>
 
                                         <p>
                                             As a <strong>web developer</strong>,
                                             I highly value teamwork. <br />
                                             <br />
                                             Picture a strong team working in
-                                            unison on projects – in my view,
+                                            unison on projects. In my view,
                                             it&apos;s the best way to grow while
                                             fully enjoying your daily work.
                                             <br />
@@ -387,7 +387,7 @@ function Goals() {
                                             <br />
                                             To seamlessly integrate into a team
                                             and find the ideal role for optimal
-                                            contribution
+                                            contribution.
                                         </p>
                                     </div>
                                 </div>
@@ -409,13 +409,13 @@ function Goals() {
                                         <h2
                                             className={`goalMain__goalContainer__title ${theme}`}
                                         >
-                                            Advance in the company
+                                            Progress in the company
                                         </h2>
 
                                         <div
                                             className={`goalMain__goalContainer__clic ${theme}`}
                                         >
-                                            Discover the objective
+                                            Discover the goal
                                         </div>
                                     </div>
 

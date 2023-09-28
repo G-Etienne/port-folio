@@ -80,15 +80,15 @@ function Home() {
                                     Je suis passionné et totalement investi dans
                                     mes projets. Mon désir constant
                                     d&apos;apprendre et de relever des défis me
-                                    pousse à fournir toujours plus efforts. Je
-                                    crois fermement en la valeur de chaque idée
-                                    et en la rapidité de l&apos;évolution grâce
-                                    à la collaboration. La bienveillance est
-                                    pour moi essentielle pour créer un
-                                    environnement plaisant et enrichissant. En
-                                    somme, je suis un homme empathique qui
-                                    valorise le bien-être de chacun, pour que
-                                    chaque jour soit agréable.
+                                    pousse à fournir toujours plus
+                                    d&apos;efforts. Je crois fermement en la
+                                    valeur de chaque idée et en la rapidité de
+                                    l&apos;évolution grâce à la collaboration.
+                                    La bienveillance est pour moi essentielle
+                                    pour créer un environnement plaisant et
+                                    enrichissant. En somme, je suis un homme
+                                    empathique qui valorise le bien-être de
+                                    chacun, pour que chaque jour soit agréable.
                                 </p>
                             </div>
                         </div>
@@ -115,11 +115,11 @@ function Home() {
                                     une révélation pour moi. En tant que créatif
                                     depuis ma jeunesse, j&apos;ai retrouvé dans
                                     ce domaine ma passion pour le{" "}
-                                    <strong>design</strong> et
+                                    <strong>design</strong> et{" "}
                                     <strong>l&apos;expérience visuelle</strong>.
                                     Cette profession me permet également de
                                     combiner ma passion pour la logique. Ainsi,
-                                    je peux créer des
+                                    je peux créer des{" "}
                                     <strong>éléments visuels</strong> en
                                     utilisant des logiques simples et efficaces
                                     sur <strong>le web</strong>. Mon objectif
@@ -232,7 +232,7 @@ function Home() {
                                     through collaboration. Kindness is essential
                                     to me in creating a pleasant and enriching
                                     environment. In summary, I am an empathetic
-                                    individual who values the well-being of
+                                    person who values the well-being of
                                     everyone, so that each day is enjoyable.
                                 </p>
                             </div>
@@ -257,9 +257,9 @@ function Home() {
                                     className={`aboutMain__containerWeb__textPart__text ${theme}`}
                                 >
                                     <strong>Web development</strong> has been a
-                                    revelation for me. As a creative individual
+                                    revelation for me. As a creative person
                                     since my youth, I rediscovered my passion
-                                    for <strong>design</strong> and
+                                    for <strong>design</strong> and{" "}
                                     <strong>visual experience</strong> in this
                                     field. This profession also allows me to
                                     merge my enthusiasm for logic. Consequently,

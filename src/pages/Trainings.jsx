@@ -71,9 +71,9 @@ function Trainings() {
                                     <p
                                         className={`trainingsMain__web__textContainer__center ${theme}`}
                                     >
-                                        Centre de foramtion : OpenClassRooms{" "}
+                                        Centre de formation : OpenClassRooms{" "}
                                         <br />
-                                        Formation à distance. France, 2022 /
+                                        Formation à distance : France, 2022 /
                                         2023
                                     </p>
 
@@ -82,25 +82,23 @@ function Trainings() {
                                         les éléments essentiels pour tout bon{" "}
                                         <strong>développeur web</strong>. Elle
                                         couvre <strong>HTML</strong>,{" "}
-                                        <strong>CSS</strong>,
+                                        <strong>CSS</strong>,{" "}
                                         <strong>SASS</strong>,{" "}
                                         <strong>ReactJS</strong>,{" "}
                                         <strong>SEO</strong> et{" "}
                                         <strong>accessibilité</strong>, la
                                         création d&apos;
                                         <strong>API REST</strong>, la mise en
-                                        place de
-                                        <strong>
-                                            bases de données
-                                        </strong> avec <strong>MongoDB</strong>,
-                                        le
+                                        place de{" "}
+                                        <strong>bases de données</strong> avec{" "}
+                                        <strong>MongoDB</strong>, le{" "}
                                         <strong>responsive design</strong> et
                                         toutes les bonnes pratiques qui y sont
                                         associées. Pendant une période de plus
                                         de 8 mois, grâce à cette formation et à
                                         un travail intensif, j&apos;ai pu
                                         développer de nombreuses compétences
-                                        essentielles de mon domaine
+                                        indispensables à mon domaine
                                         professionnel.
                                     </p>
 
@@ -214,7 +212,7 @@ function Trainings() {
                                     >
                                         Training Center: OpenClassrooms
                                         <br />
-                                        Remote Training. France, 2022 / 2023
+                                        Remote Training : France, 2022 / 2023
                                     </p>
 
                                     <p>
@@ -222,18 +220,17 @@ function Trainings() {
                                         encompasses all the essential elements
                                         for any good{" "}
                                         <strong>web developer</strong>. It
-                                        covers
-                                        <strong>HTML</strong>,{" "}
+                                        covers <strong>HTML</strong>,{" "}
                                         <strong>CSS</strong>,{" "}
                                         <strong>SASS</strong>,{" "}
                                         <strong>ReactJS</strong>,{" "}
-                                        <strong>SEO</strong>, and
+                                        <strong>SEO</strong>, and{" "}
                                         <strong>accessibility</strong>, the
                                         creation of{" "}
                                         <strong>RESTful APIs</strong>, the
                                         establishment of{" "}
-                                        <strong>databases</strong>
-                                        with <strong>MongoDB</strong>,{" "}
+                                        <strong>databases</strong> with{" "}
+                                        <strong>MongoDB</strong>,{" "}
                                         <strong>responsive design</strong>, and
                                         all associated best practices. Over a
                                         period of more than 8 months, thanks to

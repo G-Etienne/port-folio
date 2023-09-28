@@ -38,7 +38,7 @@ function Contact() {
                         <h2
                             className={`contactMain__bigTitle special ${theme}`}
                         >
-                            Prêt à donner vie à votre
+                            Prêt à donner vie à votre{" "}
                             <strong>projet web</strong> ?<br />
                             N&apos;hésitez pas à me contacter pour en discuter !
                         </h2>
@@ -66,7 +66,7 @@ function Contact() {
                                 <h3
                                     className={`contactMain__contacts__title email  ${theme}`}
                                 >
-                                    Email
+                                    Courriel
                                 </h3>
 
                                 {/* button */}
@@ -74,7 +74,7 @@ function Contact() {
                                     href="mailto:ginet.devweb@gmail.com?subject=Premier contact."
                                     className={`contactMain__contacts__button email  ${theme}`}
                                 >
-                                    Contactez moi!
+                                    Contactez moi
                                 </a>
                             </div>
 
@@ -130,7 +130,7 @@ function Contact() {
                                     href="https://www.linkedin.com/in/etienne-ginet-74376a271"
                                     className={`contactMain__contacts__button linkedin  ${theme}`}
                                 >
-                                    Mon Linkedin!
+                                    Mon Linkedin
                                 </a>
                             </div>
                         </div>
@@ -194,7 +194,7 @@ function Contact() {
                                     href="mailto:ginet.devweb@gmail.com?subject=Premier contact."
                                     className={`contactMain__contacts__button email  ${theme}`}
                                 >
-                                    Contact me!
+                                    Contact me
                                 </a>
                             </div>
 
@@ -250,7 +250,7 @@ function Contact() {
                                     href="https://www.linkedin.com/in/etienne-ginet-74376a271"
                                     className={`contactMain__contacts__button linkedin  ${theme}`}
                                 >
-                                    My Linkedin!
+                                    My Linkedin
                                 </a>
                             </div>
                         </div>

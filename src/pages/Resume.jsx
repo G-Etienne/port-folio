@@ -82,8 +82,8 @@ function Resume() {
                                     <p>
                                         Découvrez mon cv sous sa forme
                                         classique.
-                                        <br /> <br /> Aller directement à
-                                        l&apos;éssenciel sans perdre de temps!
+                                        <br /> <br /> Allez directement à
+                                        l&apos;essentiel sans perdre de temps!
                                     </p>
 
                                     {/* links part */}
@@ -137,7 +137,7 @@ function Resume() {
 
                                     <p>
                                         Découvrez la lettre de recommendation de
-                                        mon ancien mentor lors de ma formation.
+                                        mon ancien mentor.
                                         <br /> <br /> Une confirmation de mon
                                         aptitude à être une personne
                                         persévérante et à assimiler rapidement
@@ -266,7 +266,7 @@ function Resume() {
                                     <h2>My Resume</h2>
 
                                     <p>
-                                        Discover my CV in its classic form.
+                                        Discover my resume in its classic form.
                                         <br />
                                         <br /> Go straight to the essentials
                                         without wasting time !
@@ -279,7 +279,7 @@ function Resume() {
                                                 setFullScreenResume("big")
                                             }
                                         >
-                                            MY Resume
+                                            My Resume
                                         </a>
 
                                         <a
@@ -323,10 +323,9 @@ function Resume() {
 
                                     <p>
                                         Discover the letter of recommendation
-                                        from my former mentor during my
-                                        training. <br />
+                                        from my former mentor. <br />
                                         <br /> A confirmation of my ability to
-                                        be a determined individual and quickly
+                                        be a determined person and quickly
                                         absorb new knowledge.
                                     </p>
 

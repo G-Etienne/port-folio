@@ -46,7 +46,7 @@ function WaitSkill() {
                     {/* container in the center */}
                     <div className={`waitContainer__content ${theme}`}>
                         {/* title */}
-                        <h1>Cette pages n&apos;est pas encore disponible.</h1>
+                        <h1>Cette page n&apos;est pas encore disponible.</h1>
 
                         <img
                             alt="image for illustring this part"
@@ -56,9 +56,8 @@ function WaitSkill() {
 
                         {/* text under the image */}
                         <p>
-                            Cette page web actuellement en cours de
-                            développement est sera disponible très
-                            prochainement.
+                            Cette page web est actuellement en cours de
+                            développement et sera disponible très prochainement.
                             <br />
                             Vous désirez en savoir plus sur mes compétences,
                             n&apos;hésitez pas à regarder mon CV.

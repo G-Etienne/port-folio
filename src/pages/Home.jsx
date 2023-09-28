@@ -57,7 +57,7 @@ function Home() {
                                 >
                                     <h4>Bienvenue dans mon monde !</h4>
 
-                                    <p>Explorez-le en cliquant sur le Menu !</p>
+                                    <p>Explorez-le en cliquant sur le menu !</p>
                                 </div>
                             </div>
 
@@ -116,19 +116,19 @@ function Home() {
                                 className={`homeMain__presentationContainer__text ${theme}`}
                             >
                                 <h4>
-                                    Salut, je suis Étienne, un développeur web
+                                    Bonjour, je suis Étienne, un développeur web
                                     passionné.
                                 </h4>
 
                                 <p>
-                                    Bienvenue sur mon portfolio où tu
-                                    découvriras mes compétences et projets.{" "}
+                                    Bienvenue sur mon portfolio où vous
+                                    découvrirez mes compétences et projets.{" "}
                                     <br />
                                     <br />
-                                    Explore mon univers digital où chaque ligne
+                                    Explorez mon univers digital où chaque ligne
                                     de code façonne le web de demain. <br />
                                     <br />
-                                    Rejoins-moi dans ce voyage interactif au
+                                    Rejoinez-moi dans ce voyage interactif au
                                     croisement de la programmation et du design.
                                 </p>
                             </div>
@@ -168,7 +168,7 @@ function Home() {
                                 >
                                     <h4>Welcome to my world !</h4>
 
-                                    <p>Explore it by clicking on the Menu !</p>
+                                    <p>Explore it by clicking on the menu !</p>
                                 </div>
                             </div>
 
@@ -188,7 +188,7 @@ function Home() {
                                 <div
                                     className={`homeMain__resumeContainer__classicResume__text ${theme}`}
                                 >
-                                    <h4>Do you prefer a classic resmue ?</h4>
+                                    <h4>Do you prefer a classic resume ?</h4>
 
                                     <NavLink
                                         className={`homeMain__resumeContainer__classicResume__text__link ${theme}`}
