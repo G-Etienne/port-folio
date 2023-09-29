@@ -61,17 +61,6 @@
             margin: 0px;
             padding: 0px;
 
-            //visile goal bloc
-            &__storeFront {
-                background-image: url("../../../assets/Goals/back-storefront-goal.jpg");
-                background-size: cover;
-
-                //dark theme
-                &.dark {
-                    background-image: url("../../../assets/Goals/back-frontstore-dark.jpg");
-                }
-            }
-
             //text for this goal
             &__textGoal {
                 transform-origin: top center;
@@ -346,6 +335,11 @@
                     font-size: 11px;
                     margin-top: 5px;
                 }
+
+                //hidding the cross for the title place
+                & > div {
+                    display: none;
+                }
             }
         }
 
@@ -382,6 +376,11 @@
                     font-size: 11px;
                     margin-top: 5px;
                 }
+
+                //hidding the cross for the title place
+                & > div {
+                    display: none;
+                }
             }
         }
 
@@ -415,6 +414,11 @@
                 & > p {
                     font-size: 11px;
                     margin-top: 5px;
+                }
+
+                //hidding the cross for the title place
+                & > div {
+                    display: none;
                 }
             }
         }

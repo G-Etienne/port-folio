@@ -88,7 +88,8 @@
         //big title on the page
         &__bigTitle {
             font-size: 25px;
-            margin-top: 0px;
+            margin-top: 25px;
+            position: relative;
         }
 
         //contacts container
@@ -413,5 +414,17 @@
 @media screen and (max-height: 900px) and (max-width: 450px) {
     .contactScreen {
         margin-top: 3.5%;
+    }
+}
+
+@media screen and (max-height: 620px) and (max-width: 1100px) {
+    .contactMain {
+        margin-bottom: 50px;
+        &__bigTitle {
+            &.special {
+                position: relative;
+                top: -50px;
+            }
+        }
     }
 }

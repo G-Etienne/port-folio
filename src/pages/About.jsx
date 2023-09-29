@@ -12,10 +12,23 @@ import { LangueContext } from "../contexts/LangueContext";
 // import "../styles/pages/mediaQueriesPages/_mediaQueriesAbout.scss";
 
 //---------------------------------------------------------
+//image
+import aboutImageClear from "../assets/About/about-image.jpg";
+import aboutImageDark from "../assets/About/about-dark-image.jpg";
+//---------------------------------------------------------
 function Home() {
     //context for the langue and theme
     const { theme } = useContext(ThemeContext);
     const { langue } = useContext(LangueContext);
+
+    //change image according to the theme
+    let aboutImage = aboutImageClear;
+
+    if (theme === "white") {
+        aboutImage = aboutImageClear;
+    } else if (theme === "dark") {
+        aboutImage = aboutImageDark;
+    }
 
     //french part
     if (langue === "french") {
@@ -54,9 +67,11 @@ function Home() {
                                 MOI...
                             </h3>
 
-                            <div
+                            <img
+                                src={aboutImage}
+                                alt="image for illustrate the about page"
                                 className={`aboutMain__containerTop__image ${theme}`}
-                            ></div>
+                            ></img>
                         </div>
 
                         {/* part about etienne */}
@@ -201,9 +216,11 @@ function Home() {
                                 ME...
                             </h3>
 
-                            <div
+                            <img
+                                src={aboutImage}
+                                alt="image for illustrate the about page"
                                 className={`aboutMain__containerTop__image ${theme}`}
-                            ></div>
+                            ></img>
                         </div>
 
                         {/* part about etienne */}

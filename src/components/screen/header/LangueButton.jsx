@@ -38,6 +38,7 @@ function LangueButton() {
                     alt="french flag image illustraion"
                     className={`frenchFlag ${langue + "Button"}`}
                 ></img>
+
                 <img
                     src={secondFlag}
                     alt="english flag image illustraion"

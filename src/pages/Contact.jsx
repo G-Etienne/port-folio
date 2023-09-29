@@ -38,8 +38,8 @@ function Contact() {
                         <h2
                             className={`contactMain__bigTitle special ${theme}`}
                         >
-                            Prêt à donner vie à votre{" "}
-                            <strong>projet web</strong> ?<br />
+                            Prêt à donner vie à vos <strong>projets web</strong>{" "}
+                            ?<br />
                             N&apos;hésitez pas à me contacter pour en discuter !
                         </h2>
 
@@ -158,7 +158,7 @@ function Contact() {
                         <h2
                             className={`contactMain__bigTitle special ${theme}`}
                         >
-                            Ready to bring your <strong>web project</strong> to
+                            Ready to bring your <strong>web projects</strong> to
                             life?
                             <br /> Feel free to contact me to discuss it!
                         </h2>

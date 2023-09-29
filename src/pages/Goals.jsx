@@ -154,10 +154,7 @@ function Goals() {
                                             <FontAwesomeIcon icon={faXmark} />
                                         </div>
 
-                                        <h3>
-                                            Avançons <br />
-                                            ensemble
-                                        </h3>
+                                        <h3>Avançons ensemble</h3>
 
                                         <p>
                                             En tant que

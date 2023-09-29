@@ -55,7 +55,7 @@ function Home() {
                                 <div
                                     className={`homeMain__resumeContainer__interactifResume__text ${theme}`}
                                 >
-                                    <h4>Bienvenue dans mon monde !</h4>
+                                    <h4>Bienvenue sur mon cyberespace !</h4>
 
                                     <p>Explorez-le en cliquant sur le menu !</p>
                                 </div>
@@ -166,7 +166,7 @@ function Home() {
                                 <div
                                     className={`homeMain__resumeContainer__interactifResume__text ${theme}`}
                                 >
-                                    <h4>Welcome to my world !</h4>
+                                    <h4>Welcome to my cyberspace !</h4>
 
                                     <p>Explore it by clicking on the menu !</p>
                                 </div>
